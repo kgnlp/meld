@@ -1,0 +1,217 @@
+{
+    "CrossNER": {
+        "citekeys": [
+            "liu2020crossner"
+        ],
+        "note": "Version from 2021 with fixed annotations",
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/zliucr/CrossNER",
+                "revision": "2e7ba2a7798c961e3f29fbc51252c5a8d40224bf",
+                "base_language": "eng",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll"
+                        }
+                    }
+                ],
+                "subsets": {
+                    "ai": {
+                        "directory": "ner_data/ai",
+                        "train": [
+                            "train.txt"
+                        ],
+                        "validation": [
+                            "dev.txt"
+                        ],
+                        "test": [
+                            "test.txt"
+                        ]
+                    },
+                    "literature": {
+                        "directory": "ner_data/literature",
+                        "train": [
+                            "train.txt"
+                        ],
+                        "validation": [
+                            "dev.txt"
+                        ],
+                        "test": [
+                            "test.txt"
+                        ]
+                    },
+                    "music": {
+                        "directory": "ner_data/music",
+                        "train": [
+                            "train.txt"
+                        ],
+                        "validation": [
+                            "dev.txt"
+                        ],
+                        "test": [
+                            "test.txt"
+                        ]
+                    },
+                    "politics": {
+                        "directory": "ner_data/politics",
+                        "train": [
+                            "train.txt"
+                        ],
+                        "validation": [
+                            "dev.txt"
+                        ],
+                        "test": [
+                            "test.txt"
+                        ]
+                    },
+                    "science": {
+                        "directory": "ner_data/science",
+                        "train": [
+                            "train.txt"
+                        ],
+                        "validation": [
+                            "dev.txt"
+                        ],
+                        "test": [
+                            "test.txt"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "document_boundaries": "none",
+                "sentence_boundaries": "full"
+            },
+            {
+                "split": [
+                    "ai"
+                ],
+                "license": "MIT",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "annotators-each:3"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "wikipedia",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "AI"
+                ],
+                "data_sources": [
+                    "Wikipedia"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    "literature"
+                ],
+                "license": "MIT",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "annotators-each:3"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "wikipedia",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "Literature"
+                ],
+                "data_sources": [
+                    "Wikipedia"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    "music"
+                ],
+                "license": "MIT",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "annotators-each:3"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "wikipedia",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "music"
+                ],
+                "data_sources": [
+                    "Wikipedia"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    "politics"
+                ],
+                "license": "MIT",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "annotators-each:3"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "wikipedia",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "politics"
+                ],
+                "data_sources": [
+                    "Wikipedia"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    "science"
+                ],
+                "license": "MIT",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "annotators-each:3"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "wikipedia",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "science"
+                ],
+                "data_sources": [
+                    "Wikipedia"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

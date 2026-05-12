@@ -1,0 +1,446 @@
+{
+    "SOFC-Exp": {
+        "note": "The original paper proposes using train + dev as a single train split and using 5-fold cross-validation",
+        "citekeys": [
+            "friedrich-etal-2020-sofc"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/boschresearch/sofc-exp_textmining_resources.git",
+                "revision": "bbf75fdda4ba68fe8041fdc2780acd2a134e9770",
+                "base_language": "eng",
+                "subsets": {
+                    "experiments_only": {
+                        "directory": "sofc-exp-corpus",
+                        "data_pipe": [
+                            {
+                                "step": "convert",
+                                "reader": {
+                                    "type": "sofc_standoff",
+                                    "arguments": {
+                                        "label_source": "entities"
+                                    }
+                                }
+                            }
+                        ],
+                        "train": [
+                            {
+                                "text": [
+                                    "texts/PMC3564701.txt",
+                                    "texts/PMC3730159.txt",
+                                    "texts/PMC3793895.txt",
+                                    "texts/PMC4021905.txt",
+                                    "texts/PMC4222441.txt",
+                                    "texts/PMC4313086.txt",
+                                    "texts/PMC4578433.txt",
+                                    "texts/PMC4663492.txt",
+                                    "texts/PMC4673446.txt",
+                                    "texts/PMC4770875.txt",
+                                    "texts/PMC4772004.txt",
+                                    "texts/PMC4895149.txt",
+                                    "texts/PMC4986314.txt",
+                                    "texts/PMC4992832.txt",
+                                    "texts/PMC5075869.txt",
+                                    "texts/PMC5216129.txt",
+                                    "texts/PMC5331335.txt",
+                                    "texts/PMC5456601.txt",
+                                    "texts/PMC5456869.txt",
+                                    "texts/PMC5457052.txt",
+                                    "texts/PMC5700654.txt",
+                                    "texts/PMC5706185.txt",
+                                    "texts/PMC5793538.txt",
+                                    "texts/PMC5848893.txt",
+                                    "texts/PMC6073263.txt",
+                                    "texts/PMC6158676.txt"
+                                ],
+                                "sentences": [
+                                    "annotations/sentences/PMC3564701.csv",
+                                    "annotations/sentences/PMC3730159.csv",
+                                    "annotations/sentences/PMC3793895.csv",
+                                    "annotations/sentences/PMC4021905.csv",
+                                    "annotations/sentences/PMC4222441.csv",
+                                    "annotations/sentences/PMC4313086.csv",
+                                    "annotations/sentences/PMC4578433.csv",
+                                    "annotations/sentences/PMC4663492.csv",
+                                    "annotations/sentences/PMC4673446.csv",
+                                    "annotations/sentences/PMC4770875.csv",
+                                    "annotations/sentences/PMC4772004.csv",
+                                    "annotations/sentences/PMC4895149.csv",
+                                    "annotations/sentences/PMC4986314.csv",
+                                    "annotations/sentences/PMC4992832.csv",
+                                    "annotations/sentences/PMC5075869.csv",
+                                    "annotations/sentences/PMC5216129.csv",
+                                    "annotations/sentences/PMC5331335.csv",
+                                    "annotations/sentences/PMC5456601.csv",
+                                    "annotations/sentences/PMC5456869.csv",
+                                    "annotations/sentences/PMC5457052.csv",
+                                    "annotations/sentences/PMC5700654.csv",
+                                    "annotations/sentences/PMC5706185.csv",
+                                    "annotations/sentences/PMC5793538.csv",
+                                    "annotations/sentences/PMC5848893.csv",
+                                    "annotations/sentences/PMC6073263.csv",
+                                    "annotations/sentences/PMC6158676.csv"
+                                ],
+                                "entities": [
+                                    "annotations/entity_types_and_slots/PMC3564701.csv",
+                                    "annotations/entity_types_and_slots/PMC3730159.csv",
+                                    "annotations/entity_types_and_slots/PMC3793895.csv",
+                                    "annotations/entity_types_and_slots/PMC4021905.csv",
+                                    "annotations/entity_types_and_slots/PMC4222441.csv",
+                                    "annotations/entity_types_and_slots/PMC4313086.csv",
+                                    "annotations/entity_types_and_slots/PMC4578433.csv",
+                                    "annotations/entity_types_and_slots/PMC4663492.csv",
+                                    "annotations/entity_types_and_slots/PMC4673446.csv",
+                                    "annotations/entity_types_and_slots/PMC4770875.csv",
+                                    "annotations/entity_types_and_slots/PMC4772004.csv",
+                                    "annotations/entity_types_and_slots/PMC4895149.csv",
+                                    "annotations/entity_types_and_slots/PMC4986314.csv",
+                                    "annotations/entity_types_and_slots/PMC4992832.csv",
+                                    "annotations/entity_types_and_slots/PMC5075869.csv",
+                                    "annotations/entity_types_and_slots/PMC5216129.csv",
+                                    "annotations/entity_types_and_slots/PMC5331335.csv",
+                                    "annotations/entity_types_and_slots/PMC5456601.csv",
+                                    "annotations/entity_types_and_slots/PMC5456869.csv",
+                                    "annotations/entity_types_and_slots/PMC5457052.csv",
+                                    "annotations/entity_types_and_slots/PMC5700654.csv",
+                                    "annotations/entity_types_and_slots/PMC5706185.csv",
+                                    "annotations/entity_types_and_slots/PMC5793538.csv",
+                                    "annotations/entity_types_and_slots/PMC5848893.csv",
+                                    "annotations/entity_types_and_slots/PMC6073263.csv",
+                                    "annotations/entity_types_and_slots/PMC6158676.csv"
+                                ]
+                            }
+                        ],
+                        "validation": [
+                            {
+                                "text": [
+                                    "texts/PMC4495617.txt",
+                                    "texts/PMC4698742.txt",
+                                    "texts/PMC4735809.txt",
+                                    "texts/PMC5456866.txt",
+                                    "texts/PMC5457058.txt",
+                                    "texts/PMC5457196.txt",
+                                    "texts/PMC5457246.txt",
+                                    "texts/PMC5944822.txt"
+                                ],
+                                "sentences": [
+                                    "annotations/sentences/PMC4495617.csv",
+                                    "annotations/sentences/PMC4698742.csv",
+                                    "annotations/sentences/PMC4735809.csv",
+                                    "annotations/sentences/PMC5456866.csv",
+                                    "annotations/sentences/PMC5457058.csv",
+                                    "annotations/sentences/PMC5457196.csv",
+                                    "annotations/sentences/PMC5457246.csv",
+                                    "annotations/sentences/PMC5944822.csv"
+                                ],
+                                "entities": [
+                                    "annotations/entity_types_and_slots/PMC4495617.csv",
+                                    "annotations/entity_types_and_slots/PMC4698742.csv",
+                                    "annotations/entity_types_and_slots/PMC4735809.csv",
+                                    "annotations/entity_types_and_slots/PMC5456866.csv",
+                                    "annotations/entity_types_and_slots/PMC5457058.csv",
+                                    "annotations/entity_types_and_slots/PMC5457196.csv",
+                                    "annotations/entity_types_and_slots/PMC5457246.csv",
+                                    "annotations/entity_types_and_slots/PMC5944822.csv"
+                                ]
+                            }
+                        ],
+                        "test": [
+                            {
+                                "text": [
+                                    "texts/PMC6164086.txt",
+                                    "texts/PMC6247067.txt",
+                                    "texts/PMC6249295.txt",
+                                    "texts/PMC6337513.txt",
+                                    "texts/PMC6370853.txt",
+                                    "texts/PMC6427619.txt",
+                                    "texts/PMC6445146.txt",
+                                    "texts/PMC6461657.txt",
+                                    "texts/PMC6517467.txt",
+                                    "texts/PMC6523084.txt",
+                                    "texts/PMC6632008.txt"
+                                ],
+                                "sentences": [
+                                    "annotations/sentences/PMC6164086.csv",
+                                    "annotations/sentences/PMC6247067.csv",
+                                    "annotations/sentences/PMC6249295.csv",
+                                    "annotations/sentences/PMC6337513.csv",
+                                    "annotations/sentences/PMC6370853.csv",
+                                    "annotations/sentences/PMC6427619.csv",
+                                    "annotations/sentences/PMC6445146.csv",
+                                    "annotations/sentences/PMC6461657.csv",
+                                    "annotations/sentences/PMC6517467.csv",
+                                    "annotations/sentences/PMC6523084.csv",
+                                    "annotations/sentences/PMC6632008.csv"
+                                ],
+                                "entities": [
+                                    "annotations/entity_types_and_slots/PMC6164086.csv",
+                                    "annotations/entity_types_and_slots/PMC6247067.csv",
+                                    "annotations/entity_types_and_slots/PMC6249295.csv",
+                                    "annotations/entity_types_and_slots/PMC6337513.csv",
+                                    "annotations/entity_types_and_slots/PMC6370853.csv",
+                                    "annotations/entity_types_and_slots/PMC6427619.csv",
+                                    "annotations/entity_types_and_slots/PMC6445146.csv",
+                                    "annotations/entity_types_and_slots/PMC6461657.csv",
+                                    "annotations/entity_types_and_slots/PMC6517467.csv",
+                                    "annotations/entity_types_and_slots/PMC6523084.csv",
+                                    "annotations/entity_types_and_slots/PMC6632008.csv"
+                                ]
+                            }
+                        ]
+                    },
+                    "full": {
+                        "directory": "sofc-exp-corpus",
+                        "data_pipe": [
+                            {
+                                "step": "convert",
+                                "reader": {
+                                    "type": "sofc_standoff",
+                                    "arguments": {
+                                        "label_source": "frames"
+                                    }
+                                }
+                            }
+                        ],
+                        "train": [
+                            {
+                                "text": [
+                                    "texts/PMC3564701.txt",
+                                    "texts/PMC3730159.txt",
+                                    "texts/PMC3793895.txt",
+                                    "texts/PMC4021905.txt",
+                                    "texts/PMC4222441.txt",
+                                    "texts/PMC4313086.txt",
+                                    "texts/PMC4578433.txt",
+                                    "texts/PMC4663492.txt",
+                                    "texts/PMC4673446.txt",
+                                    "texts/PMC4770875.txt",
+                                    "texts/PMC4772004.txt",
+                                    "texts/PMC4895149.txt",
+                                    "texts/PMC4986314.txt",
+                                    "texts/PMC4992832.txt",
+                                    "texts/PMC5075869.txt",
+                                    "texts/PMC5216129.txt",
+                                    "texts/PMC5331335.txt",
+                                    "texts/PMC5456601.txt",
+                                    "texts/PMC5456869.txt",
+                                    "texts/PMC5457052.txt",
+                                    "texts/PMC5700654.txt",
+                                    "texts/PMC5706185.txt",
+                                    "texts/PMC5793538.txt",
+                                    "texts/PMC5848893.txt",
+                                    "texts/PMC6073263.txt",
+                                    "texts/PMC6158676.txt"
+                                ],
+                                "sentences": [
+                                    "annotations/sentences/PMC3564701.csv",
+                                    "annotations/sentences/PMC3730159.csv",
+                                    "annotations/sentences/PMC3793895.csv",
+                                    "annotations/sentences/PMC4021905.csv",
+                                    "annotations/sentences/PMC4222441.csv",
+                                    "annotations/sentences/PMC4313086.csv",
+                                    "annotations/sentences/PMC4578433.csv",
+                                    "annotations/sentences/PMC4663492.csv",
+                                    "annotations/sentences/PMC4673446.csv",
+                                    "annotations/sentences/PMC4770875.csv",
+                                    "annotations/sentences/PMC4772004.csv",
+                                    "annotations/sentences/PMC4895149.csv",
+                                    "annotations/sentences/PMC4986314.csv",
+                                    "annotations/sentences/PMC4992832.csv",
+                                    "annotations/sentences/PMC5075869.csv",
+                                    "annotations/sentences/PMC5216129.csv",
+                                    "annotations/sentences/PMC5331335.csv",
+                                    "annotations/sentences/PMC5456601.csv",
+                                    "annotations/sentences/PMC5456869.csv",
+                                    "annotations/sentences/PMC5457052.csv",
+                                    "annotations/sentences/PMC5700654.csv",
+                                    "annotations/sentences/PMC5706185.csv",
+                                    "annotations/sentences/PMC5793538.csv",
+                                    "annotations/sentences/PMC5848893.csv",
+                                    "annotations/sentences/PMC6073263.csv",
+                                    "annotations/sentences/PMC6158676.csv"
+                                ],
+                                "frames": [
+                                    "annotations/frames/PMC3564701.csv",
+                                    "annotations/frames/PMC3730159.csv",
+                                    "annotations/frames/PMC3793895.csv",
+                                    "annotations/frames/PMC4021905.csv",
+                                    "annotations/frames/PMC4222441.csv",
+                                    "annotations/frames/PMC4313086.csv",
+                                    "annotations/frames/PMC4578433.csv",
+                                    "annotations/frames/PMC4663492.csv",
+                                    "annotations/frames/PMC4673446.csv",
+                                    "annotations/frames/PMC4770875.csv",
+                                    "annotations/frames/PMC4772004.csv",
+                                    "annotations/frames/PMC4895149.csv",
+                                    "annotations/frames/PMC4986314.csv",
+                                    "annotations/frames/PMC4992832.csv",
+                                    "annotations/frames/PMC5075869.csv",
+                                    "annotations/frames/PMC5216129.csv",
+                                    "annotations/frames/PMC5331335.csv",
+                                    "annotations/frames/PMC5456601.csv",
+                                    "annotations/frames/PMC5456869.csv",
+                                    "annotations/frames/PMC5457052.csv",
+                                    "annotations/frames/PMC5700654.csv",
+                                    "annotations/frames/PMC5706185.csv",
+                                    "annotations/frames/PMC5793538.csv",
+                                    "annotations/frames/PMC5848893.csv",
+                                    "annotations/frames/PMC6073263.csv",
+                                    "annotations/frames/PMC6158676.csv"
+                                ]
+                            }
+                        ],
+                        "validation": [
+                            {
+                                "text": [
+                                    "texts/PMC4495617.txt",
+                                    "texts/PMC4698742.txt",
+                                    "texts/PMC4735809.txt",
+                                    "texts/PMC5456866.txt",
+                                    "texts/PMC5457058.txt",
+                                    "texts/PMC5457196.txt",
+                                    "texts/PMC5457246.txt",
+                                    "texts/PMC5944822.txt"
+                                ],
+                                "sentences": [
+                                    "annotations/sentences/PMC4495617.csv",
+                                    "annotations/sentences/PMC4698742.csv",
+                                    "annotations/sentences/PMC4735809.csv",
+                                    "annotations/sentences/PMC5456866.csv",
+                                    "annotations/sentences/PMC5457058.csv",
+                                    "annotations/sentences/PMC5457196.csv",
+                                    "annotations/sentences/PMC5457246.csv",
+                                    "annotations/sentences/PMC5944822.csv"
+                                ],
+                                "frames": [
+                                    "annotations/frames/PMC4495617.csv",
+                                    "annotations/frames/PMC4698742.csv",
+                                    "annotations/frames/PMC4735809.csv",
+                                    "annotations/frames/PMC5456866.csv",
+                                    "annotations/frames/PMC5457058.csv",
+                                    "annotations/frames/PMC5457196.csv",
+                                    "annotations/frames/PMC5457246.csv",
+                                    "annotations/frames/PMC5944822.csv"
+                                ]
+                            }
+                        ],
+                        "test": [
+                            {
+                                "text": [
+                                    "texts/PMC6164086.txt",
+                                    "texts/PMC6247067.txt",
+                                    "texts/PMC6249295.txt",
+                                    "texts/PMC6337513.txt",
+                                    "texts/PMC6370853.txt",
+                                    "texts/PMC6427619.txt",
+                                    "texts/PMC6445146.txt",
+                                    "texts/PMC6461657.txt",
+                                    "texts/PMC6517467.txt",
+                                    "texts/PMC6523084.txt",
+                                    "texts/PMC6632008.txt"
+                                ],
+                                "sentences": [
+                                    "annotations/sentences/PMC6164086.csv",
+                                    "annotations/sentences/PMC6247067.csv",
+                                    "annotations/sentences/PMC6249295.csv",
+                                    "annotations/sentences/PMC6337513.csv",
+                                    "annotations/sentences/PMC6370853.csv",
+                                    "annotations/sentences/PMC6427619.csv",
+                                    "annotations/sentences/PMC6445146.csv",
+                                    "annotations/sentences/PMC6461657.csv",
+                                    "annotations/sentences/PMC6517467.csv",
+                                    "annotations/sentences/PMC6523084.csv",
+                                    "annotations/sentences/PMC6632008.csv"
+                                ],
+                                "frames": [
+                                    "annotations/frames/PMC6164086.csv",
+                                    "annotations/frames/PMC6247067.csv",
+                                    "annotations/frames/PMC6249295.csv",
+                                    "annotations/frames/PMC6337513.csv",
+                                    "annotations/frames/PMC6370853.csv",
+                                    "annotations/frames/PMC6427619.csv",
+                                    "annotations/frames/PMC6445146.csv",
+                                    "annotations/frames/PMC6461657.csv",
+                                    "annotations/frames/PMC6517467.csv",
+                                    "annotations/frames/PMC6523084.csv",
+                                    "annotations/frames/PMC6632008.csv"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY 4.0",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 2,
+                    "features": [
+                        "domain-experts",
+                        "lead-annotator:1"
+                    ],
+                    "agreement": [
+                        {
+                            "metric": "inter-annotator-F1",
+                            "value": {
+                                "EXPERIMENT": 0.943,
+                                "MATERIAL": 0.959,
+                                "VALUE": 0.955,
+                                "DEVICE": 0.975
+                            }
+                        },
+                        {
+                            "metric": "inter-annotator-precision",
+                            "value": {
+                                "EXPERIMENT": 1,
+                                "MATERIAL": 1,
+                                "VALUE": 1,
+                                "DEVICE": 0.963
+                            }
+                        },
+                        {
+                            "metric": "inter-annotator-recall",
+                            "value": {
+                                "EXPERIMENT": 0.893,
+                                "MATERIAL": 0.921,
+                                "VALUE": 0.915,
+                                "DEVICE": 0.987
+                            }
+                        }
+                    ]
+                },
+                "primary_domain": "science",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "SOFC"
+                ],
+                "data_sources": [
+                    "Open-access research papers (45, on solid oxide fuel cells (SOFCs))"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    "full"
+                ],
+                "document_boundaries": "full"
+            },
+            {
+                "split": [
+                    "experiments_only"
+                ],
+                "document_boundaries": "partial"
+            }
+        ]
+    }
+}

@@ -1,0 +1,163 @@
+{
+    "EBM-NLP": {
+        "note": "The label category is prepended to tag names to resolve the ambiguity between, e.g., \"Pyhsical\" outcomes and interventions. As a result, labels slightly differ from the reference.",
+        "citekeys": [
+            "nye-etal-2018-corpus"
+        ],
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/bepnye/EBM-NLP.git",
+                        "revision": "43a4a1ea3f0a21cfb8820c040b843dfaf66192d0",
+                        "files": [
+                            "ebm_nlp_1_00.tar.gz",
+                            "ebm_nlp_2_00.tar.gz"
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "ebm_nlp_2_00.tar.gz",
+                        "files": [
+                            "ebm_nlp_2_00/documents/*.txt",
+                            "ebm_nlp_2_00/documents/*.tokens",
+                            "ebm_nlp_2_00/annotations/aggregated/hierarchical_labels/*/*/*.ann",
+                            "ebm_nlp_2_00/annotations/aggregated/starting_spans/*/*/*.ann",
+                            "ebm_nlp_2_00/annotations/aggregated/hierarchical_labels/*/*/gold/*.ann",
+                            "ebm_nlp_2_00/annotations/aggregated/starting_spans/*/*/gold/*.ann"
+                        ],
+                        "use_globs": true
+                    },
+                    {
+                        "step": "splits",
+                        "language": "eng",
+                        "train": [
+                            {
+                                "text": [
+                                    "ebm_nlp_2_00/documents/*.txt"
+                                ],
+                                "tokens": [
+                                    "ebm_nlp_2_00/documents/*.tokens"
+                                ],
+                                "annotations": [
+                                    "ebm_nlp_2_00/annotations/aggregated/hierarchical_labels/*/train/*.ann"
+                                ],
+                                "broad_annotations": [
+                                    "ebm_nlp_2_00/annotations/aggregated/starting_spans/*/*/*.ann"
+                                ]
+                            }
+                        ],
+                        "test": [
+                            {
+                                "text": [
+                                    "ebm_nlp_2_00/documents/*.txt"
+                                ],
+                                "tokens": [
+                                    "ebm_nlp_2_00/documents/*.tokens"
+                                ],
+                                "annotations": [
+                                    "ebm_nlp_2_00/annotations/aggregated/hierarchical_labels/*/test/gold/*.ann"
+                                ],
+                                "broad_annotations": [
+                                    "ebm_nlp_2_00/annotations/aggregated/starting_spans/*/*/gold/*.ann"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "ebm_nlp_standoff",
+                            "arguments": {
+                                "broad_label_map": {
+                                    "participants": {
+                                        "O": 0,
+                                        "I-Participants": 1
+                                    },
+                                    "interventions": {
+                                        "O": 0,
+                                        "I-Interventions": 1
+                                    },
+                                    "outcomes": {
+                                        "O": 0,
+                                        "I-Outcomes": 1
+                                    }
+                                },
+                                "label_map": {
+                                    "participants": {
+                                        "O": 0,
+                                        "I-Participant Age": 1,
+                                        "I-Participant Sex": 2,
+                                        "I-Participant Sample size": 3,
+                                        "I-Participant Condition": 4
+                                    },
+                                    "interventions": {
+                                        "O": 0,
+                                        "I-Intervention Surgical": 1,
+                                        "I-Intervention Physical": 2,
+                                        "I-Intervention Drug": 3,
+                                        "I-Intervention Educational": 4,
+                                        "I-Intervention Psychological": 5,
+                                        "I-Intervention Other": 6,
+                                        "I-Intervention Control": 7
+                                    },
+                                    "outcomes": {
+                                        "O": 0,
+                                        "I-Outcome Physical": 1,
+                                        "I-Outcome Pain": 2,
+                                        "I-Outcome Mortality": 3,
+                                        "I-Outcome Adverse effects": 4,
+                                        "I-Outcome Mental": 5,
+                                        "I-Outcome Other": 6
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "bio",
+            "tag_format": "indices"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Unspecified",
+                "document_boundaries": "full",
+                "sentence_boundaries": "none",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "crowd-sourced:subset",
+                        "domain-experts:subset",
+                        "annotators-each:3+"
+                    ],
+                    "agreement": {
+                        "metric": "cohens-kappa",
+                        "value": {
+                            "P": 0.71,
+                            "I": 0.69,
+                            "O": 0.62
+                        }
+                    }
+                },
+                "primary_domain": "clinical",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "randomized controlled trials (RTC)"
+                ],
+                "data_sources": [
+                    "MEDLINE (randomized controlled trials (RTC) with an emphasis on cardiovascular diseases, cancer, and autism)"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

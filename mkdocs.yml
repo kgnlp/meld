@@ -1,0 +1,32 @@
+site_name: MELD Documentation
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: teal
+  logo: icon.svg
+  favicon: icon.svg
+nav:
+  - Home: index.md
+  - API Reference:
+      - Overview: reference.md
+      - Data: reference/data.md
+      - Data Pipes: reference/data_pipes.md
+      - Tokenization: reference/tokenization.md
+      - Formats: reference/formats.md
+      - CONLL: reference/conll.md
+      - Readers: reference/readers.md
+      - Data Stats: reference/data_stats.md
+      - Manifest: reference/manifest.md
+      - Registry: reference/registry.md
+      - Download: reference/download.md
+      - Dataset Conversion: reference/dataset_conversion.md
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [meld]
+          options:
+            show_source: true
+            show_bases: true
+            docstring_style: google

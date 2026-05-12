@@ -1,0 +1,60 @@
+{
+    "German-LER": {
+        "citekeys": [
+            "leitner2019fine"
+        ],
+        "source": {
+            "loader": "huggingface",
+            "arguments": {
+                "repo": "elenanereiss/german-ler",
+                "revision": "405b6923dfd2299da3d76a68220ee15a95bc1eab",
+                "base_language": "deu",
+                "text_column": "tokens",
+                "tag_column": "ner",
+                "train_name": "train",
+                "validation_name": "validation",
+                "test_name": "test",
+                "data_pipe": [
+                    {
+                        "step": "columns",
+                        "tagsets": {
+                            "fine": "ner",
+                            "coarse": "coarse-ner"
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY 4.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 1,
+                    "features": [],
+                    "agreement": null
+                },
+                "primary_domain": "law",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "court decisions"
+                ],
+                "data_sources": [
+                    {
+                        "source": "Rechtsprechung im Internet",
+                        "url": "http://www.rechtsprechung-im-internet.de/"
+                    }
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

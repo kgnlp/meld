@@ -1,0 +1,58 @@
+{
+    "WIESP2022": {
+        "citekeys": [
+            "grezes-etal-2022-overview"
+        ],
+        "source": {
+            "loader": "huggingface",
+            "arguments": {
+                "repo": "adsabs/WIESP2022-NER",
+                "revision": "cdb6315d2d523ee509cb915eb37a2ac1f807da2f",
+                "base_language": "eng",
+                "text_column": "tokens",
+                "tag_column": "ner_tags",
+                "train_name": "train",
+                "validation_name": "validation",
+                "test_name": "test",
+                "data_pipe": [
+                    {
+                        "step": "columns",
+                        "sequence_type": "passage"
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY 4.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 1,
+                    "features": [
+                        "domain-experts"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "science",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "astrophysics"
+                ],
+                "data_sources": [
+                    "Astrophysical Journal (2015--2021)",
+                    "Astronomy & Astrophysics (2015--2021)",
+                    "Monthly Notices of the Royal Astronomical Society (2015--2021)"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

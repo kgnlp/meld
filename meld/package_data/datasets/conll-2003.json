@@ -1,0 +1,87 @@
+{
+    "CoNLL-2003": {
+        "citekeys": [
+            "TjongKimSang2003IntroductionTT"
+        ],
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "download",
+                        "urls": [
+                            {
+                                "url": "https://data.deepai.org/conll2003.zip",
+                                "sha256": "96a104d174ddae7558bab603f19382c5fe02ff1da5c077a7f3ce2ced1578a2c3"
+                            }
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "conll2003.zip",
+                        "files": [
+                            "train.txt",
+                            "valid.txt",
+                            "test.txt"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "language": "eng",
+                        "train": [
+                            "train.txt"
+                        ],
+                        "validation": [
+                            "valid.txt"
+                        ],
+                        "test": [
+                            "test.txt"
+                        ]
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll",
+                            "arguments": {
+                                "dialect": "conll2003",
+                                "delimiter": " "
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": {
+                    "annotations": "Unspecified",
+                    "text": "Proprietary"
+                },
+                "document_boundaries": "full",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [],
+                    "agreement": null
+                },
+                "primary_domain": "news",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    {
+                        "source": "Reuters Corpus",
+                        "url": "https://trec.nist.gov/data/reuters/reuters.html"
+                    }
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

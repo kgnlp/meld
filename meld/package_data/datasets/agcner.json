@@ -1,0 +1,100 @@
+{
+    "AgCNER": {
+        "citekeys": [
+            "Yao2024AgCNERTF"
+        ],
+        "use_shared_cache": "meld-archive",
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/kgnlp/meld-archive",
+                "revision": "fe5de00b12469737feefadf53e52c89b73899724",
+                "keep_repo": true,
+                "base_language": "zho",
+                "subsets": {
+                    "__root__": {
+                        "data_pipe": [
+                            {
+                                "step": "convert",
+                                "reader": {
+                                    "type": "conll",
+                                    "arguments": {
+                                        "delimiter": " "
+                                    }
+                                }
+                            }
+                        ],
+                        "directory": "AgCNER",
+                        "train": [
+                            "train.txt"
+                        ],
+                        "validation": [
+                            "dev.txt"
+                        ],
+                        "test": [
+                            "test.txt"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC 0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 3,
+                    "features": [
+                        "expert-guided"
+                    ],
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": 0.966
+                    }
+                },
+                "primary_domain": "agriculture",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    {
+                        "source": "China National Knowledge Infrastructure",
+                        "url": "https://www.cnki.com.cn/"
+                    },
+                    {
+                        "source": "Wangfang Data",
+                        "url": "https://www.wanfangdata.com.cn/"
+                    },
+                    {
+                        "source": "China Agricultural Technology Promotion Information Platform",
+                        "url": "https://njtg.nercita.org.cn/user/index.shtml"
+                    },
+                    {
+                        "source": "China Pesticide Information Network",
+                        "url": "http://www.chinapesticide.org.cn/"
+                    },
+                    {
+                        "source": "Agricultural Diseases, Pests, and Weeds Image and Text Database",
+                        "url": "http://bcch.ahnw.cn/"
+                    },
+                    {
+                        "source": "Chinese Crop Germplasm Information System",
+                        "url": "https://www.cgris.net/disease/default.html"
+                    },
+                    {
+                        "source": "Baidu Baike",
+                        "url": "https://baike.baidu.com/"
+                    }
+                ],
+                "dataset_lineage": null,
+                "label_set_standard": null
+            }
+        ]
+    }
+}

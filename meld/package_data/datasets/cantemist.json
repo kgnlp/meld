@@ -1,0 +1,112 @@
+{
+    "CANTEMIST": {
+        "citekeys": [
+            "miranda2020named"
+        ],
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "download",
+                        "urls": [
+                            {
+                                "url": "https://zenodo.org/records/3978041/files/cantemist.zip",
+                                "sha256": "760aff79d8fd5585eff74db191fb497ed4279e88bafc78ca4b8af3df46216bcb"
+                            }
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "cantemist.zip",
+                        "files": [
+                            "train-set/cantemist-ner/*.txt",
+                            "train-set/cantemist-ner/*.ann",
+                            "dev-set1/cantemist-ner/*.txt",
+                            "dev-set1/cantemist-ner/*.ann",
+                            "dev-set2/cantemist-ner/*.txt",
+                            "dev-set2/cantemist-ner/*.ann",
+                            "test-set/cantemist-ner/*.txt",
+                            "test-set/cantemist-ner/*.ann"
+                        ],
+                        "use_globs": true
+                    },
+                    {
+                        "step": "splits",
+                        "language": "spa",
+                        "train": [
+                            {
+                                "annotations": [
+                                    "train-set/cantemist-ner/*.ann"
+                                ],
+                                "text": [
+                                    "train-set/cantemist-ner/*.txt"
+                                ]
+                            }
+                        ],
+                        "validation": [
+                            {
+                                "annotations": [
+                                    "dev-set1/cantemist-ner/*.ann",
+                                    "dev-set2/cantemist-ner/*.ann"
+                                ],
+                                "text": [
+                                    "dev-set1/cantemist-ner/*.txt",
+                                    "dev-set2/cantemist-ner/*.txt"
+                                ]
+                            }
+                        ],
+                        "test": [
+                            {
+                                "annotations": [
+                                    "test-set/cantemist-ner/*.ann"
+                                ],
+                                "text": [
+                                    "test-set/cantemist-ner/*.txt"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "standoff"
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY 4.0",
+                "document_boundaries": "full",
+                "sentence_boundaries": "none",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "domain-experts",
+                        "expert-guided"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "clinical",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "cancer",
+                    "tumor morphology"
+                ],
+                "data_sources": [
+                    "Spanish language oncological clinical case reports"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

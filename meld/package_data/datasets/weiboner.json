@@ -1,0 +1,71 @@
+{
+    "Weibo-NER": {
+        "note": "Revised version of Weibo NER from He and Sun, 2016",
+        "citekeys": [
+            "peng2015ner",
+            "peng2016improving",
+            "HeS16"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/hltcoe/golden-horse.git",
+                "revision": "7a73c08e45ed94312af4ef2d97cc35a47d029e99",
+                "base_language": "zho",
+                "subsets": {
+                    "__root__": {
+                        "data_pipe": [
+                            {
+                                "step": "convert",
+                                "reader": {
+                                    "type": "conll",
+                                    "arguments": {
+                                        "dialect": "conll_weibo_ner"
+                                    }
+                                }
+                            }
+                        ],
+                        "directory": "data",
+                        "train": [
+                            "weiboNER_2nd_conll.dev"
+                        ],
+                        "validation": [
+                            "weiboNER_2nd_conll.dev"
+                        ],
+                        "test": [
+                            "weiboNER_2nd_conll.train"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY-SA 3.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "annotators-each:N"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "social media",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    "Sina Weibo (November 2013--December 2014)"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": "DEFT ERE"
+            }
+        ]
+    }
+}

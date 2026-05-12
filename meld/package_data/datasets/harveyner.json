@@ -1,0 +1,85 @@
+{
+    "HarveyNER": {
+        "citekeys": [
+            "chen-etal-2022-crossroads"
+        ],
+        "note": "Simple and complex subsets contain tweets with simple and complex entities respectively, where complex entities are defined as containing at least one of a selected set of conjunctions or prepositions. HarveyNER also includes an unlabeled subset which is not included in this configuration",
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/brickee/HarveyNER.git",
+                "revision": "fd0af221f1f30e7051c6ad334acf5e3fc5777fd9",
+                "base_language": "eng",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll",
+                            "arguments": {
+                                "dialect": "conll2003_two_column",
+                                "delimiter": " "
+                            }
+                        }
+                    }
+                ],
+                "subsets": {
+                    "__root__": {
+                        "directory": "data/tweets",
+                        "train": [
+                            "tweets.train.bio"
+                        ],
+                        "validation": [
+                            "tweets.dev.bio"
+                        ]
+                    },
+                    "simple": {
+                        "directory": "data/tweets/easy_hard",
+                        "test": [
+                            "tweets.simple.bio"
+                        ]
+                    },
+                    "complex": {
+                        "directory": "data/tweets/easy_hard",
+                        "test": [
+                            "tweets.complex.bio"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Unspecified",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 3,
+                    "features": [],
+                    "agreement": {
+                        "metric": "cohens-kappa",
+                        "value": {
+                            "all tokens": 0.8364,
+                            "annotated tokens": 0.6304
+                        }
+                    }
+                },
+                "primary_domain": "social media",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "coordinate-oriented locations"
+                ],
+                "data_sources": [
+                    "Twitter (Tweets during Hurricane Harvey)"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

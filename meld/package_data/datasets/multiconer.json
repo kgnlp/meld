@@ -1,0 +1,205 @@
+{
+    "MultiCoNER": {
+        "citekeys": [
+            "multiconer2-report",
+            "multiconer2-data"
+        ],
+        "note": "Version 2. The multilingual test set includes simulated noise.",
+        "source": {
+            "loader": "huggingface",
+            "arguments": {
+                "repo": "MultiCoNER/multiconer_v2",
+                "revision": "4be2d62c912977ee26ed14d2553a4fe17ca3d980",
+                "trust_remote_code": true,
+                "language_from_subset_name": "\\w+ \\((?P<language>\\w+)\\)",
+                "text_column": "tokens",
+                "tag_column": "ner_tags",
+                "train_name": "train",
+                "validation_name": "validation",
+                "test_name": "test"
+            }
+        },
+        "settings": {
+            "multilingual": [
+                {
+                    "type": "subset",
+                    "name": "Multilingual (MULTI)"
+                }
+            ],
+            "monolingual": [
+                {
+                    "type": "subset",
+                    "name": "Bangla (BN)"
+                },
+                {
+                    "type": "subset",
+                    "name": "Chinese (ZH)"
+                },
+                {
+                    "type": "subset",
+                    "name": "English (EN)"
+                },
+                {
+                    "type": "subset",
+                    "name": "Farsi (FA)"
+                },
+                {
+                    "type": "subset",
+                    "name": "French (FR)"
+                },
+                {
+                    "type": "subset",
+                    "name": "German (DE)"
+                },
+                {
+                    "type": "subset",
+                    "name": "Hindi (HI)"
+                },
+                {
+                    "type": "subset",
+                    "name": "Italian (IT)"
+                },
+                {
+                    "type": "subset",
+                    "name": "Portuguese (PT)"
+                },
+                {
+                    "type": "subset",
+                    "name": "Spanish (ES)"
+                },
+                {
+                    "type": "subset",
+                    "name": "Swedish (SV)"
+                },
+                {
+                    "type": "subset",
+                    "name": "Ukrainian (UK)"
+                }
+            ]
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY 4.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "silver-standard",
+                    "annotator_count": 0,
+                    "features": [
+                        "automatically-extracted"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "wikipedia",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    "Wikipedia (short sentences for a low context setting)"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    "*.test"
+                ],
+                "data_sources": [
+                    "Wikipedia (short sentences for a low context setting, with inserted noise)"
+                ]
+            },
+            {
+                "split": [
+                    "BN"
+                ],
+                "annotation": {
+                    "features": [
+                        "automatically-extracted",
+                        "machine-translated"
+                    ]
+                },
+                "data_sources": [
+                    "Wikipedia (machine translated from EN subset)"
+                ]
+            },
+            {
+                "split": [
+                    "BN.test"
+                ],
+                "data_sources": [
+                    "Wikipedia (machine translated from EN subset, with inserted noise)"
+                ]
+            },
+            {
+                "split": [
+                    "DE"
+                ],
+                "annotation": {
+                    "features": [
+                        "automatically-extracted",
+                        "machine-translated"
+                    ]
+                },
+                "data_sources": [
+                    "Wikipedia (machine translated from EN subset)"
+                ]
+            },
+            {
+                "split": [
+                    "DE.test"
+                ],
+                "data_sources": [
+                    "Wikipedia (machine translated from EN subset, with inserted noise)"
+                ]
+            },
+            {
+                "split": [
+                    "HI"
+                ],
+                "annotation": {
+                    "features": [
+                        "automatically-extracted",
+                        "machine-translated"
+                    ]
+                },
+                "data_sources": [
+                    "Wikipedia (machine translated from EN subset)"
+                ]
+            },
+            {
+                "split": [
+                    "HI.test"
+                ],
+                "data_sources": [
+                    "Wikipedia (machine translated from EN subset, with inserted noise)"
+                ]
+            },
+            {
+                "split": [
+                    "HI"
+                ],
+                "annotation": {
+                    "features": [
+                        "automatically-extracted",
+                        "machine-translated"
+                    ]
+                },
+                "data_sources": [
+                    "Wikipedia (machine translated from EN subset)"
+                ]
+            },
+            {
+                "split": [
+                    "HI"
+                ],
+                "data_sources": [
+                    "Wikipedia (machine translated from EN subset, with inserted noise)"
+                ]
+            }
+        ]
+    }
+}

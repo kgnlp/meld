@@ -1,0 +1,80 @@
+{
+    "Tweebank-NER": {
+        "citekeys": [
+            "jiang-EtAl:2022:LREC2"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/mit-ccc/TweebankNLP",
+                "revision": "442697870da961db2b3c5a9442ca17beb5fdbfd9",
+                "base_language": "eng",
+                "subsets": {
+                    "__root__": {
+                        "directory": "Tweebank-NER-v1.0",
+                        "data_pipe": [
+                            {
+                                "step": "convert",
+                                "reader": {
+                                    "type": "conll",
+                                    "arguments": {
+                                        "dialect": "conll2003_ignore_docstart"
+                                    }
+                                }
+                            }
+                        ],
+                        "train": [
+                            "train.bio"
+                        ],
+                        "validation": [
+                            "dev.bio"
+                        ],
+                        "test": [
+                            "test.bio"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "text_properties": [
+                "anonymized"
+            ],
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Apache 2.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "crowd-sourced",
+                        "annotators-each:3+"
+                    ],
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "PER": 0.846,
+                            "LOC": 0.744,
+                            "ORG": 0.719,
+                            "MISC": 0.509
+                        }
+                    }
+                },
+                "primary_domain": "social media",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    "Tweebank V2"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": "CoNLL 2003"
+            }
+        ]
+    }
+}

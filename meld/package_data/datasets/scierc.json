@@ -1,0 +1,4085 @@
+{
+    "SCIERC": {
+        "citekeys": [
+            "luan2018multitask"
+        ],
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "download",
+                        "urls": [
+                            {
+                                "url": "http://nlp.cs.washington.edu/sciIE/data/sciERC_raw.tar.gz",
+                                "sha256": "15863ae2bfecd68bd9da412048bbbe52886259644bb6afcb46129b86dca12750"
+                            }
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "sciERC_raw.tar.gz",
+                        "files": [
+                            "raw_data/*.ann",
+                            "raw_data/*.txt"
+                        ],
+                        "use_globs": true
+                    },
+                    {
+                        "step": "splits",
+                        "language": "eng",
+                        "directory": "raw_data",
+                        "train": [
+                            {
+                                "annotations": [
+                                    "J87-1003.ann"
+                                ],
+                                "text": [
+                                    "J87-1003.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2003_18_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2003_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2013_31_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2013_31_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-5008.ann"
+                                ],
+                                "text": [
+                                    "I05-5008.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C92-2068.ann"
+                                ],
+                                "text": [
+                                    "C92-2068.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A97-1052.ann"
+                                ],
+                                "text": [
+                                    "A97-1052.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2006_21_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2006_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2013_36_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2013_36_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N06-4001.ann"
+                                ],
+                                "text": [
+                                    "N06-4001.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-2003.ann"
+                                ],
+                                "text": [
+                                    "N03-2003.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2011_47_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2011_47_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_1998_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_1998_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCAI_2016_420_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCAI_2016_420_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2015_403_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2015_403_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E85-1041.ann"
+                                ],
+                                "text": [
+                                    "E85-1041.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCAI_2001_12_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCAI_2001_12_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H90-1011.ann"
+                                ],
+                                "text": [
+                                    "H90-1011.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "W99-0408.ann"
+                                ],
+                                "text": [
+                                    "W99-0408.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCAI_2013_5_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCAI_2013_5_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1102.ann"
+                                ],
+                                "text": [
+                                    "C04-1102.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2004_21_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2004_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-2017.ann"
+                                ],
+                                "text": [
+                                    "N03-2017.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1018.ann"
+                                ],
+                                "text": [
+                                    "P05-1018.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C92-3165.ann"
+                                ],
+                                "text": [
+                                    "C92-3165.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C08-1118.ann"
+                                ],
+                                "text": [
+                                    "C08-1118.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2006_28_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2006_28_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "AAAI_2015_10_abs.ann"
+                                ],
+                                "text": [
+                                    "AAAI_2015_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICASSP_1997_707_abs.ann"
+                                ],
+                                "text": [
+                                    "ICASSP_1997_707_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P01-1009.ann"
+                                ],
+                                "text": [
+                                    "P01-1009.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H01-1058.ann"
+                                ],
+                                "text": [
+                                    "H01-1058.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H05-1064.ann"
+                                ],
+                                "text": [
+                                    "H05-1064.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2003_18_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2003_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "X98-1022.ann"
+                                ],
+                                "text": [
+                                    "X98-1022.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2014_21_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2014_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E85-1004.ann"
+                                ],
+                                "text": [
+                                    "E85-1004.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2015_21_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2015_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2006_18_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2006_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P01-1004.ann"
+                                ],
+                                "text": [
+                                    "P01-1004.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H01-1040.ann"
+                                ],
+                                "text": [
+                                    "H01-1040.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2001_50_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2001_50_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "W03-2907.ann"
+                                ],
+                                "text": [
+                                    "W03-2907.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C08-1128.ann"
+                                ],
+                                "text": [
+                                    "C08-1128.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E95-1021.ann"
+                                ],
+                                "text": [
+                                    "E95-1021.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2008_100_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2008_100_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C92-1055.ann"
+                                ],
+                                "text": [
+                                    "C92-1055.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A00-2023.ann"
+                                ],
+                                "text": [
+                                    "A00-2023.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E83-1021.ann"
+                                ],
+                                "text": [
+                                    "E83-1021.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2011_300_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2011_300_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "W05-1308.ann"
+                                ],
+                                "text": [
+                                    "W05-1308.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-4011.ann"
+                                ],
+                                "text": [
+                                    "P06-4011.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2005_11_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2005_11_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-3030.ann"
+                                ],
+                                "text": [
+                                    "P05-3030.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-2025.ann"
+                                ],
+                                "text": [
+                                    "N03-2025.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-2021.ann"
+                                ],
+                                "text": [
+                                    "I05-2021.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P03-1002.ann"
+                                ],
+                                "text": [
+                                    "P03-1002.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A97-1028.ann"
+                                ],
+                                "text": [
+                                    "A97-1028.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2013_28_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2013_28_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E06-1035.ann"
+                                ],
+                                "text": [
+                                    "E06-1035.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-2015.ann"
+                                ],
+                                "text": [
+                                    "N03-2015.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCAI_2010_4_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCAI_2010_4_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1010.ann"
+                                ],
+                                "text": [
+                                    "P05-1010.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H90-1060.ann"
+                                ],
+                                "text": [
+                                    "H90-1060.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "W04-2204.ann"
+                                ],
+                                "text": [
+                                    "W04-2204.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P03-2036.ann"
+                                ],
+                                "text": [
+                                    "P03-2036.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1067.ann"
+                                ],
+                                "text": [
+                                    "P05-1067.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "W06-1605.ann"
+                                ],
+                                "text": [
+                                    "W06-1605.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A97-1021.ann"
+                                ],
+                                "text": [
+                                    "A97-1021.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P01-1007.ann"
+                                ],
+                                "text": [
+                                    "P01-1007.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICML_1995_30_abs.ann"
+                                ],
+                                "text": [
+                                    "ICML_1995_30_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2008_259_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2008_259_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C90-1002.ann"
+                                ],
+                                "text": [
+                                    "C90-1002.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P81-1032.ann"
+                                ],
+                                "text": [
+                                    "P81-1032.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2015_16_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2015_16_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2006_31_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2006_31_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H92-1003.ann"
+                                ],
+                                "text": [
+                                    "H92-1003.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P03-1005.ann"
+                                ],
+                                "text": [
+                                    "P03-1005.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "W08-2122.ann"
+                                ],
+                                "text": [
+                                    "W08-2122.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "W04-2703.ann"
+                                ],
+                                "text": [
+                                    "W04-2703.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2000_490_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2000_490_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2012_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2012_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCAI_2010_5_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCAI_2010_5_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-1012.ann"
+                                ],
+                                "text": [
+                                    "P06-1012.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "L08-1540.ann"
+                                ],
+                                "text": [
+                                    "L08-1540.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P03-1068.ann"
+                                ],
+                                "text": [
+                                    "P03-1068.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-2048.ann"
+                                ],
+                                "text": [
+                                    "I05-2048.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P03-1050.ann"
+                                ],
+                                "text": [
+                                    "P03-1050.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2007_31_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2007_31_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E93-1025.ann"
+                                ],
+                                "text": [
+                                    "E93-1025.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C86-1105.ann"
+                                ],
+                                "text": [
+                                    "C86-1105.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2005_47_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2005_47_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-2036.ann"
+                                ],
+                                "text": [
+                                    "N03-2036.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2001_10_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2001_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2016_15_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2016_15_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N06-2009.ann"
+                                ],
+                                "text": [
+                                    "N06-2009.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-4004.ann"
+                                ],
+                                "text": [
+                                    "N03-4004.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C88-1007.ann"
+                                ],
+                                "text": [
+                                    "C88-1007.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2011_50_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2011_50_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C88-2130.ann"
+                                ],
+                                "text": [
+                                    "C88-2130.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H01-1070.ann"
+                                ],
+                                "text": [
+                                    "H01-1070.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P03-1031.ann"
+                                ],
+                                "text": [
+                                    "P03-1031.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H05-1115.ann"
+                                ],
+                                "text": [
+                                    "H05-1115.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C90-3046.ann"
+                                ],
+                                "text": [
+                                    "C90-3046.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2008_21_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2008_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A92-1026.ann"
+                                ],
+                                "text": [
+                                    "A92-1026.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P02-1060.ann"
+                                ],
+                                "text": [
+                                    "P02-1060.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H93-1076.ann"
+                                ],
+                                "text": [
+                                    "H93-1076.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2014_47_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2014_47_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCAI_2003_15_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCAI_2003_15_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E06-1045.ann"
+                                ],
+                                "text": [
+                                    "E06-1045.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2010_11_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2010_11_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A92-1027.ann"
+                                ],
+                                "text": [
+                                    "A92-1027.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I08-1027.ann"
+                                ],
+                                "text": [
+                                    "I08-1027.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A94-1037.ann"
+                                ],
+                                "text": [
+                                    "A94-1037.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1069.ann"
+                                ],
+                                "text": [
+                                    "P05-1069.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1032.ann"
+                                ],
+                                "text": [
+                                    "P05-1032.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H94-1102.ann"
+                                ],
+                                "text": [
+                                    "H94-1102.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-2110.ann"
+                                ],
+                                "text": [
+                                    "P06-2110.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H05-1012.ann"
+                                ],
+                                "text": [
+                                    "H05-1012.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-3010.ann"
+                                ],
+                                "text": [
+                                    "N03-3010.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-2044.ann"
+                                ],
+                                "text": [
+                                    "I05-2044.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C80-1039.ann"
+                                ],
+                                "text": [
+                                    "C80-1039.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-5009.ann"
+                                ],
+                                "text": [
+                                    "I05-5009.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H90-1016.ann"
+                                ],
+                                "text": [
+                                    "H90-1016.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2015_300_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2015_300_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2007_21_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2007_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C88-2086.ann"
+                                ],
+                                "text": [
+                                    "C88-2086.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E99-1029.ann"
+                                ],
+                                "text": [
+                                    "E99-1029.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2002_10_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2002_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P02-1059.ann"
+                                ],
+                                "text": [
+                                    "P02-1059.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "W02-1404.ann"
+                                ],
+                                "text": [
+                                    "W02-1404.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-2008.ann"
+                                ],
+                                "text": [
+                                    "P05-2008.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2013_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2013_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C86-1132.ann"
+                                ],
+                                "text": [
+                                    "C86-1132.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P80-1026.ann"
+                                ],
+                                "text": [
+                                    "P80-1026.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H01-1001.ann"
+                                ],
+                                "text": [
+                                    "H01-1001.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-4008.ann"
+                                ],
+                                "text": [
+                                    "I05-4008.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "J87-3001.ann"
+                                ],
+                                "text": [
+                                    "J87-3001.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-3022.ann"
+                                ],
+                                "text": [
+                                    "I05-3022.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-3025.ann"
+                                ],
+                                "text": [
+                                    "P05-3025.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H91-1077.ann"
+                                ],
+                                "text": [
+                                    "H91-1077.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C86-1021.ann"
+                                ],
+                                "text": [
+                                    "C86-1021.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C92-1052.ann"
+                                ],
+                                "text": [
+                                    "C92-1052.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C02-1071.ann"
+                                ],
+                                "text": [
+                                    "C02-1071.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2016_215_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2016_215_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A92-1010.ann"
+                                ],
+                                "text": [
+                                    "A92-1010.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P03-1058.ann"
+                                ],
+                                "text": [
+                                    "P03-1058.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E95-1036.ann"
+                                ],
+                                "text": [
+                                    "E95-1036.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-1112.ann"
+                                ],
+                                "text": [
+                                    "P06-1112.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A92-1023.ann"
+                                ],
+                                "text": [
+                                    "A92-1023.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2014_21_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2014_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICASSP_2011_587_abs.ann"
+                                ],
+                                "text": [
+                                    "ICASSP_2011_587_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2012_11_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2012_11_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2016_205_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2016_205_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2009_21_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2009_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "AAAI_2015_11_abs.ann"
+                                ],
+                                "text": [
+                                    "AAAI_2015_11_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C90-3007.ann"
+                                ],
+                                "text": [
+                                    "C90-3007.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "AAAI_2008_262_abs.ann"
+                                ],
+                                "text": [
+                                    "AAAI_2008_262_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2012_37_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2012_37_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A97-1050.ann"
+                                ],
+                                "text": [
+                                    "A97-1050.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "W04-1307.ann"
+                                ],
+                                "text": [
+                                    "W04-1307.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICML_2006_122_abs.ann"
+                                ],
+                                "text": [
+                                    "ICML_2006_122_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C88-2166.ann"
+                                ],
+                                "text": [
+                                    "C88-2166.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N01-1003.ann"
+                                ],
+                                "text": [
+                                    "N01-1003.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H92-1036.ann"
+                                ],
+                                "text": [
+                                    "H92-1036.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C94-1088.ann"
+                                ],
+                                "text": [
+                                    "C94-1088.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-1001.ann"
+                                ],
+                                "text": [
+                                    "N03-1001.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCAI_2013_15_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCAI_2013_15_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E93-1043.ann"
+                                ],
+                                "text": [
+                                    "E93-1043.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P08-2034.ann"
+                                ],
+                                "text": [
+                                    "P08-2034.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-1052.ann"
+                                ],
+                                "text": [
+                                    "P06-1052.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E87-1037.ann"
+                                ],
+                                "text": [
+                                    "E87-1037.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "W02-1403.ann"
+                                ],
+                                "text": [
+                                    "W02-1403.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-2006.ann"
+                                ],
+                                "text": [
+                                    "N03-2006.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2016_107_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2016_107_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2015_50_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2015_50_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-2014.ann"
+                                ],
+                                "text": [
+                                    "I05-2014.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C82-1054.ann"
+                                ],
+                                "text": [
+                                    "C82-1054.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2014_28_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2014_28_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCAI_2013_4_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCAI_2013_4_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2014_31_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2014_31_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E89-1040.ann"
+                                ],
+                                "text": [
+                                    "E89-1040.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2006_11_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2006_11_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2001_31_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2001_31_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C88-2162.ann"
+                                ],
+                                "text": [
+                                    "C88-2162.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P04-2010.ann"
+                                ],
+                                "text": [
+                                    "P04-2010.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-2067.ann"
+                                ],
+                                "text": [
+                                    "P06-2067.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1058.ann"
+                                ],
+                                "text": [
+                                    "P05-1058.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-1088.ann"
+                                ],
+                                "text": [
+                                    "P06-1088.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_1996_15_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_1996_15_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2001_21_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2001_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2003_150_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2003_150_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2001_111_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2001_111_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCAI_2001_5_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCAI_2001_5_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-2001.ann"
+                                ],
+                                "text": [
+                                    "P06-2001.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "L08-1050.ann"
+                                ],
+                                "text": [
+                                    "L08-1050.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2013_50_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2013_50_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2001_110_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2001_110_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "AAAI_2008_254_abs.ann"
+                                ],
+                                "text": [
+                                    "AAAI_2008_254_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2016_405_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2016_405_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E85-1037.ann"
+                                ],
+                                "text": [
+                                    "E85-1037.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E06-1018.ann"
+                                ],
+                                "text": [
+                                    "E06-1018.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P84-1020.ann"
+                                ],
+                                "text": [
+                                    "P84-1020.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICASSP_2011_588_abs.ann"
+                                ],
+                                "text": [
+                                    "ICASSP_2011_588_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICASSP_1997_714_abs.ann"
+                                ],
+                                "text": [
+                                    "ICASSP_1997_714_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2001_21_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2001_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2014_20_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2014_20_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C90-1013.ann"
+                                ],
+                                "text": [
+                                    "C90-1013.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCNLP_2005_3_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCNLP_2005_3_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N06-1018.ann"
+                                ],
+                                "text": [
+                                    "N06-1018.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2014_18_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2014_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2005_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2005_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2001_18_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2001_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A88-1001.ann"
+                                ],
+                                "text": [
+                                    "A88-1001.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-4014.ann"
+                                ],
+                                "text": [
+                                    "P06-4014.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "AAAI_1993_71_abs.ann"
+                                ],
+                                "text": [
+                                    "AAAI_1993_71_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2016_406_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2016_406_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-6010.ann"
+                                ],
+                                "text": [
+                                    "I05-6010.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P01-1008.ann"
+                                ],
+                                "text": [
+                                    "P01-1008.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1024.ann"
+                                ],
+                                "text": [
+                                    "C04-1024.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2008_103_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2008_103_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H92-1045.ann"
+                                ],
+                                "text": [
+                                    "H92-1045.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2005_18_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2005_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_1999_47_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_1999_47_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2000_483_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2000_483_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E99-1014.ann"
+                                ],
+                                "text": [
+                                    "E99-1014.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1028.ann"
+                                ],
+                                "text": [
+                                    "P05-1028.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2008_257_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2008_257_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E93-1004.ann"
+                                ],
+                                "text": [
+                                    "E93-1004.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P03-1009.ann"
+                                ],
+                                "text": [
+                                    "P03-1009.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2009_11_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2009_11_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2007_28_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2007_28_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2007_21_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2007_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-1018.ann"
+                                ],
+                                "text": [
+                                    "N03-1018.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1057.ann"
+                                ],
+                                "text": [
+                                    "P05-1057.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2015_400_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2015_400_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2012_18_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2012_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2016_100_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2016_100_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "J97-1004.ann"
+                                ],
+                                "text": [
+                                    "J97-1004.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E99-1038.ann"
+                                ],
+                                "text": [
+                                    "E99-1038.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2010_21_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2010_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P80-1004.ann"
+                                ],
+                                "text": [
+                                    "P80-1004.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I08-1043.ann"
+                                ],
+                                "text": [
+                                    "I08-1043.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P01-1047.ann"
+                                ],
+                                "text": [
+                                    "P01-1047.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N06-2038.ann"
+                                ],
+                                "text": [
+                                    "N06-2038.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "M91-1029.ann"
+                                ],
+                                "text": [
+                                    "M91-1029.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H94-1064.ann"
+                                ],
+                                "text": [
+                                    "H94-1064.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2011_303_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2011_303_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1058.ann"
+                                ],
+                                "text": [
+                                    "C04-1058.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P81-1033.ann"
+                                ],
+                                "text": [
+                                    "P81-1033.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E89-1006.ann"
+                                ],
+                                "text": [
+                                    "E89-1006.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1068.ann"
+                                ],
+                                "text": [
+                                    "C04-1068.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1192.ann"
+                                ],
+                                "text": [
+                                    "C04-1192.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2003_21_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2003_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C96-2213.ann"
+                                ],
+                                "text": [
+                                    "C96-2213.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C88-2132.ann"
+                                ],
+                                "text": [
+                                    "C88-2132.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E91-1050.ann"
+                                ],
+                                "text": [
+                                    "E91-1050.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H01-1017.ann"
+                                ],
+                                "text": [
+                                    "H01-1017.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICML_2016_21_abs.ann"
+                                ],
+                                "text": [
+                                    "ICML_2016_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H89-2066.ann"
+                                ],
+                                "text": [
+                                    "H89-2066.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C90-3072.ann"
+                                ],
+                                "text": [
+                                    "C90-3072.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1080.ann"
+                                ],
+                                "text": [
+                                    "C04-1080.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2015_10_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2015_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1022.ann"
+                                ],
+                                "text": [
+                                    "C04-1022.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P03-1033.ann"
+                                ],
+                                "text": [
+                                    "P03-1033.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-2059.ann"
+                                ],
+                                "text": [
+                                    "P06-2059.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1074.ann"
+                                ],
+                                "text": [
+                                    "P05-1074.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H89-2019.ann"
+                                ],
+                                "text": [
+                                    "H89-2019.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C02-1120.ann"
+                                ],
+                                "text": [
+                                    "C02-1120.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2015_9_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2015_9_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P03-1034.ann"
+                                ],
+                                "text": [
+                                    "P03-1034.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E83-1029.ann"
+                                ],
+                                "text": [
+                                    "E83-1029.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "J05-1003.ann"
+                                ],
+                                "text": [
+                                    "J05-1003.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "J89-4003.ann"
+                                ],
+                                "text": [
+                                    "J89-4003.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2014_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2014_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H05-1101.ann"
+                                ],
+                                "text": [
+                                    "H05-1101.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2005_21_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2005_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "L08-1110.ann"
+                                ],
+                                "text": [
+                                    "L08-1110.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "J90-3002.ann"
+                                ],
+                                "text": [
+                                    "J90-3002.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "L08-1154.ann"
+                                ],
+                                "text": [
+                                    "L08-1154.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H05-2007.ann"
+                                ],
+                                "text": [
+                                    "H05-2007.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_1996_22_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_1996_22_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2014_50_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2014_50_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H05-1117.ann"
+                                ],
+                                "text": [
+                                    "H05-1117.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H01-1055.ann"
+                                ],
+                                "text": [
+                                    "H01-1055.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-2013.ann"
+                                ],
+                                "text": [
+                                    "I05-2013.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICASSP_2016_3_abs.ann"
+                                ],
+                                "text": [
+                                    "ICASSP_2016_3_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C90-2032.ann"
+                                ],
+                                "text": [
+                                    "C90-2032.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C00-1054.ann"
+                                ],
+                                "text": [
+                                    "C00-1054.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H89-1027.ann"
+                                ],
+                                "text": [
+                                    "H89-1027.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H91-1067.ann"
+                                ],
+                                "text": [
+                                    "H91-1067.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2011_18_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2011_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2007_18_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2007_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E91-1043.ann"
+                                ],
+                                "text": [
+                                    "E91-1043.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P03-1030.ann"
+                                ],
+                                "text": [
+                                    "P03-1030.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2003_10_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2003_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1112.ann"
+                                ],
+                                "text": [
+                                    "C04-1112.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2013_26_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2013_26_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-1004.ann"
+                                ],
+                                "text": [
+                                    "N03-1004.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C92-4199.ann"
+                                ],
+                                "text": [
+                                    "C92-4199.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2001_28_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2001_28_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P84-1078.ann"
+                                ],
+                                "text": [
+                                    "P84-1078.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A97-1042.ann"
+                                ],
+                                "text": [
+                                    "A97-1042.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICML_2006_112_abs.ann"
+                                ],
+                                "text": [
+                                    "ICML_2006_112_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P01-1070.ann"
+                                ],
+                                "text": [
+                                    "P01-1070.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "W07-0208.ann"
+                                ],
+                                "text": [
+                                    "W07-0208.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H92-1026.ann"
+                                ],
+                                "text": [
+                                    "H92-1026.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E87-1043.ann"
+                                ],
+                                "text": [
+                                    "E87-1043.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C96-1055.ann"
+                                ],
+                                "text": [
+                                    "C96-1055.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "X96-1041.ann"
+                                ],
+                                "text": [
+                                    "X96-1041.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P80-1019.ann"
+                                ],
+                                "text": [
+                                    "P80-1019.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2007_11_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2007_11_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E06-1004.ann"
+                                ],
+                                "text": [
+                                    "E06-1004.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E06-1031.ann"
+                                ],
+                                "text": [
+                                    "E06-1031.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "AAAI_1993_70_abs.ann"
+                                ],
+                                "text": [
+                                    "AAAI_1993_70_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "J86-1002.ann"
+                                ],
+                                "text": [
+                                    "J86-1002.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2007_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2007_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N06-1007.ann"
+                                ],
+                                "text": [
+                                    "N06-1007.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2014_11_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2014_11_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-2043.ann"
+                                ],
+                                "text": [
+                                    "I05-2043.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICASSP_2016_4_abs.ann"
+                                ],
+                                "text": [
+                                    "ICASSP_2016_4_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-1012.ann"
+                                ],
+                                "text": [
+                                    "N03-1012.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2007_20_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2007_20_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P02-1023.ann"
+                                ],
+                                "text": [
+                                    "P02-1023.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-6011.ann"
+                                ],
+                                "text": [
+                                    "I05-6011.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_1998_18_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_1998_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "AAAI_2008_255_abs.ann"
+                                ],
+                                "text": [
+                                    "AAAI_2008_255_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCAI_2001_4_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCAI_2001_4_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2005_50_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2005_50_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H92-1010.ann"
+                                ],
+                                "text": [
+                                    "H92-1010.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_1996_15_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_1996_15_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A88-1003.ann"
+                                ],
+                                "text": [
+                                    "A88-1003.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "L08-1097.ann"
+                                ],
+                                "text": [
+                                    "L08-1097.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2010_18_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2010_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2015_393_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2015_393_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICML_2006_111_abs.ann"
+                                ],
+                                "text": [
+                                    "ICML_2006_111_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C92-2115.ann"
+                                ],
+                                "text": [
+                                    "C92-2115.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2012_29_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2012_29_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N04-2005.ann"
+                                ],
+                                "text": [
+                                    "N04-2005.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P83-1003.ann"
+                                ],
+                                "text": [
+                                    "P83-1003.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2013_33_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2013_33_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCAI_1995_190_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCAI_1995_190_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1048.ann"
+                                ],
+                                "text": [
+                                    "P05-1048.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_1998_39_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_1998_39_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-2016.ann"
+                                ],
+                                "text": [
+                                    "P05-2016.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C92-4207.ann"
+                                ],
+                                "text": [
+                                    "C92-4207.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCAI_2016_423_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCAI_2016_423_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICASSP_2016_14_abs.ann"
+                                ],
+                                "text": [
+                                    "ICASSP_2016_14_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A97-1027.ann"
+                                ],
+                                "text": [
+                                    "A97-1027.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N04-1024.ann"
+                                ],
+                                "text": [
+                                    "N04-1024.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_1992_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_1992_10_abs.txt"
+                                ]
+                            }
+                        ],
+                        "validation": [
+                            {
+                                "annotations": [
+                                    "ICCV_2003_158_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2003_158_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1096.ann"
+                                ],
+                                "text": [
+                                    "C04-1096.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P84-1047.ann"
+                                ],
+                                "text": [
+                                    "P84-1047.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C88-1066.ann"
+                                ],
+                                "text": [
+                                    "C88-1066.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1116.ann"
+                                ],
+                                "text": [
+                                    "C04-1116.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2009_47_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2009_47_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C80-1073.ann"
+                                ],
+                                "text": [
+                                    "C80-1073.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H05-1041.ann"
+                                ],
+                                "text": [
+                                    "H05-1041.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2014_18_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2014_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2014_10_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2014_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P03-1022.ann"
+                                ],
+                                "text": [
+                                    "P03-1022.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2010_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2010_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H91-1010.ann"
+                                ],
+                                "text": [
+                                    "H91-1010.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C88-2160.ann"
+                                ],
+                                "text": [
+                                    "C88-2160.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1034.ann"
+                                ],
+                                "text": [
+                                    "P05-1034.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2011_292_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2011_292_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2012_40_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2012_40_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "AAAI_2015_21_abs.ann"
+                                ],
+                                "text": [
+                                    "AAAI_2015_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1147.ann"
+                                ],
+                                "text": [
+                                    "C04-1147.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A00-1024.ann"
+                                ],
+                                "text": [
+                                    "A00-1024.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H01-1041.ann"
+                                ],
+                                "text": [
+                                    "H01-1041.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-4010.ann"
+                                ],
+                                "text": [
+                                    "N03-4010.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P04-1030.ann"
+                                ],
+                                "text": [
+                                    "P04-1030.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2004_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2004_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "L08-1260.ann"
+                                ],
+                                "text": [
+                                    "L08-1260.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCAI_2016_412_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCAI_2016_412_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "W03-0406.ann"
+                                ],
+                                "text": [
+                                    "W03-0406.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E99-1023.ann"
+                                ],
+                                "text": [
+                                    "E99-1023.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N04-1008.ann"
+                                ],
+                                "text": [
+                                    "N04-1008.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICASSP_2011_598_abs.ann"
+                                ],
+                                "text": [
+                                    "ICASSP_2011_598_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2003_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2003_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-3008.ann"
+                                ],
+                                "text": [
+                                    "P06-3008.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2003_11_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2003_11_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1073.ann"
+                                ],
+                                "text": [
+                                    "P05-1073.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E93-1023.ann"
+                                ],
+                                "text": [
+                                    "E93-1023.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C90-3014.ann"
+                                ],
+                                "text": [
+                                    "C90-3014.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "IJCAI_2016_413_abs.ann"
+                                ],
+                                "text": [
+                                    "IJCAI_2016_413_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C08-3010.ann"
+                                ],
+                                "text": [
+                                    "C08-3010.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "J88-3002.ann"
+                                ],
+                                "text": [
+                                    "J88-3002.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N04-4028.ann"
+                                ],
+                                "text": [
+                                    "N04-4028.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H05-1005.ann"
+                                ],
+                                "text": [
+                                    "H05-1005.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2015_392_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2015_392_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H92-1017.ann"
+                                ],
+                                "text": [
+                                    "H92-1017.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2016_416_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2016_416_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2015_303_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2015_303_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "J81-1002.ann"
+                                ],
+                                "text": [
+                                    "J81-1002.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E99-1034.ann"
+                                ],
+                                "text": [
+                                    "E99-1034.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-1017.ann"
+                                ],
+                                "text": [
+                                    "N03-1017.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2011_293_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2011_293_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-3001.ann"
+                                ],
+                                "text": [
+                                    "P05-3001.txt"
+                                ]
+                            }
+                        ],
+                        "test": [
+                            {
+                                "annotations": [
+                                    "X96-1059.ann"
+                                ],
+                                "text": [
+                                    "X96-1059.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2001_47_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2001_47_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2013_21_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2013_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H01-1049.ann"
+                                ],
+                                "text": [
+                                    "H01-1049.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C96-1062.ann"
+                                ],
+                                "text": [
+                                    "C96-1062.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2009_18_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2009_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P85-1019.ann"
+                                ],
+                                "text": [
+                                    "P85-1019.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1039.ann"
+                                ],
+                                "text": [
+                                    "P05-1039.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-2012.ann"
+                                ],
+                                "text": [
+                                    "P06-2012.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-1018.ann"
+                                ],
+                                "text": [
+                                    "P06-1018.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2001_11_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2001_11_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_1999_15_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_1999_15_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C94-1091.ann"
+                                ],
+                                "text": [
+                                    "C94-1091.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2003_161_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2003_161_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2009_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2009_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-1026.ann"
+                                ],
+                                "text": [
+                                    "N03-1026.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICML_2016_11_abs.ann"
+                                ],
+                                "text": [
+                                    "ICML_2016_11_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C88-1044.ann"
+                                ],
+                                "text": [
+                                    "C88-1044.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2008_20_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2008_20_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICASSP_2016_11_abs.ann"
+                                ],
+                                "text": [
+                                    "ICASSP_2016_11_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N06-1037.ann"
+                                ],
+                                "text": [
+                                    "N06-1037.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-2013.ann"
+                                ],
+                                "text": [
+                                    "P05-2013.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1128.ann"
+                                ],
+                                "text": [
+                                    "C04-1128.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2006_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2006_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2002_11_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2002_11_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-3007.ann"
+                                ],
+                                "text": [
+                                    "P06-3007.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2013_25_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2013_25_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1076.ann"
+                                ],
+                                "text": [
+                                    "P05-1076.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1103.ann"
+                                ],
+                                "text": [
+                                    "C04-1103.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2002_18_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2002_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C86-1081.ann"
+                                ],
+                                "text": [
+                                    "C86-1081.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P03-1070.ann"
+                                ],
+                                "text": [
+                                    "P03-1070.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1056.ann"
+                                ],
+                                "text": [
+                                    "P05-1056.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2011_11_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2011_11_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICML_2016_10_abs.ann"
+                                ],
+                                "text": [
+                                    "ICML_2016_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1011.ann"
+                                ],
+                                "text": [
+                                    "C04-1011.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2006_13_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2006_13_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N04-1022.ann"
+                                ],
+                                "text": [
+                                    "N04-1022.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E89-1016.ann"
+                                ],
+                                "text": [
+                                    "E89-1016.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E06-1022.ann"
+                                ],
+                                "text": [
+                                    "E06-1022.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-5004.ann"
+                                ],
+                                "text": [
+                                    "I05-5004.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H01-1042.ann"
+                                ],
+                                "text": [
+                                    "H01-1042.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1035.ann"
+                                ],
+                                "text": [
+                                    "C04-1035.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1036.ann"
+                                ],
+                                "text": [
+                                    "C04-1036.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2011_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2011_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2012_30_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2012_30_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P08-1105.ann"
+                                ],
+                                "text": [
+                                    "P08-1105.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICML_2006_119_abs.ann"
+                                ],
+                                "text": [
+                                    "ICML_2006_119_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P04-2005.ann"
+                                ],
+                                "text": [
+                                    "P04-2005.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2016_560_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2016_560_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-1053.ann"
+                                ],
+                                "text": [
+                                    "P06-1053.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2016_413_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2016_413_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICML_1995_38_abs.ann"
+                                ],
+                                "text": [
+                                    "ICML_1995_38_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-4007.ann"
+                                ],
+                                "text": [
+                                    "P06-4007.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E99-1015.ann"
+                                ],
+                                "text": [
+                                    "E99-1015.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2004_18_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2004_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "J86-4002.ann"
+                                ],
+                                "text": [
+                                    "J86-4002.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P06-1013.ann"
+                                ],
+                                "text": [
+                                    "P06-1013.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P05-1046.ann"
+                                ],
+                                "text": [
+                                    "P05-1046.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "J82-3002.ann"
+                                ],
+                                "text": [
+                                    "J82-3002.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2016_99_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2016_99_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-5003.ann"
+                                ],
+                                "text": [
+                                    "I05-5003.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2008_256_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2008_256_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P01-1056.ann"
+                                ],
+                                "text": [
+                                    "P01-1056.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2003_151_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2003_151_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C90-3063.ann"
+                                ],
+                                "text": [
+                                    "C90-3063.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "J05-4003.ann"
+                                ],
+                                "text": [
+                                    "J05-4003.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C00-2123.ann"
+                                ],
+                                "text": [
+                                    "C00-2123.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E91-1012.ann"
+                                ],
+                                "text": [
+                                    "E91-1012.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "J86-3001.ann"
+                                ],
+                                "text": [
+                                    "J86-3001.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P86-1011.ann"
+                                ],
+                                "text": [
+                                    "P86-1011.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E95-1033.ann"
+                                ],
+                                "text": [
+                                    "E95-1033.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "W02-1602.ann"
+                                ],
+                                "text": [
+                                    "W02-1602.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C04-1106.ann"
+                                ],
+                                "text": [
+                                    "C04-1106.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2016_204_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2016_204_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2006_21_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2006_21_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2015_18_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2015_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_1994_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_1994_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "P83-1004.ann"
+                                ],
+                                "text": [
+                                    "P83-1004.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C90-3045.ann"
+                                ],
+                                "text": [
+                                    "C90-3045.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_1993_10_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_1993_10_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICML_2016_18_abs.ann"
+                                ],
+                                "text": [
+                                    "ICML_2016_18_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "I05-4010.ann"
+                                ],
+                                "text": [
+                                    "I05-4010.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICCV_2013_47_abs.ann"
+                                ],
+                                "text": [
+                                    "ICCV_2013_47_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "H05-1095.ann"
+                                ],
+                                "text": [
+                                    "H05-1095.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "A97-1020.ann"
+                                ],
+                                "text": [
+                                    "A97-1020.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "N03-1033.ann"
+                                ],
+                                "text": [
+                                    "N03-1033.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2016_212_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2016_212_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ICASSP_1997_706_abs.ann"
+                                ],
+                                "text": [
+                                    "ICASSP_1997_706_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2008_28_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2008_28_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "ECCV_2016_110_abs.ann"
+                                ],
+                                "text": [
+                                    "ECCV_2016_110_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2008_258_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2008_258_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "C08-2010.ann"
+                                ],
+                                "text": [
+                                    "C08-2010.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "E93-1066.ann"
+                                ],
+                                "text": [
+                                    "E93-1066.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2014_40_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2014_40_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2010_30_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2010_30_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2004_30_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2004_30_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "INTERSPEECH_2007_40_abs.ann"
+                                ],
+                                "text": [
+                                    "INTERSPEECH_2007_40_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "CVPR_2003_30_abs.ann"
+                                ],
+                                "text": [
+                                    "CVPR_2003_30_abs.txt"
+                                ]
+                            },
+                            {
+                                "annotations": [
+                                    "NIPS_2016_80_abs.ann"
+                                ],
+                                "text": [
+                                    "NIPS_2016_80_abs.txt"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "standoff"
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "spans"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Unspecified",
+                "document_boundaries": "full",
+                "sentence_boundaries": "none",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 5,
+                    "features": [
+                        "domain-experts"
+                    ],
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": 0.769
+                    }
+                },
+                "primary_domain": "science",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "AI"
+                ],
+                "data_sources": [
+                    {
+                        "source": "Semantic Scholar Corpus (general AI [AAAI, IJCAI], NLP [ACL, EMNLP, IJCNLP], speech [ICASSP, Interspeech], machine learning [NIPS, ICML], computer vision [CVPR, ICCV, ECCV])",
+                        "url": "http://labs.semanticscholar.org/corpus/"
+                    }
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

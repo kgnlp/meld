@@ -1,0 +1,62 @@
+{
+    "DanfeNER": {
+        "citekeys": [
+            "niraula2023danfener"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/nowalab/DanfeNER.git",
+                "revision": "d0841ff8423b560939eb265a670bf81cd672cc8e",
+                "base_language": "nep",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "plain_spans"
+                        }
+                    }
+                ],
+                "subsets": {
+                    "__root__": {
+                        "train": [
+                            "DanfeNER-train-char.txt"
+                        ],
+                        "test": [
+                            "DanfeNER-test-char.txt"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "spans"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Non-commercial",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 2,
+                    "features": [],
+                    "agreement": {
+                        "metric": "cohens-kappa",
+                        "value": 0.75
+                    }
+                },
+                "primary_domain": "social media",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    "Twitter"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": "EverestNER"
+            }
+        ]
+    }
+}

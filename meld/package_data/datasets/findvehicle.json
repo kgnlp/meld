@@ -1,0 +1,79 @@
+{
+    "FindVehicle": {
+        "citekeys": [
+            "guan2024findvehicle"
+        ],
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "google_docs",
+                        "urls": [
+                            {
+                                "url": "https://drive.google.com/uc?id=1I2ZyOeq6W-2uaGCOFcuMQIqwP_26_ihS",
+                                "target_filename": "FindVehicle_train.txt",
+                                "sha256": "39eabdd4d34955b26abafb835cd3619929181670dfd65ca7a5b83f516f9378b0"
+                            },
+                            {
+                                "url": "https://drive.google.com/uc?id=1vqnxIxw7iKK87b5_CERIFykZD1IxbyBe",
+                                "target_filename": "FindVehicle_test.txt",
+                                "sha256": "75b7f768b537972aa05ab8b54eb436914c5920ea724cf9108a38cb9a8aa5766c"
+                            }
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "language": "eng",
+                        "train": [
+                            "FindVehicle_train.txt"
+                        ],
+                        "test": [
+                            "FindVehicle_test.txt"
+                        ]
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll",
+                            "arguments": {
+                                "delimiter": " ",
+                                "bioes_to_bio": true
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bioes"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Unspecified",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [],
+                    "agreement": null
+                },
+                "primary_domain": "transportation",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "vehicles"
+                ],
+                "data_sources": [
+                    "Descriptive sentences written for the dataset by volunteers"
+                ],
+                "dataset_lineage": [
+                    "UA-DETRAC:images"
+                ],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

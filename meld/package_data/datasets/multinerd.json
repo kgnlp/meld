@@ -1,0 +1,166 @@
+{
+    "MultiNERd": {
+        "citekeys": [
+            "tedeschi-navigli-2022-multinerd"
+        ],
+        "source": {
+            "loader": "huggingface",
+            "arguments": {
+                "repo": "Babelscape/multinerd",
+                "revision": "92744ac16b799cb5010914490bcce554c8ea20d3",
+                "text_column": "tokens",
+                "tag_column": "ner_tags",
+                "train_name": "train",
+                "validation_name": "validation",
+                "test_name": "test",
+                "language_column": "lang",
+                "data_pipe": [
+                    {
+                        "step": "columns",
+                        "tagsets": {
+                            "ner": {
+                                "label_map": {
+                                    "O": 0,
+                                    "B-PER": 1,
+                                    "I-PER": 2,
+                                    "B-ORG": 3,
+                                    "I-ORG": 4,
+                                    "B-LOC": 5,
+                                    "I-LOC": 6,
+                                    "B-ANIM": 7,
+                                    "I-ANIM": 8,
+                                    "B-BIO": 9,
+                                    "I-BIO": 10,
+                                    "B-CEL": 11,
+                                    "I-CEL": 12,
+                                    "B-DIS": 13,
+                                    "I-DIS": 14,
+                                    "B-EVE": 15,
+                                    "I-EVE": 16,
+                                    "B-FOOD": 17,
+                                    "I-FOOD": 18,
+                                    "B-INST": 19,
+                                    "I-INST": 20,
+                                    "B-MEDIA": 21,
+                                    "I-MEDIA": 22,
+                                    "B-MYTH": 23,
+                                    "I-MYTH": 24,
+                                    "B-PLANT": 25,
+                                    "I-PLANT": 26,
+                                    "B-TIME": 27,
+                                    "I-TIME": 28,
+                                    "B-VEHI": 29,
+                                    "I-VEHI": 30
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio",
+            "tag_format": "indices"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY-NC-SA 4.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "silver-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "automatically-extracted"
+                    ]
+                },
+                "primary_domain": "wikipedia",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "encyclopedia",
+                    "news"
+                ],
+                "data_sources": [
+                    "Wikipedia",
+                    "Wikinews"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    "language-en"
+                ],
+                "annotation": {
+                    "agreement": [
+                        {
+                            "metric": "automatic-annotation-precision",
+                            "value": {
+                                "Anim": 0.72,
+                                "Bio": 0.78,
+                                "Cel": 0.96,
+                                "Dis": 0.99,
+                                "Eve": 0.96,
+                                "Food": 0.83,
+                                "Inst": 0.90,
+                                "Loc": 0.99,
+                                "Media": 0.95,
+                                "O": 0.99,
+                                "Org": 0.97,
+                                "Per": 0.99,
+                                "Plant": 0.73,
+                                "Myth": 0.88,
+                                "Time": 0.99,
+                                "Veh": 0.82
+                            }
+                        },
+                        {
+                            "metric": "automatic-annotation-recall",
+                            "value": {
+                                "Anim": 0.52,
+                                "Bio": 0.66,
+                                "Cel": 0.96,
+                                "Dis": 0.88,
+                                "Eve": 0.93,
+                                "Food": 0.44,
+                                "Inst": 0.53,
+                                "Loc": 0.99,
+                                "Media": 0.95,
+                                "O": 1.00,
+                                "Org": 0.95,
+                                "Per": 0.99,
+                                "Plant": 0.40,
+                                "Myth": 0.96,
+                                "Time": 0.96,
+                                "Veh": 0.85
+                            }
+                        },
+                        {
+                            "metric": "automatic-annotation-F1",
+                            "value": {
+                                "Anim": 0.60,
+                                "Bio": 0.71,
+                                "Cel": 0.96,
+                                "Dis": 0.93,
+                                "Eve": 0.94,
+                                "Food": 0.58,
+                                "Inst": 0.67,
+                                "Loc": 0.99,
+                                "Media": 0.95,
+                                "O": 0.99,
+                                "Org": 0.96,
+                                "Per": 0.99,
+                                "Plant": 0.52,
+                                "Myth": 0.92,
+                                "Time": 0.98,
+                                "Veh": 0.84
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

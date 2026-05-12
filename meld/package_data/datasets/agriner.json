@@ -1,0 +1,85 @@
+{
+    "AgriNER": {
+        "note": "Since the prepocessed train_data.json file contains some incorrect span offsets, processed JSON files are only used for assigning each file to the correct split",
+        "citekeys": [
+            "sayan-2023-agriner"
+        ],
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/Tec4Tric/AgriNER.git",
+                        "revision": "ae5bebe9c46851c5aa216b5cb9da68983488275b",
+                        "files": [
+                            "Raw_Dataset.zip",
+                            "AgriNer_Code/train_data.json",
+                            "AgriNer_Code/test_data.json"
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "Raw_Dataset.zip",
+                        "files": [
+                            "dataset/*.ann",
+                            "dataset/*.txt"
+                        ],
+                        "use_globs": true
+                    },
+                    {
+                        "step": "read_splits",
+                        "language": "eng",
+                        "directories": "dataset",
+                        "splits_reader": "agriner_standoff_split_json",
+                        "split_files": {
+                            "train": "AgriNer_Code/train_data.json",
+                            "test": "AgriNer_Code/test_data.json"
+                        }
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "standoff"
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "spans"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY-SA 4.0",
+                "document_boundaries": "full",
+                "sentence_boundaries": "none",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": "4+",
+                    "features": [],
+                    "agreement": null
+                },
+                "primary_domain": "agriculture",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    {
+                        "source": "Asian Journal of Agricultural and Food Sciences (AJAFS)",
+                        "url": "https://www.ajouronline.com/index.php/AJAFS/index"
+                    },
+                    {
+                        "source": "The Indian Journal of Agricultural Sciences",
+                        "url": "https://epubs.icar.org.in/index.php/IJAgS"
+                    },
+                    "IEEE Journals",
+                    "Springer Nature Journals"
+                ],
+                "dataset_lineage": null,
+                "label_set_standard": null
+            }
+        ]
+    }
+}

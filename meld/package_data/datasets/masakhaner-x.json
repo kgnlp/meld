@@ -1,0 +1,732 @@
+{
+    "MasakhaNER-X": {
+        "citekeys": [
+            "10.1162/tacl_a_00416",
+            "adelani-etal-2022-masakhaner",
+            "ruder-etal-2023-xtreme"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/masakhane-io/masakhane-ner.git",
+                "revision": "60f07e642a31e225d5b30c7ecb70c46a02966677",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "byte_offset_jsonl",
+                            "arguments": {
+                                "text_key": "text",
+                                "offsets_key": "spans",
+                                "annotated_span_target_key": "target"
+                            }
+                        }
+                    }
+                ],
+                "subsets": {
+                    "am": {
+                        "language": "am",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/am.jsonl"
+                        ],
+                        "validation": [
+                            "validation/am.jsonl"
+                        ],
+                        "test": [
+                            "test/am.jsonl"
+                        ]
+                    },
+                    "bbj": {
+                        "language": "bbj",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/bbj.jsonl"
+                        ],
+                        "validation": [
+                            "validation/bbj.jsonl"
+                        ],
+                        "test": [
+                            "test/bbj.jsonl"
+                        ]
+                    },
+                    "bm": {
+                        "language": "bm",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/bm.jsonl"
+                        ],
+                        "validation": [
+                            "validation/bm.jsonl"
+                        ],
+                        "test": [
+                            "test/bm.jsonl"
+                        ]
+                    },
+                    "ee": {
+                        "language": "ee",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/ee.jsonl"
+                        ],
+                        "validation": [
+                            "validation/ee.jsonl"
+                        ],
+                        "test": [
+                            "test/ee.jsonl"
+                        ]
+                    },
+                    "ha": {
+                        "language": "ha",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/ha.jsonl"
+                        ],
+                        "validation": [
+                            "validation/ha.jsonl"
+                        ],
+                        "test": [
+                            "test/ha.jsonl"
+                        ]
+                    },
+                    "ig": {
+                        "language": "ig",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/ig.jsonl"
+                        ],
+                        "validation": [
+                            "validation/ig.jsonl"
+                        ],
+                        "test": [
+                            "test/ig.jsonl"
+                        ]
+                    },
+                    "lg": {
+                        "language": "lg",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/lg.jsonl"
+                        ],
+                        "validation": [
+                            "validation/lg.jsonl"
+                        ],
+                        "test": [
+                            "test/lg.jsonl"
+                        ]
+                    },
+                    "luo": {
+                        "language": "luo",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/luo.jsonl"
+                        ],
+                        "validation": [
+                            "validation/luo.jsonl"
+                        ],
+                        "test": [
+                            "test/luo.jsonl"
+                        ]
+                    },
+                    "mos": {
+                        "language": "mos",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/mos.jsonl"
+                        ],
+                        "validation": [
+                            "validation/mos.jsonl"
+                        ],
+                        "test": [
+                            "test/mos.jsonl"
+                        ]
+                    },
+                    "ny": {
+                        "language": "ny",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/ny.jsonl"
+                        ],
+                        "validation": [
+                            "validation/ny.jsonl"
+                        ],
+                        "test": [
+                            "test/ny.jsonl"
+                        ]
+                    },
+                    "pcm": {
+                        "language": "pcm",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/pcm.jsonl"
+                        ],
+                        "validation": [
+                            "validation/pcm.jsonl"
+                        ],
+                        "test": [
+                            "test/pcm.jsonl"
+                        ]
+                    },
+                    "rw": {
+                        "language": "rw",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/rw.jsonl"
+                        ],
+                        "validation": [
+                            "validation/rw.jsonl"
+                        ],
+                        "test": [
+                            "test/rw.jsonl"
+                        ]
+                    },
+                    "sn": {
+                        "language": "sn",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/sn.jsonl"
+                        ],
+                        "validation": [
+                            "validation/sn.jsonl"
+                        ],
+                        "test": [
+                            "test/sn.jsonl"
+                        ]
+                    },
+                    "sw": {
+                        "language": "sw",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/sw.jsonl"
+                        ],
+                        "validation": [
+                            "validation/sw.jsonl"
+                        ],
+                        "test": [
+                            "test/sw.jsonl"
+                        ]
+                    },
+                    "tn": {
+                        "language": "tn",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/tn.jsonl"
+                        ],
+                        "validation": [
+                            "validation/tn.jsonl"
+                        ],
+                        "test": [
+                            "test/tn.jsonl"
+                        ]
+                    },
+                    "tw": {
+                        "language": "tw",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/tw.jsonl"
+                        ],
+                        "validation": [
+                            "validation/tw.jsonl"
+                        ],
+                        "test": [
+                            "test/tw.jsonl"
+                        ]
+                    },
+                    "wo": {
+                        "language": "wo",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/wo.jsonl"
+                        ],
+                        "validation": [
+                            "validation/wo.jsonl"
+                        ],
+                        "test": [
+                            "test/wo.jsonl"
+                        ]
+                    },
+                    "xh": {
+                        "language": "xh",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/xh.jsonl"
+                        ],
+                        "validation": [
+                            "validation/xh.jsonl"
+                        ],
+                        "test": [
+                            "test/xh.jsonl"
+                        ]
+                    },
+                    "yo": {
+                        "language": "yo",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/yo.jsonl"
+                        ],
+                        "validation": [
+                            "validation/yo.jsonl"
+                        ],
+                        "test": [
+                            "test/yo.jsonl"
+                        ]
+                    },
+                    "zu": {
+                        "language": "zu",
+                        "directory": "xtreme-up/MasakhaNER-X",
+                        "train": [
+                            "train/zu.jsonl"
+                        ],
+                        "validation": [
+                            "validation/zu.jsonl"
+                        ],
+                        "test": [
+                            "test/zu.jsonl"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "spans",
+            "tag_alignment": "byte_offsets"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY-NC 4.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "features": [
+                        "expert-guided"
+                    ]
+                },
+                "primary_domain": "news",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    {
+                        "source": "MAFAND-MT",
+                        "url": "https://huggingface.co/datasets/masakhane/mafand"
+                    },
+                    "Kano Focus and Freedom Radio",
+                    "IGIHE, Rwanda",
+                    "Nation Online Malawi",
+                    "VOA Shona",
+                    "VOA Swahili",
+                    "Isolezwe Newspaper",
+                    "Voice of Nigeria and Asejere"
+                ],
+                "dataset_lineage": [
+                    "MasakhaNER",
+                    "MasakhaNER 2.0"
+                ],
+                "label_set_standard": "MUC-6"
+            },
+            {
+                "split": [
+                    "am"
+                ],
+                "annotation": {
+                    "annotator_count": "1+",
+                    "features": [
+                        "expert-guided",
+                        "author-annotated"
+                    ],
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER (all tokens)": 0.987,
+                            "MasakhaNER (annotated tokens)": 0.959
+                        }
+                    }
+                },
+                "data_sources": [
+                    "DW",
+                    "BBC"
+                ]
+            },
+            {
+                "split": [
+                    "bm"
+                ],
+                "annotation": {
+                    "annotator_count": 3,
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.980
+                        }
+                    }
+                },
+                "data_sources": [
+                    {
+                        "source": "MAFAND-MT",
+                        "url": "https://huggingface.co/datasets/masakhane/mafand"
+                    }
+                ]
+            },
+            {
+                "split": [
+                    "bbj"
+                ],
+                "annotation": {
+                    "annotator_count": 3,
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 1.000
+                        }
+                    }
+                },
+                "data_sources": [
+                    {
+                        "source": "MAFAND-MT",
+                        "url": "https://huggingface.co/datasets/masakhane/mafand"
+                    }
+                ]
+            },
+            {
+                "split": [
+                    "ee"
+                ],
+                "annotation": {
+                    "annotator_count": 3,
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.991
+                        }
+                    }
+                },
+                "data_sources": [
+                    {
+                        "source": "MAFAND-MT",
+                        "url": "https://huggingface.co/datasets/masakhane/mafand"
+                    }
+                ]
+            },
+            {
+                "split": [
+                    "ha"
+                ],
+                "annotation": {
+                    "annotator_count": "4+",
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER (all tokens)": 0.988,
+                            "MasakhaNER (annotated tokens)": 0.962
+                        }
+                    }
+                },
+                "data_sources": [
+                    "VOA Hausa"
+                ]
+            },
+            {
+                "split": [
+                    "ig"
+                ],
+                "annotation": {
+                    "annotator_count": "4+",
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.965,
+                            "MasakhaNER (all tokens)": 0.995,
+                            "MasakhaNER (annotated tokens)": 0.962
+                        }
+                    }
+                },
+                "data_sources": [
+                    "IgboRadio",
+                    "Ka ỌdỊ Taa",
+                    "BBC Igbo"
+                ]
+            },
+            {
+                "split": [
+                    "rw"
+                ],
+                "annotation": {
+                    "annotator_count": "4+",
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.943,
+                            "MasakhaNER (all tokens)": 1,
+                            "MasakhaNER (annotated tokens)": 1
+                        }
+                    }
+                },
+                "data_sources": [
+                    "IGIHE news"
+                ]
+            },
+            {
+                "split": [
+                    "lg"
+                ],
+                "annotation": {
+                    "annotator_count": "4+",
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.950,
+                            "MasakhaNER (all tokens)": 0.997,
+                            "MasakhaNER (annotated tokens)": 0.990
+                        }
+                    }
+                },
+                "data_sources": [
+                    {
+                        "source": "MAFAND-MT",
+                        "url": "https://huggingface.co/datasets/masakhane/mafand"
+                    },
+                    "BUKEDDE news"
+                ]
+            },
+            {
+                "split": [
+                    "luo"
+                ],
+                "annotation": {
+                    "annotator_count": "4+",
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.907,
+                            "MasakhaNER (all tokens)": 1,
+                            "MasakhaNER (annotated tokens)": 1
+                        }
+                    }
+                },
+                "data_sources": [
+                    {
+                        "source": "MAFAND-MT",
+                        "url": "https://huggingface.co/datasets/masakhane/mafand"
+                    },
+                    "Ramogi FM news"
+                ]
+            },
+            {
+                "split": [
+                    "mos"
+                ],
+                "annotation": {
+                    "annotator_count": 3,
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.927
+                        }
+                    }
+                },
+                "data_sources": [
+                    {
+                        "source": "MAFAND-MT",
+                        "url": "https://huggingface.co/datasets/masakhane/mafand"
+                    }
+                ]
+            },
+            {
+                "split": [
+                    "pcm"
+                ],
+                "annotation": {
+                    "annotator_count": "4+",
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.966,
+                            "MasakhaNER (all tokens)": 0.987,
+                            "MasakhaNER (annotated tokens)": 0.966
+                        }
+                    }
+                },
+                "data_sources": [
+                    {
+                        "source": "MAFAND-MT",
+                        "url": "https://huggingface.co/datasets/masakhane/mafand"
+                    },
+                    "BBC Pidgin"
+                ]
+            },
+            {
+                "split": [
+                    "ny"
+                ],
+                "annotation": {
+                    "annotator_count": 3,
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.988
+                        }
+                    }
+                },
+                "data_sources": [
+                    "Nation Online Malawi"
+                ]
+            },
+            {
+                "split": [
+                    "sn"
+                ],
+                "annotation": {
+                    "annotator_count": 3,
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.957
+                        }
+                    }
+                },
+                "data_sources": [
+                    "VOA Shona"
+                ]
+            },
+            {
+                "split": [
+                    "sw"
+                ],
+                "annotation": {
+                    "annotator_count": "4+",
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.974,
+                            "MasakhaNER (all tokens)": 1,
+                            "MasakhaNER (annotated tokens)": 1
+                        }
+                    }
+                },
+                "data_sources": [
+                    "VOA Swahili"
+                ]
+            },
+            {
+                "split": [
+                    "tn"
+                ],
+                "annotation": {
+                    "annotator_count": 3,
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.962
+                        }
+                    }
+                },
+                "data_sources": [
+                    {
+                        "source": "MAFAND-MT",
+                        "url": "https://huggingface.co/datasets/masakhane/mafand"
+                    }
+                ]
+            },
+            {
+                "split": [
+                    "tw"
+                ],
+                "annotation": {
+                    "annotator_count": 3,
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.932
+                        }
+                    }
+                },
+                "data_sources": [
+                    {
+                        "source": "MAFAND-MT",
+                        "url": "https://huggingface.co/datasets/masakhane/mafand"
+                    }
+                ]
+            },
+            {
+                "split": [
+                    "wo"
+                ],
+                "annotation": {
+                    "annotator_count": "4+",
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.979,
+                            "MasakhaNER (all tokens)": 1,
+                            "MasakhaNER (annotated tokens)": 1
+                        }
+                    }
+                },
+                "data_sources": [
+                    {
+                        "source": "MAFAND-MT",
+                        "url": "https://huggingface.co/datasets/masakhane/mafand"
+                    },
+                    "Lu Defu Waxu",
+                    "Saabal"
+                ]
+            },
+            {
+                "split": [
+                    "xh"
+                ],
+                "annotation": {
+                    "annotator_count": 3,
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.945
+                        }
+                    }
+                },
+                "data_sources": [
+                    "Isolezwe Newspaper"
+                ]
+            },
+            {
+                "split": [
+                    "yo"
+                ],
+                "annotation": {
+                    "annotator_count": "4+",
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.950,
+                            "MasakhaNER (all tokens)": 0.990,
+                            "MasakhaNER (annotated tokens)": 0.964
+                        }
+                    }
+                },
+                "data_sources": [
+                    "Global Voices",
+                    "Voice of Nigeria and Asejere"
+                ]
+            },
+            {
+                "split": [
+                    "zu"
+                ],
+                "annotation": {
+                    "annotator_count": 3,
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": {
+                            "MasakhaNER 2": 0.953
+                        }
+                    }
+                },
+                "data_sources": [
+                    "Isolezwe Newspaper"
+                ]
+            }
+        ]
+    }
+}

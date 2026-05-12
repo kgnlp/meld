@@ -1,0 +1,79 @@
+{
+    "TASTEset": {
+        "citekeys": [
+            "Wroblewska2022TASTEsetR"
+        ],
+        "note": "The entire dataset is treated as the test set since no explicit splits are specified. The original paper uses 5-fold cross-validation over the entire dataset",
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/taisti/TASTEset.git",
+                "revision": "80bb783f521023db9193a90202fa9339afc8f678",
+                "base_language": "eng",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "offset_csv",
+                            "arguments": {
+                                "text_column": "ingredients",
+                                "offsets_column": "ingredients_entities"
+                            }
+                        }
+                    }
+                ],
+                "subsets": {
+                    "__root__": {
+                        "test": [
+                            "data/TASTEset.csv"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "spans",
+            "tag_alignment": "offsets"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "MIT",
+                "document_boundaries": "full",
+                "sentence_boundaries": "none",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [],
+                    "agreement": null
+                },
+                "primary_domain": "food",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "recipes"
+                ],
+                "data_sources": [
+                    {
+                        "source": "Allrecipes",
+                        "url": "https://www.allrecipes.com/"
+                    },
+                    {
+                        "source": "Food.com",
+                        "url": "http://food.com/"
+                    },
+                    {
+                        "source": "Tasty",
+                        "url": "https://tasty.co/"
+                    },
+                    {
+                        "source": "Yummly",
+                        "url": "https://www.yummly.com/"
+                    }
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

@@ -1,0 +1,113 @@
+{
+    "JNLPBA": {
+        "citekeys": [
+            "collier-kim-2004-introduction"
+        ],
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "download",
+                        "urls": [
+                            {
+                                "url": "https://www.nactem.ac.uk/GENIA/current/Shared-tasks/JNLPBA/Train/Genia4ERtraining.tar.gz",
+                                "sha256": "425689a68128b4ebc4f6a968eb0d3123f54481945de14ff139265beee65119e9"
+                            },
+                            {
+                                "url": "https://www.nactem.ac.uk/GENIA/current/Shared-tasks/JNLPBA/Evaluation/Genia4ERtest.tar.gz",
+                                "sha256": "f85c3dad6890300ff312fab5e66253767cb2040bd780959b3bb830f03a4b6a12"
+                            }
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "Genia4ERtraining.tar.gz",
+                        "files": [
+                            "Genia4ERtask2.iob2"
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "Genia4ERtest.tar.gz",
+                        "files": [
+                            "Genia4EReval2.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "language": "eng",
+                        "train": [
+                            "Genia4ERtask2.iob2"
+                        ],
+                        "test": [
+                            "Genia4EReval2.iob2"
+                        ]
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll",
+                            "arguments": {
+                                "dialect": "conll_jnlpba"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "spans",
+            "tag_alignment": "offsets"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": {
+                    "text": "GENIA Project License",
+                    "annotations": "CC BY 3.0"
+                },
+                "document_boundaries": "full",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null
+                },
+                "primary_domain": "biomedical",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "molecular biology"
+                ],
+                "dataset_lineage": [
+                    "GENIA version 3.02"
+                ],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    ".train"
+                ],
+                "annotation": {
+                    "features": []
+                },
+                "data_sources": [
+                    "MEDLINE (from GENIA version 3.0)"
+                ]
+            },
+            {
+                "split": [
+                    ".test"
+                ],
+                "annotation": {
+                    "features": [
+                        "domain-experts:1"
+                    ]
+                },
+                "data_sources": [
+                    "MEDLINE ('human', 'blood cells' and 'transcription factors', newly annotated, from 1978--2001)"
+                ]
+            }
+        ]
+    }
+}

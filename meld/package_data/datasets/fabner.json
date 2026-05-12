@@ -1,0 +1,83 @@
+{
+    "FabNER": {
+        "citekeys": [
+            "Kumar2021FabNERIE"
+        ],
+        "use_shared_cache": "meld-archive",
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/kgnlp/meld-archive",
+                "revision": "fe5de00b12469737feefadf53e52c89b73899724",
+                "keep_repo": true,
+                "base_language": "eng",
+                "subsets": {
+                    "__root__": {
+                        "data_pipe": [
+                            {
+                                "step": "convert",
+                                "reader": {
+                                    "type": "conll",
+                                    "arguments": {
+                                        "delimiter": " ",
+                                        "bioes_to_bio": true
+                                    }
+                                }
+                            }
+                        ],
+                        "directory": "FabNER",
+                        "train": [
+                            "S2-train.txt"
+                        ],
+                        "validation": [
+                            "S3-val.txt"
+                        ],
+                        "test": [
+                            "S1-test.txt"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bioes"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY 4.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 4,
+                    "features": [
+                        "domain-experts"
+                    ],
+                    "agreement": {
+                        "metric": "annotation-discrepancy",
+                        "value": 0.0176
+                    }
+                },
+                "primary_domain": "science",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "manufacturing"
+                ],
+                "data_sources": [
+                    "Journal of Manufacturing Processes",
+                    "J. Manufacturing Systems",
+                    "Additive Manufacturing",
+                    "Rapid Prototyping",
+                    "Advanced Materials",
+                    "Int. Journal of Adv. Manufacturing Technology",
+                    "ASME J. Manufacturing Science",
+                    "Other manufacturing process science journals"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "FoNE": {
+        "citekeys": [
+            "snaebjarnarson-etal-2023-transfer"
+        ],
+        "note": "No dedicated train/test splits. Original paper used 10 fold cross-validation. Loads from auto-converted parquet branch.",
+        "source": {
+            "loader": "huggingface",
+            "arguments": {
+                "repo": "vesteinn/sosialurin-faroese-ner",
+                "revision": "93030f104afcf2ebca557d6072c564697e2d4aaa",
+                "base_language": "fao",
+                "text_column": "tokens",
+                "tag_column": "ner_tags",
+                "test_name": "train",
+                "data_pipe": [
+                    {
+                        "step": "columns",
+                        "tagsets": {
+                            "ner": {
+                                "label_map": {
+                                    "B-Date": 0,
+                                    "B-Location": 1,
+                                    "B-Miscellaneous": 2,
+                                    "B-Money": 3,
+                                    "B-Organization": 4,
+                                    "B-Percent": 5,
+                                    "B-Person": 6,
+                                    "B-Time": 7,
+                                    "I-Date": 8,
+                                    "I-Location": 9,
+                                    "I-Miscellaneous": 10,
+                                    "I-Money": 11,
+                                    "I-Organization": 12,
+                                    "I-Percent": 13,
+                                    "I-Person": 14,
+                                    "I-Time": 15,
+                                    "O": 16
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio",
+            "tag_format": "indices"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY 4.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [],
+                    "agreement": null
+                },
+                "primary_domain": "news",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    {
+                        "source": "Sosialurin corpus",
+                        "url": "https://huggingface.co/datasets/vesteinn/sosialurin-faroese-pos"
+                    }
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

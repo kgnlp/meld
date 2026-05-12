@@ -1,0 +1,221 @@
+{
+    "Naamapadam": {
+        "citekeys": [
+            "mhaske-etal-2023-naamapadam"
+        ],
+        "source": {
+            "loader": "huggingface",
+            "arguments": {
+                "repo": "ai4bharat/naamapadam",
+                "revision": "9d4f21ac57d11ed4f9ea64854fdc9f5618e61acc",
+                "trust_remote_code": true,
+                "language_from_subset_name": "(?P<language>\\w+)",
+                "text_column": "tokens",
+                "tag_column": "ner_tags",
+                "train_name": "train",
+                "validation_name": "validation",
+                "test_name": "test",
+                "data_pipe": [
+                    {
+                        "step": "columns",
+                        "tagsets": {
+                            "ner": {
+                                "label_map": {
+                                    "O": 0,
+                                    "B-PER": 1,
+                                    "I-PER": 2,
+                                    "B-ORG": 3,
+                                    "I-ORG": 4,
+                                    "B-LOC": 5,
+                                    "I-LOC": 6
+                                }
+                            }
+                        },
+                        "filter_empty_documents": true
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC 0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": null,
+                "primary_domain": "general",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "news",
+                    "wikipedia",
+                    "general"
+                ],
+                "data_sources": [
+                    {
+                        "source": "Samanantar parallel corpus",
+                        "url": "https://huggingface.co/datasets/ai4bharat/samanantar"
+                    }
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": "CoNLL 2003"
+            },
+            {
+                "split": [
+                    "*.test"
+                ],
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [],
+                    "agreement": null
+                }
+            },
+            {
+                "split": [
+                    "*.validation",
+                    "*.train",
+                    "as.test",
+                    "or.test"
+                ],
+                "annotation": {
+                    "type": "silver-standard",
+                    "annotator_count": 0,
+                    "features": [
+                        "automatically-extracted"
+                    ],
+                    "agreement": null
+                }
+            },
+            {
+                "split": [
+                    "bn.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "cohens-kappa",
+                        "value": {
+                            "all tokens": 0.8506,
+                            "annotated tokens": 0.7033
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "gu.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "cohens_kappa",
+                        "value": {
+                            "all tokens": 0.7965,
+                            "annotated tokens": 0.6169
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "hi.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "cohens_kappa",
+                        "value": {
+                            "all tokens": 0.9536,
+                            "annotated tokens": 0.8996
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "kn.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "cohens_kappa",
+                        "value": {
+                            "all tokens": 0.9217,
+                            "annotated tokens": 0.8452
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "ml.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "cohens_kappa",
+                        "value": {
+                            "all tokens": 0.9006,
+                            "annotated tokens": 0.8156
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "mr.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "cohens_kappa",
+                        "value": {
+                            "all tokens": 0.9037,
+                            "annotated tokens": 0.8047
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "pa.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "cohens_kappa",
+                        "value": {
+                            "all tokens": 0.6948,
+                            "annotated tokens": 0.4605
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "ta.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "cohens_kappa",
+                        "value": {
+                            "all tokens": 0.7176,
+                            "annotated tokens": 0.5209
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "te.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "cohens_kappa",
+                        "value": {
+                            "all tokens": 0.8888,
+                            "annotated tokens": 0.7850
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

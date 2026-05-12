@@ -1,0 +1,125 @@
+{
+    "BC5CDR": {
+        "citekeys": [
+            "Li2016BioCreativeVC"
+        ],
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "download",
+                        "urls": [
+                            {
+                                "url": "https://ftp.ncbi.nlm.nih.gov/pub/lu/BC5CDR/CDR_Data.zip",
+                                "sha256": "0a359a7f038d283a7b05b084fa73de014e7410e1f5d7034bf3fd01f016fc2444"
+                            }
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "CDR_Data.zip",
+                        "files": [
+                            "CDR_Data/CDR.Corpus.v010516/CDR_TrainingSet.BioC.xml",
+                            "CDR_Data/CDR.Corpus.v010516/CDR_DevelopmentSet.BioC.xml",
+                            "CDR_Data/CDR.Corpus.v010516/CDR_TestSet.BioC.xml"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "language": "eng",
+                        "train": [
+                            "CDR_Data/CDR.Corpus.v010516/CDR_TrainingSet.BioC.xml"
+                        ],
+                        "validation": [
+                            "CDR_Data/CDR.Corpus.v010516/CDR_DevelopmentSet.BioC.xml"
+                        ],
+                        "test": [
+                            "CDR_Data/CDR.Corpus.v010516/CDR_TestSet.BioC.xml"
+                        ]
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "bioc_xml"
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "discontinuous_spans",
+            "tag_alignment": "offsets"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Public Domain",
+                "document_boundaries": "full",
+                "sentence_boundaries": "sections",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 4,
+                    "features": [
+                        "annotators-each:2"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "biomedical",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "chemical-disease relations"
+                ],
+                "data_sources": [
+                    "CTD-Pfizer corpus",
+                    "PubMed"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    ".train"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "jaccard-score",
+                        "value": {
+                            "Disease": "0.8600",
+                            "Chemical": "0.9523"
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    ".validation"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "jaccard-score",
+                        "value": {
+                            "Disease": "0.8742",
+                            "Chemical": "0.9577"
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    ".test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "jaccard-score",
+                        "value": {
+                            "Disease": "0.8875",
+                            "Chemical": "0.9630"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

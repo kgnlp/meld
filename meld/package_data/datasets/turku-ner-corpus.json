@@ -1,0 +1,82 @@
+{
+    "Turku-NER-corpus": {
+        "citekeys": [
+            "luoma-etal-2020-broad"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/TurkuNLP/turku-ner-corpus.git",
+                "revision": "41856819d45580f1c4ce7100e75ea6b859fb75dc",
+                "base_language": "fin",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll",
+                            "arguments": {
+                                "dialect": "conll2003_two_column"
+                            }
+                        }
+                    }
+                ],
+                "subsets": {
+                    "__root__": {
+                        "directory": "data/conll",
+                        "train": [
+                            "train.tsv"
+                        ],
+                        "validation": [
+                            "dev.tsv"
+                        ],
+                        "test": [
+                            "test.tsv"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY-SA 4.0",
+                "document_boundaries": "full",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 14,
+                    "features": [],
+                    "agreement": {
+                        "metric": "f-score",
+                        "value": {
+                            "PER": 0.9855,
+                            "DATE": 0.9825,
+                            "LOC": 0.9465,
+                            "ORG": 0.9144,
+                            "PRO": 0.8219,
+                            "EVENT": 0.6667
+                        }
+                    }
+                },
+                "primary_domain": "general",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "wikipedia",
+                    "news",
+                    "speeches",
+                    "literature",
+                    "EU legislation"
+                ],
+                "data_sources": [
+                    "Turku Dependency Treebank (TDT) corpus (Universal Dependencies version)"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": "FiNER"
+            }
+        ]
+    }
+}

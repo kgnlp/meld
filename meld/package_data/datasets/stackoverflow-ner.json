@@ -1,0 +1,113 @@
+{
+    "StackOverflowNER": {
+        "note": "Processing was chosen to match the reference implementation without combining or removing tags to maintain the original annotation. Code blocks have been removed before annotation in the StackOvervflow subset",
+        "citekeys": [
+            "tabassum-etal-2020-code"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/jeniyat/StackOverflowNER.git",
+                "revision": "d1f408d235fcfbb268f028ef53162398ecb8a328",
+                "base_language": "eng",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll",
+                            "arguments": {
+                                "dialect": "conll_stackoverflow_ner",
+                                "preprocessor": "stackoverflow_ner"
+                            }
+                        }
+                    }
+                ],
+                "subsets": {
+                    "stackoverflow": {
+                        "directory": "resources/annotated_ner_data/StackOverflow",
+                        "train": [
+                            "train.txt"
+                        ],
+                        "validation": [
+                            "dev.txt"
+                        ],
+                        "test": [
+                            "test.txt"
+                        ]
+                    },
+                    "github": {
+                        "directory": "resources/annotated_ner_data/GitHub",
+                        "test": [
+                            "GH_test_set.txt"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "MIT",
+                "document_boundaries": "full",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 5,
+                    "features": [
+                        "domain-experts"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "software",
+                "data_sources": [],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    "stackoverflow"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "cohens-kappa",
+                        "value": 0.62
+                    }
+                },
+                "other_domains": [],
+                "finegrained_domains": [
+                    "QA"
+                ],
+                "data_sources": [
+                    "StackOverflow 10-year archive (September 2008--March 2018)"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    "github"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "cohens-kappa",
+                        "value": 0.68
+                    }
+                },
+                "other_domains": [],
+                "finegrained_domains": [
+                    "issue reports",
+                    "documentation"
+                ],
+                "data_sources": [
+                    "GitHub dump (Issue reports, READMEs)"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

@@ -1,0 +1,94 @@
+{
+    "LegalNERo": {
+        "note": "Uses Version 4 of LegalNERo with fine-grained entity annotations introduced in this version",
+        "citekeys": [
+            "pais-etal-2021-named"
+        ],
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "download",
+                        "urls": [
+                            {
+                                "url": "https://zenodo.org/records/7025333/files/legalnero.zip?download=1",
+                                "sha256": "31d731e44e4d4bc96576a1ea7ba85b3d22316e85ca5e47dd3da62444cd5500b8"
+                            }
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "legalnero.zip",
+                        "files": [
+                            "ann_FGLEGAL_PER_LOC_ORG_TIME_overlap/*.ann",
+                            "text/*.txt",
+                            "splits_FGLEGAL_PER_LOC_ORG_TIME.tsv"
+                        ],
+                        "use_globs": true
+                    },
+                    {
+                        "step": "read_splits",
+                        "language": "ron",
+                        "split_files": "splits_FGLEGAL_PER_LOC_ORG_TIME.tsv",
+                        "splits_reader": "legalnero_standoff_split_columns",
+                        "directories": {
+                            "text": "text",
+                            "annotations": "ann_FGLEGAL_PER_LOC_ORG_TIME_overlap"
+                        },
+                        "split_name_map": {
+                            "train": "train",
+                            "test": "test",
+                            "valid": "validation"
+                        }
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "standoff",
+                            "arguments": {
+                                "offsets_without_newlines": true
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "spans"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY-NC-ND 4.0",
+                "document_boundaries": "full",
+                "sentence_boundaries": "none",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 5,
+                    "features": [
+                        "expert-guided"
+                    ],
+                    "agreement": {
+                        "metric": "cohens-kappa",
+                        "value": 0.89
+                    }
+                },
+                "primary_domain": "law",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "national legislation"
+                ],
+                "data_sources": [
+                    {
+                        "source": "MARCELL-RO",
+                        "url": "https://marcell-project.eu/deliverables.html"
+                    }
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

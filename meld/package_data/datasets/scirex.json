@@ -1,0 +1,89 @@
+{
+    "SciREX": {
+        "citekeys": [
+            "jain-etal-2020-scirex"
+        ],
+        "note": "Some entity annotations span multiple sentences, in which case sentences are merged until the entity spans fit. Contains an extra \"sections\" layer between sentence and document level that is currently not extracted",
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/allenai/SciREX.git",
+                        "revision": "7daad660fe94f504433590b7a781cfabe1e179c6",
+                        "files": [
+                            "scirex_dataset/release_data.tar.gz"
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "scirex_dataset/release_data.tar.gz",
+                        "files": [
+                            "release_data/train.jsonl",
+                            "release_data/dev.jsonl",
+                            "release_data/test.jsonl"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "language": "eng",
+                        "directory": "release_data",
+                        "train": [
+                            "train.jsonl"
+                        ],
+                        "validation": [
+                            "dev.jsonl"
+                        ],
+                        "test": [
+                            "test.jsonl"
+                        ]
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "scirex_jsonl"
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "spans"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Apache 2.0",
+                "document_boundaries": "full",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 5,
+                    "features": [
+                        "domain-experts",
+                        "lead-annotator:1"
+                    ],
+                    "agreement": {
+                        "metric": "cohens-kappa",
+                        "value": 0.95
+                    }
+                },
+                "primary_domain": "science",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "AI"
+                ],
+                "data_sources": [
+                    {
+                        "source": "Papers with Code",
+                        "url": "https://github.com/paperswithcode/paperswithcode-data"
+                    }
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

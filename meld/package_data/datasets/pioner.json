@@ -1,0 +1,106 @@
+{
+    "pioNER": {
+        "citekeys": [
+            "Ghukasyan2018pioNERDA"
+        ],
+        "note": "Train and validation splits were automatically extracted from Wikipedia. The test set was manually annotated from news articles",
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/ispras-texterra/pioner.git",
+                "revision": "30605e97bb3af427b93ae09809995c08cbc3df43",
+                "base_language": "hye",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll",
+                            "arguments": {
+                                "dialect": "conll2003_pioner",
+                                "delimiter": " ",
+                                "preprocessor": "pioner"
+                            }
+                        }
+                    }
+                ],
+                "subsets": {
+                    "__root__": {
+                        "train": [
+                            "pioner-silver/train.conll03"
+                        ],
+                        "validation": [
+                            "pioner-silver/dev.conll03"
+                        ],
+                        "test": [
+                            "pioner-gold/test.conll03"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Apache 2.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full"
+            },
+            {
+                "split": [
+                    ".train",
+                    ".validation"
+                ],
+                "annotation": {
+                    "type": "silver-standard",
+                    "annotator_count": 0,
+                    "features": [
+                        "automatically-extracted"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "wikipedia",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    "Armenian Wikipedia"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    ".test"
+                ],
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [],
+                    "agreement": null
+                },
+                "primary_domain": "news",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "politics",
+                    "sports",
+                    "society",
+                    "official",
+                    "opinion piece",
+                    "art",
+                    "general"
+                ],
+                "data_sources": [
+                    {
+                        "source": "ilur.am",
+                        "url": "https://www.ilur.am/news/newsline.html"
+                    }
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

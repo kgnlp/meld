@@ -1,0 +1,99 @@
+{
+    "Herodotos-Project-NER": {
+        "note": "Preserves in-domain/out-of-domain folds as subsets, where the Gallic Wars is the in-domain training data",
+        "citekeys": [
+            "erdmann-etal-2019-practical"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/Herodotos-Project/Herodotos-Project-Latin-NER-Tagger-Annotation.git",
+                "revision": "229547aa0f64e6c13fdf6fe49f99383c0a243ea4",
+                "base_language": "lat",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll",
+                            "arguments": {
+                                "dialect": "conll_herodotos"
+                            }
+                        }
+                    }
+                ],
+                "subsets": {
+                    "civil_wars": {
+                        "directory": "Annotation_1-1-19",
+                        "test": [
+                            "CW.crf"
+                        ]
+                    },
+                    "gallic_wars": {
+                        "directory": "Annotation_1-1-19",
+                        "train": [
+                            "GWtrain.crf"
+                        ],
+                        "test": [
+                            "GWtest.crf"
+                        ]
+                    },
+                    "ovid": {
+                        "directory": "Annotation_1-1-19",
+                        "test": [
+                            "Ovid.crf"
+                        ]
+                    },
+                    "pliny_the_elder": {
+                        "directory": "Annotation_1-1-19",
+                        "test": [
+                            "PlinyElder.crf"
+                        ]
+                    },
+                    "pliny_the_younger": {
+                        "directory": "Annotation_1-1-19",
+                        "test": [
+                            "PlinyYounger.crf"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "AGPL-3.0 license",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 3,
+                    "features": [
+                        "domain-experts"
+                    ],
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": 0.959
+                    }
+                },
+                "primary_domain": "literature",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "non-fiction",
+                    "epistolary",
+                    "poetry"
+                ],
+                "data_sources": [
+                    "De Bello Gallico",
+                    "Epistulae",
+                    "Ars Amatoria"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

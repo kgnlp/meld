@@ -1,0 +1,85 @@
+{
+    "TurkuONE": {
+        "citekeys": [
+            "luoma-etal-2021-fine"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/TurkuNLP/turku-one.git",
+                "revision": "6df48238c521c6e4618b3c117412fb56d0ccbf58",
+                "base_language": "fin",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll"
+                        }
+                    }
+                ],
+                "subsets": {
+                    "__root__": {
+                        "directory": "data/conll",
+                        "train": [
+                            "train.tsv"
+                        ],
+                        "validation": [
+                            "dev.tsv"
+                        ],
+                        "test": [
+                            "test.tsv"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": {
+                    "annotations": "CC BY-SA 4.0",
+                    "text": {
+                        "Digitoday": "CC BY-ND-NC 1.0",
+                        "Wikipedia": "CC BY-SA 3.0",
+                        "other": "CC BY-SA 4.0"
+                    }
+                },
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 1,
+                    "features": [],
+                    "agreement": null
+                },
+                "primary_domain": "general",
+                "other_domains": [
+                    "wikipedia",
+                    "news",
+                    "speeches",
+                    "literature",
+                    "EU legislation",
+                    "Finnish legislation"
+                ],
+                "finegrained_domains": [],
+                "data_sources": [
+                    "FiNER data",
+                    "Turku NER Corpus data",
+                    {
+                        "source": "Finnish Acts of Parliament (60 acts and decrees)",
+                        "url": "https://finlex.fi/fi/laki"
+                    }
+                ],
+                "dataset_lineage": [
+                    "FiNER",
+                    "Turku NER Corpus"
+                ],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

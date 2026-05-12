@@ -1,0 +1,52 @@
+{
+    "Japanese-Wikipedia": {
+        "citekeys": [
+            "omi2021wikipedia"
+        ],
+        "source": {
+            "loader": "huggingface",
+            "arguments": {
+                "repo": "stockmark/ner-wikipedia-dataset",
+                "revision": "d6c4d4821885ed656b9fbc7b2283dc7d165916d1",
+                "base_language": "jpn",
+                "text_column": "text",
+                "tag_column": "entities",
+                "test_name": "train",
+                "data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "dataset_spans"
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "spans"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY-SA 3.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [],
+                    "agreement": null
+                },
+                "primary_domain": "wikipedia",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    "Japanese Wikipedia"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

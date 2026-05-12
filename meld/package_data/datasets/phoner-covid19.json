@@ -1,0 +1,88 @@
+{
+    "PhoNER-COVID19": {
+        "citekeys": [
+            "PhoNER_COVID19"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/VinAIResearch/PhoNER_COVID19.git",
+                "revision": "9af190aa76adcfad0a2d14fab9bcab2b252c9c2e",
+                "base_language": "vie",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll",
+                            "arguments": {
+                                "delimiter": " "
+                            }
+                        }
+                    }
+                ],
+                "subsets": {
+                    "__root__": {
+                        "directory": "data/syllable",
+                        "train": [
+                            "train_syllable.conll"
+                        ],
+                        "validation": [
+                            "dev_syllable.conll"
+                        ],
+                        "test": [
+                            "test_syllable.conll"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Research Only",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 12,
+                    "features": [],
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": 0.92
+                    }
+                },
+                "primary_domain": "news",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "disease",
+                    "covid"
+                ],
+                "data_sources": [
+                    {
+                        "source": "VnExpress",
+                        "url": "https://vnexpress.net"
+                    },
+                    {
+                        "source": "ZingNews",
+                        "url": "https://zingnews.vn"
+                    },
+                    {
+                        "source": "BaoMoi",
+                        "url": "https://baomoi.com"
+                    },
+                    {
+                        "source": "ThanhNien",
+                        "url": "https://thanhnien.vn"
+                    },
+                    "Other Vietnamese online news sites"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

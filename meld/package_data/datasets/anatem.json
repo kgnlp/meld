@@ -1,0 +1,90 @@
+{
+    "AnatEM": {
+        "citekeys": [
+            "10.1093/bioinformatics/btt580"
+        ],
+        "note": "Contains lists of documents in the cancer and general domain.",
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "download",
+                        "urls": [
+                            {
+                                "url": "https://www.nactem.ac.uk/anatomytagger/AnatEM-1.0.2.tar.gz",
+                                "sha256": "2862d5ec147d9578b75a4eacbbffb9e126e7a1c271ac55cd8ab0eec05877127b"
+                            }
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "AnatEM-1.0.2.tar.gz",
+                        "files": [
+                            "AnatEM-1.0.2/nersuite/train/[!.]*.nersuite",
+                            "AnatEM-1.0.2/nersuite/devel/[!.]*.nersuite",
+                            "AnatEM-1.0.2/nersuite/test/[!.]*.nersuite"
+                        ],
+                        "use_globs": true
+                    },
+                    {
+                        "step": "splits",
+                        "language": "eng",
+                        "train": [
+                            "AnatEM-1.0.2/nersuite/train/*.nersuite"
+                        ],
+                        "validation": [
+                            "AnatEM-1.0.2/nersuite/devel/*.nersuite"
+                        ],
+                        "test": [
+                            "AnatEM-1.0.2/nersuite/test/*.nersuite"
+                        ]
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll",
+                            "arguments": {
+                                "dialect": "ner_suite",
+                                "shards_are_documents": true
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "text_alignment": "offsets",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY-SA 3.0",
+                "document_boundaries": "full",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [],
+                    "agreement": null
+                },
+                "primary_domain": "biomedical",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "anatomical"
+                ],
+                "data_sources": [
+                    "PubMed"
+                ],
+                "dataset_lineage": [
+                    "AnEM",
+                    "Multi-Level Event Extraction (MLEE)",
+                    "New data"
+                ],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

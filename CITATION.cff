@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: If you use our work, please cite the article from preferred-citation.
+authors:
+  - given-names: Kevin
+    family-names: Glocker
+    orcid: https://orcid.org/0009-0001-9364-0298
+  - given-names: Marco
+    family-names: Kuhlmann
+    orcid: https://orcid.org/0000-0002-2492-9872
+title: 'MELD'
+version: 1.0.0
+url: https://github.com/kgnlp/meld
+license: MIT
+date-released: '2026-05-13'
+preferred-citation:
+  authors:
+    - given-names: Kevin
+      family-names: Glocker
+      orcid: https://orcid.org/0009-0001-9364-0298
+    - given-names: Marco
+      family-names: Kuhlmann
+      orcid: https://orcid.org/0000-0002-2492-9872
+  title: 'MELD: Melding Diverse Multilingual and Multi-Domain Datasets for Named Entity Recognition Evaluation'
+  doi: 10.63317/32qrd24xac2e
+  type: conference-paper
+  start: 1889
+  end: 1903
+  year: 2026
+  collection-title: "Proceedings of the Fifteenth Language Resources and Evaluation Conference (LREC 2026)"
+  publisher:
+    name: European Language Resources Association (ELRA)
+    address: Palma, Mallorca, Spain

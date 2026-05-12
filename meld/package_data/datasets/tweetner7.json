@@ -1,0 +1,82 @@
+{
+    "TweetNER7": {
+        "citekeys": [
+            "ushio-etal-2022-tweet"
+        ],
+        "note": "Licensing terms stated by author: https://huggingface.co/datasets/tner/tweetner7/discussions/1#66155d2e348ce7858b365077",
+        "source": {
+            "loader": "huggingface",
+            "arguments": {
+                "repo": "tner/tweetner7",
+                "revision": "9d9c27f1d4fb18a02e0d8283bac6ebb01c56c458",
+                "trust_remote_code": true,
+                "base_language": "eng",
+                "text_column": "tokens",
+                "tag_column": "tags",
+                "train_name": "train",
+                "validation_name": "validation",
+                "test_name": "test",
+                "split_naming_pattern": "(?P<split>[^_]+)_(?P<year>.+)",
+                "data_pipe": [
+                    {
+                        "step": "columns",
+                        "tagsets": {
+                            "ner": {
+                                "label_map": {
+                                    "B-corporation": 0,
+                                    "B-creative_work": 1,
+                                    "B-event": 2,
+                                    "B-group": 3,
+                                    "B-location": 4,
+                                    "B-person": 5,
+                                    "B-product": 6,
+                                    "I-corporation": 7,
+                                    "I-creative_work": 8,
+                                    "I-event": 9,
+                                    "I-group": 10,
+                                    "I-location": 11,
+                                    "I-person": 12,
+                                    "I-product": 13,
+                                    "O": 14
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "text_properties": [
+                "anonymized"
+            ],
+            "tags": "bio",
+            "tag_format": "indices"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Non-commercial",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "crowd-sourced",
+                        "annotators-each:3"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "social media",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    "Twitter (September 2019--August 2021)"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

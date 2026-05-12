@@ -1,0 +1,110 @@
+{
+    "NCBI-Disease": {
+        "citekeys": [
+            "DOGAN20141"
+        ],
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "download",
+                        "urls": [
+                            {
+                                "url": "https://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/NCBItrainset_corpus.zip",
+                                "sha256": "26157233d70aeda0b2ac1dda4fc9369b0717bd888f5afe511d0c1c6a5ad307a0"
+                            },
+                            {
+                                "url": "https://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/NCBIdevelopset_corpus.zip",
+                                "sha256": "61681ad09356619c8f4f3e1738663dd007ad0135720fdc90195120fea944cbe9"
+                            },
+                            {
+                                "url": "https://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/NCBItestset_corpus.zip",
+                                "sha256": "b978442f39c739deb6619c70e7b07327d9eb1b71aff64996c02a592435583f46"
+                            }
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "NCBItrainset_corpus.zip",
+                        "files": [
+                            "NCBItrainset_corpus.txt"
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "NCBIdevelopset_corpus.zip",
+                        "files": [
+                            "NCBIdevelopset_corpus.txt"
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "NCBItestset_corpus.zip",
+                        "files": [
+                            "NCBItestset_corpus.txt"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "language": "eng",
+                        "train": [
+                            "NCBItrainset_corpus.txt"
+                        ],
+                        "validation": [
+                            "NCBIdevelopset_corpus.txt"
+                        ],
+                        "test": [
+                            "NCBItestset_corpus.txt"
+                        ]
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "pubtator"
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "spans",
+            "tag_alignment": "offsets"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Public Domain",
+                "document_boundaries": "full",
+                "sentence_boundaries": "sections",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 16,
+                    "features": [
+                        "annotators-each:2+",
+                        "domain-experts",
+                        "author-verified"
+                    ],
+                    "agreement": {
+                        "metric": "average-f-score",
+                        "value": 0.88
+                    }
+                },
+                "primary_domain": "biomedical",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "disease"
+                ],
+                "data_sources": [
+                    "PubMed"
+                ],
+                "dataset_lineage": [
+                    "Jimeno et al., 2008 disease NER corpus",
+                    "Leaman et al., 2009 disease NER corpus"
+                ],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

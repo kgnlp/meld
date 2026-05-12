@@ -1,0 +1,194 @@
+{
+    "SoMeSci": {
+        "citekeys": [
+            "schindler2021somesci",
+            "schindler2024multilevel"
+        ],
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/dave-s477/SoMeSci.git",
+                        "revision": "75b7d9d924f2a108c2baaefe677829e3a8879afa",
+                        "files": [
+                            "PLoS_methods/*.ann",
+                            "PLoS_methods/*.txt",
+                            "PLoS_sentences/*.ann",
+                            "PLoS_sentences/*.txt",
+                            "Pubmed_fulltext/*.ann",
+                            "Pubmed_fulltext/*.txt",
+                            "Creation_sentences/*.ann",
+                            "Creation_sentences/*.txt",
+                            "Formal_Citation/data_accurracy_annotation/*.ann",
+                            "Formal_Citation/data_accurracy_annotation/*.txt",
+                            "train_devel_test_split.json"
+                        ]
+                    },
+                    {
+                        "step": "read_splits",
+                        "language": "eng",
+                        "subset": "plos_methods",
+                        "directories": "PLoS_methods",
+                        "splits_reader": "somesci_standoff_split_json",
+                        "split_files": "train_devel_test_split.json",
+                        "split_name_map": {
+                            "train": "train",
+                            "devel": "validation",
+                            "test": "test"
+                        }
+                    },
+                    {
+                        "step": "read_splits",
+                        "language": "eng",
+                        "subset": "plos_sentences",
+                        "directories": "PLoS_sentences",
+                        "splits_reader": "somesci_standoff_split_json",
+                        "split_files": "train_devel_test_split.json",
+                        "split_name_map": {
+                            "train": "train",
+                            "devel": "validation",
+                            "test": "test"
+                        }
+                    },
+                    {
+                        "step": "read_splits",
+                        "language": "eng",
+                        "subset": "pubmed_fulltext",
+                        "directories": "Pubmed_fulltext",
+                        "splits_reader": "somesci_standoff_split_json",
+                        "split_files": "train_devel_test_split.json",
+                        "split_name_map": {
+                            "train": "train",
+                            "devel": "validation",
+                            "test": "test"
+                        }
+                    },
+                    {
+                        "step": "read_splits",
+                        "language": "eng",
+                        "subset": "creation_sentences",
+                        "directories": "Creation_sentences",
+                        "splits_reader": "somesci_standoff_split_json",
+                        "split_files": "train_devel_test_split.json",
+                        "split_name_map": {
+                            "train": "train",
+                            "devel": "validation",
+                            "test": "test"
+                        }
+                    },
+                    {
+                        "step": "splits",
+                        "language": "eng",
+                        "subset": "formal_citations",
+                        "directory": "Formal_Citation/data_accurracy_annotation",
+                        "test": [
+                            {
+                                "annotations": [
+                                    "*.ann"
+                                ],
+                                "text": [
+                                    "*.txt"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "standoff"
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "spans"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY 4.0",
+                "document_boundaries": "full",
+                "sentence_boundaries": "none",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 2,
+                    "features": [
+                        "domain-experts",
+                        "author-annotated",
+                        "annotators-each:2"
+                    ],
+                    "agreement": [
+                        {
+                            "metric": "cohens-kappa",
+                            "value": {
+                                "Software": 0.82,
+                                "Mention": 0.79
+                            }
+                        },
+                        {
+                            "metric": "f-score",
+                            "value": {
+                                "Application": 0.94,
+                                "Usage": 0.95,
+                                "Plugin": 0.72,
+                                "Allusion": 0.84,
+                                "OS": 1.00,
+                                "Creation": 1.00,
+                                "PE": 1.00
+                            }
+                        }
+                    ]
+                },
+                "primary_domain": "science",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "STEM",
+                    "general"
+                ],
+                "data_sources": [
+                    "PubMed Central Open Access"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    "plos_methods",
+                    "plos_sentences"
+                ],
+                "dataset_lineage": [
+                    "SoSciSoCi"
+                ],
+                "data_sources": [
+                    "PubMed Central Open Access (PLoS journal articles)"
+                ]
+            },
+            {
+                "split": [
+                    "creation_sentences"
+                ],
+                "finegrained_domains": [
+                    "software"
+                ],
+                "data_sources": [
+                    "PubMed Central Open Access (Software creation statements)"
+                ]
+            },
+            {
+                "split": [
+                    "formal_citations"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "cohens-kappa",
+                        "value": 0.76
+                    }
+                }
+            }
+        ]
+    }
+}

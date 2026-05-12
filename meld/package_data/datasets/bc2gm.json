@@ -1,0 +1,71 @@
+{
+    "BC2GM": {
+        "citekeys": [
+            "Smith2008OverviewOB"
+        ],
+        "use_shared_cache": "MTL-Bioinformatics",
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/cambridgeltl/MTL-Bioinformatics-2016.git",
+                "revision": "df0df02fae6dbb87d88ffcf323b9096528f06f84",
+                "keep_repo": true,
+                "base_language": "eng",
+                "subsets": {
+                    "__root__": {
+                        "data_pipe": [
+                            {
+                                "step": "convert",
+                                "reader": {
+                                    "type": "conll"
+                                }
+                            }
+                        ],
+                        "directory": "data/BC2GM-IOB",
+                        "train": [
+                            "train.tsv"
+                        ],
+                        "validation": [
+                            "devel.tsv"
+                        ],
+                        "test": [
+                            "test.tsv"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY 4.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "domain-experts"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "biomedical",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "genetic"
+                ],
+                "data_sources": [
+                    "MEDLINE"
+                ],
+                "dataset_lineage": [
+                    "GENETAG->BC1GM"
+                ],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

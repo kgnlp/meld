@@ -1,0 +1,227 @@
+{
+    "NYTK-NerKor": {
+        "citekeys": [
+            "DBLP:conf/tsd/SimonV21"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/nytud/NYTK-NerKor.git",
+                "revision": "7c9c5b5f1f3ec7f94e724e0b92f3afa8eb262d00",
+                "base_language": "hun",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll",
+                            "arguments": {
+                                "dialect": "conllu_plus",
+                                "preprocessor": "nytk_nerkor"
+                            }
+                        }
+                    }
+                ],
+                "subsets": {
+                    "fiction": {
+                        "directory": "data",
+                        "train": [
+                            "train/fiction/*.conllup"
+                        ],
+                        "validation": [
+                            "devel/fiction/*.conllup"
+                        ],
+                        "test": [
+                            "test/fiction/*.conllup"
+                        ]
+                    },
+                    "legal": {
+                        "directory": "data",
+                        "train": [
+                            "train/legal/*.conllup"
+                        ],
+                        "validation": [
+                            "devel/legal/*.conllup"
+                        ],
+                        "test": [
+                            "test/legal/*.conllup"
+                        ]
+                    },
+                    "news": {
+                        "directory": "data",
+                        "train": [
+                            "train/news/*.conllup"
+                        ],
+                        "validation": [
+                            "devel/news/*.conllup"
+                        ],
+                        "test": [
+                            "test/news/*.conllup"
+                        ]
+                    },
+                    "web": {
+                        "directory": "data",
+                        "train": [
+                            "train/web/*.conllup"
+                        ],
+                        "validation": [
+                            "devel/web/*.conllup"
+                        ],
+                        "test": [
+                            "test/web/*.conllup"
+                        ]
+                    },
+                    "wikipedia": {
+                        "directory": "data",
+                        "train": [
+                            "train/wikipedia/*.conllup"
+                        ],
+                        "validation": [
+                            "devel/wikipedia/*.conllup"
+                        ],
+                        "test": [
+                            "test/wikipedia/*.conllup"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY-SA 4.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 11,
+                    "features": [
+                        "annotators-each:2"
+                    ],
+                    "agreement": [
+                        {
+                            "metric": "annotator-pairs-f-measure",
+                            "value": {
+                                "LOC": 0.9086,
+                                "MISC": 0.7169,
+                                "ORG": 0.8524,
+                                "PER": 0.9316
+                            }
+                        },
+                        {
+                            "metric": "with-curated-f-measure",
+                            "value": {
+                                "LOC": 0.942,
+                                "MISC": 0.8047,
+                                "ORG": 0.9066,
+                                "PER": 0.9576
+                            }
+                        }
+                    ]
+                },
+                "label_set_standard": "CoNLL 2002"
+            },
+            {
+                "split": [
+                    "fiction"
+                ],
+                "primary_domain": "literature",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "novels",
+                    "movie subtitles"
+                ],
+                "data_sources": [
+                    {
+                        "source": "Hungarian Electronic Library",
+                        "url": "http://mek.oszk.hu/indexeng.phtml"
+                    },
+                    {
+                        "source": "Project Gutenberg",
+                        "url": "https://www.gutenberg.org/"
+                    },
+                    {
+                        "source": "OpenSubtitles (2018)",
+                        "url": "https://opus.nlpl.eu/index.php"
+                    }
+                ],
+                "dataset_lineage": []
+            },
+            {
+                "split": [
+                    "legal"
+                ],
+                "primary_domain": "law",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "EU legislation"
+                ],
+                "data_sources": [
+                    {
+                        "source": "EU Constitution (2004)",
+                        "url": "https://opus.nlpl.eu/index.php"
+                    },
+                    {
+                        "source": "European Economic and Social Committee documents (2017)",
+                        "url": "https://opus.nlpl.eu/index.php"
+                    },
+                    "JRC-Acquis (>2000)",
+                    "DGT-Acquis (2004)"
+                ],
+                "dataset_lineage": []
+            },
+            {
+                "split": [
+                    "news"
+                ],
+                "primary_domain": "news",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    {
+                        "source": "Press Release Database of the European Commission (2016)",
+                        "url": "https://opus.nlpl.eu/index.php"
+                    },
+                    {
+                        "source": "Global Voices (Hungarian, 2010--2017)",
+                        "url": "https://opus.nlpl.eu/index.php"
+                    },
+                    "NewsCrawl (2019)"
+                ],
+                "dataset_lineage": []
+            },
+            {
+                "split": [
+                    "web"
+                ],
+                "primary_domain": "general",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "web"
+                ],
+                "data_sources": [
+                    "Hungarian Webcorpus 2.0 (2017--2019)"
+                ],
+                "dataset_lineage": []
+            },
+            {
+                "split": [
+                    "wikipedia"
+                ],
+                "primary_domain": "wikipedia",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    "Hungarian Wikipedia"
+                ],
+                "dataset_lineage": [
+                    "hunNER",
+                    "New data"
+                ]
+            }
+        ]
+    }
+}

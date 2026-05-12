@@ -1,0 +1,177 @@
+{
+    "Polyglot-NER": {
+        "citekeys": [
+            "polyglotner"
+        ],
+        "source": {
+            "loader": "huggingface",
+            "arguments": {
+                "repo": "rmyeid/polyglot_ner",
+                "revision": "791a91ba3f2f4e4e1933321a6b08950310e57970",
+                "text_column": "words",
+                "tag_column": "ner",
+                "language_column": "lang",
+                "train_name": "train",
+                "data_files": {
+                    "subsets": {
+                        "ar": {
+                            "train": "ar/train/0000.parquet"
+                        },
+                        "bg": {
+                            "train": "bg/train/0000.parquet"
+                        },
+                        "ca": {
+                            "train": "ca/train/0000.parquet"
+                        },
+                        "cs": {
+                            "train": "cs/train/0000.parquet"
+                        },
+                        "da": {
+                            "train": "da/train/0000.parquet"
+                        },
+                        "de": {
+                            "train": "de/train/0000.parquet"
+                        },
+                        "el": {
+                            "train": "el/train/0000.parquet"
+                        },
+                        "en": {
+                            "train": "en/train/0000.parquet"
+                        },
+                        "es": {
+                            "train": "es/train/0000.parquet"
+                        },
+                        "et": {
+                            "train": "et/train/0000.parquet"
+                        },
+                        "fa": {
+                            "train": "fa/train/0000.parquet"
+                        },
+                        "fi": {
+                            "train": "fi/train/0000.parquet"
+                        },
+                        "fr": {
+                            "train": "fr/train/0000.parquet"
+                        },
+                        "he": {
+                            "train": "he/train/0000.parquet"
+                        },
+                        "hi": {
+                            "train": "hi/train/0000.parquet"
+                        },
+                        "hr": {
+                            "train": "hr/train/0000.parquet"
+                        },
+                        "hu": {
+                            "train": "hu/train/0000.parquet"
+                        },
+                        "id": {
+                            "train": "id/train/0000.parquet"
+                        },
+                        "it": {
+                            "train": "it/train/0000.parquet"
+                        },
+                        "ja": {
+                            "train": "ja/train/0000.parquet"
+                        },
+                        "ko": {
+                            "train": "ko/train/0000.parquet"
+                        },
+                        "lt": {
+                            "train": "lt/train/0000.parquet"
+                        },
+                        "lv": {
+                            "train": "lv/train/0000.parquet"
+                        },
+                        "ms": {
+                            "train": "ms/train/0000.parquet"
+                        },
+                        "nl": {
+                            "train": "nl/train/0000.parquet"
+                        },
+                        "no": {
+                            "train": "no/train/0000.parquet"
+                        },
+                        "pl": {
+                            "train": "pl/train/0000.parquet"
+                        },
+                        "pt": {
+                            "train": "pt/train/0000.parquet"
+                        },
+                        "ro": {
+                            "train": "ro/train/0000.parquet"
+                        },
+                        "ru": {
+                            "train": "ru/train/0000.parquet"
+                        },
+                        "sk": {
+                            "train": "sk/train/0000.parquet"
+                        },
+                        "sl": {
+                            "train": "sl/train/0000.parquet"
+                        },
+                        "sr": {
+                            "train": "sr/train/0000.parquet"
+                        },
+                        "sv": {
+                            "train": "sv/train/0000.parquet"
+                        },
+                        "th": {
+                            "train": "th/train/0000.parquet"
+                        },
+                        "tl": {
+                            "train": "tl/train/0000.parquet"
+                        },
+                        "tr": {
+                            "train": "tr/train/0000.parquet"
+                        },
+                        "uk": {
+                            "train": "uk/train/0000.parquet"
+                        },
+                        "vi": {
+                            "train": "vi/train/0000.parquet"
+                        },
+                        "zh": {
+                            "train": "zh/train/0000.parquet"
+                        }
+                    }
+                },
+                "data_pipe": [
+                    {
+                        "step": "columns",
+                        "bio_type": "iob_type_only",
+                        "filter_empty_documents": true
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Unspecified",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "silver-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "automatically-extracted"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "wikipedia",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    "Wikipedia"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

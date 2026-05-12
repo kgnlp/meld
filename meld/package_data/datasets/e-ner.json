@@ -1,0 +1,68 @@
+{
+    "E-NER": {
+        "note": "Original paper used the dataset both as test data and in a 5-fold cross-validation setup. Note that the number of sentences and tokens slightly differs compared to those reported in the paper since -DOCSTART- tokens where counted both as tokens and sentences.",
+        "citekeys": [
+            "au2022ner"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/terenceau1/E-NER-Dataset.git",
+                "revision": "4efb293384401081f166bb78c7da8148f2341929",
+                "base_language": "eng",
+                "subsets": {
+                    "__root__": {
+                        "data_pipe": [
+                            {
+                                "step": "convert",
+                                "reader": {
+                                    "type": "conll",
+                                    "arguments": {
+                                        "dialect": "conll2003_two_column",
+                                        "preprocessor": "e-ner"
+                                    }
+                                }
+                            }
+                        ],
+                        "test": [
+                            "all.csv"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY-NC-SA 4.0",
+                "document_boundaries": "full",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 1,
+                    "features": [
+                        "author-annotated"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "law",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "legal company filings"
+                ],
+                "data_sources": [
+                    {
+                        "source": "Electronic Data Gathering, Analysis, and Retrieval system (EDGAR)",
+                        "url": "https://www.sec.gov/os/accessing-edgar-data"
+                    }
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

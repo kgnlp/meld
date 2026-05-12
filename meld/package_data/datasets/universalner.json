@@ -1,0 +1,1163 @@
+{
+    "UniversalNER": {
+        "citekeys": [
+            "mayhew2024universal",
+            "jorgensen2020norne",
+            "plank2020danplus"
+        ],
+        "note": "UNER v1 + Norwegian",
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Tagalog-Ugnayan.git",
+                        "revision": "69e95595b6b1f2354d0ba735f7ec9e36c18373e4",
+                        "files": [
+                            "tl_ugnayan-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Tagalog-TRG.git",
+                        "revision": "a80b309b5254d9d6afebebd7c65789eee3215256",
+                        "files": [
+                            "tl_trg-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Swedish-Talbanken.git",
+                        "revision": "dbb692085267da83a35d1e1d2c111671b3c7c46b",
+                        "files": [
+                            "sv_talbanken-ud-dev.iob2",
+                            "sv_talbanken-ud-test.iob2",
+                            "sv_talbanken-ud-train.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Swedish-PUD.git",
+                        "revision": "7fed5e267858a295f53083051a16d73c76f60f07",
+                        "files": [
+                            "sv_pud-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Russian-PUD.git",
+                        "revision": "6f5acd6d728f70b20e4326d841356567796ee844",
+                        "files": [
+                            "ru_pud-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Portuguese-PUD.git",
+                        "revision": "cda2cf86b68d45e896aab97ceca5e91d43a86db7",
+                        "files": [
+                            "pt_pud-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Portuguese-Bosque.git",
+                        "revision": "f2c2ad67aed900385fbe5d655af41f439c9b3333",
+                        "files": [
+                            "pt_bosque-ud-dev.iob2",
+                            "pt_bosque-ud-test.iob2",
+                            "pt_bosque-ud-train.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Maghrebi_Arabic_French-Arabizi.git",
+                        "revision": "9b39d96f6de25ed2730481e67d777e1707028550",
+                        "files": [
+                            "qaf_arabizi-ud-dev.iob2",
+                            "qaf_arabizi-ud-test.iob2",
+                            "qaf_arabizi-ud-train.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_German-PUD.git",
+                        "revision": "47eb039b6d80079b280ba70efe4136413fb7af9c",
+                        "files": [
+                            "de_pud-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_English-PUD.git",
+                        "revision": "ed72f6eb19b29351fc11409b3ee9058d5c2705ae",
+                        "files": [
+                            "en_pud-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_English-EWT.git",
+                        "revision": "8ed072de2fd24022cc62458997fe96a8fe191ea4",
+                        "files": [
+                            "en_ewt-ud-dev.iob2",
+                            "en_ewt-ud-test.iob2",
+                            "en_ewt-ud-train.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Chinese-PUD.git",
+                        "revision": "647ba53747e1aa1818541965db99a0196440b7d2",
+                        "files": [
+                            "zh_pud-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Chinese-GSDSIMP.git",
+                        "revision": "1f0307599dece7b83f4cba90ce9b63ef37a7b162",
+                        "files": [
+                            "zh_gsdsimp-ud-dev.iob2",
+                            "zh_gsdsimp-ud-test.iob2",
+                            "zh_gsdsimp-ud-train.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Chinese-GSD.git",
+                        "revision": "2a0c196d7a54d41119fd069874e976a58f0d7dad",
+                        "files": [
+                            "zh_gsd-ud-dev.iob2",
+                            "zh_gsd-ud-test.iob2",
+                            "zh_gsd-ud-train.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Cebuano-GJA.git",
+                        "revision": "336794a031b197e9f928c07a34926ee14f329ffe",
+                        "files": [
+                            "ceb_gja-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Croatian-SET.git",
+                        "revision": "20dcb2ef6b6bf9d5e03605a74c4d87215a1574c1",
+                        "files": [
+                            "hr_set-ud-dev.iob2",
+                            "hr_set-ud-test.iob2",
+                            "hr_set-ud-train.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Slovak-SNK.git",
+                        "revision": "886e7c6d7e066e23246af5070d115a036a465c6d",
+                        "files": [
+                            "sk_snk-ud-dev.iob2",
+                            "sk_snk-ud-test.iob2",
+                            "sk_snk-ud-train.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Serbian-SET.git",
+                        "revision": "0d9685f001c10895572d844ef789c53dade0e265",
+                        "files": [
+                            "sr_set-ud-dev.iob2",
+                            "sr_set-ud-test.iob2",
+                            "sr_set-ud-train.iob2"
+                        ]
+                    },
+                    {
+                        "step": "git",
+                        "repo": "https://github.com/UniversalNER/UNER_Danish-DDT.git",
+                        "revision": "983c4cdc09f8ece6069d2b692b60dc4b3649ec6e",
+                        "files": [
+                            "da_ddt-ud-dev.iob2",
+                            "da_ddt-ud-test.iob2",
+                            "da_ddt-ud-train.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "tl_ugnayan",
+                        "language": "tl",
+                        "test": [
+                            "tl_ugnayan-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "tl_trg",
+                        "language": "tl",
+                        "test": [
+                            "tl_trg-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "sv_talbanken",
+                        "language": "sv",
+                        "train": [
+                            "sv_talbanken-ud-train.iob2"
+                        ],
+                        "validation": [
+                            "sv_talbanken-ud-dev.iob2"
+                        ],
+                        "test": [
+                            "sv_talbanken-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "sv_pud",
+                        "language": "sv",
+                        "test": [
+                            "sv_pud-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "ru_pud",
+                        "language": "ru",
+                        "test": [
+                            "ru_pud-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "pt_pud",
+                        "language": "pt",
+                        "test": [
+                            "pt_pud-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "pt_bosque",
+                        "language": "pt",
+                        "train": [
+                            "pt_bosque-ud-train.iob2"
+                        ],
+                        "validation": [
+                            "pt_bosque-ud-dev.iob2"
+                        ],
+                        "test": [
+                            "pt_bosque-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "qaf_arabizi",
+                        "language": "qaf-Latn",
+                        "train": [
+                            "qaf_arabizi-ud-train.iob2"
+                        ],
+                        "validation": [
+                            "qaf_arabizi-ud-dev.iob2"
+                        ],
+                        "test": [
+                            "qaf_arabizi-ud-test.iob2"
+                        ],
+                        "metadata": {
+                            "parse_arguments": {
+                                "use_comment_document_boundary": false
+                            }
+                        }
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "de_pud",
+                        "language": "de",
+                        "test": [
+                            "de_pud-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "en_pud",
+                        "language": "en",
+                        "test": [
+                            "en_pud-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "en_ewt",
+                        "language": "en",
+                        "train": [
+                            "en_ewt-ud-train.iob2"
+                        ],
+                        "validation": [
+                            "en_ewt-ud-dev.iob2"
+                        ],
+                        "test": [
+                            "en_ewt-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "zh_pud",
+                        "language": "zh",
+                        "test": [
+                            "zh_pud-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "zh_gsdsimp",
+                        "language": "zh",
+                        "train": [
+                            "zh_gsdsimp-ud-train.iob2"
+                        ],
+                        "validation": [
+                            "zh_gsdsimp-ud-dev.iob2"
+                        ],
+                        "test": [
+                            "zh_gsdsimp-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "zh_gsd",
+                        "language": "zh",
+                        "train": [
+                            "zh_gsd-ud-train.iob2"
+                        ],
+                        "validation": [
+                            "zh_gsd-ud-dev.iob2"
+                        ],
+                        "test": [
+                            "zh_gsd-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "ceb_gja",
+                        "language": "ceb",
+                        "test": [
+                            "ceb_gja-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "hr_set",
+                        "language": "hr",
+                        "train": [
+                            "hr_set-ud-train.iob2"
+                        ],
+                        "validation": [
+                            "hr_set-ud-dev.iob2"
+                        ],
+                        "test": [
+                            "hr_set-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "sk_snk",
+                        "language": "sk",
+                        "train": [
+                            "sk_snk-ud-test.iob2"
+                        ],
+                        "validation": [
+                            "sk_snk-ud-dev.iob2"
+                        ],
+                        "test": [
+                            "sk_snk-ud-train.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "sr_set",
+                        "language": "sr",
+                        "train": [
+                            "sr_set-ud-train.iob2"
+                        ],
+                        "validation": [
+                            "sr_set-ud-dev.iob2"
+                        ],
+                        "test": [
+                            "sr_set-ud-test.iob2"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "subset": "da_ddt",
+                        "language": "da",
+                        "train": [
+                            "da_ddt-ud-train.iob2"
+                        ],
+                        "validation": [
+                            "da_ddt-ud-dev.iob2"
+                        ],
+                        "test": [
+                            "da_ddt-ud-test.iob2"
+                        ],
+                        "metadata": {
+                            "parse_arguments": {
+                                "use_comment_document_boundary": false
+                            }
+                        }
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll",
+                            "arguments": {
+                                "dialect": "conllu_uner"
+                            }
+                        }
+                    },
+                    {
+                        "step": "data_pipe",
+                        "data_pipe": [
+                            {
+                                "step": "git",
+                                "repo": "https://github.com/UniversalNER/UNER_Norwegian-NDT.git",
+                                "revision": "f1da13196788be028fe8124cdc7b9b197399ad98",
+                                "files": [
+                                    "nno_norne-ud-dev.iob2",
+                                    "nno_norne-ud-test.iob2",
+                                    "nno_norne-ud-train.iob2",
+                                    "nob_norne-ud-dev.iob2",
+                                    "nob_norne-ud-test.iob2",
+                                    "nob_norne-ud-train.iob2"
+                                ]
+                            },
+                            {
+                                "step": "splits",
+                                "subset": "nob_norne",
+                                "language": "nob",
+                                "train": [
+                                    "nob_norne-ud-train.iob2"
+                                ],
+                                "validation": [
+                                    "nob_norne-ud-dev.iob2"
+                                ],
+                                "test": [
+                                    "nob_norne-ud-test.iob2"
+                                ]
+                            },
+                            {
+                                "step": "splits",
+                                "subset": "nno_norne",
+                                "language": "nno",
+                                "train": [
+                                    "nno_norne-ud-train.iob2"
+                                ],
+                                "validation": [
+                                    "nno_norne-ud-dev.iob2"
+                                ],
+                                "test": [
+                                    "nno_norne-ud-test.iob2"
+                                ]
+                            },
+                            {
+                                "step": "convert",
+                                "reader": {
+                                    "type": "conll",
+                                    "arguments": {
+                                        "dialect": "conllu_uner_newpar"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "spans",
+            "tag_alignment": "byte_offsets"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY-SA 4.0",
+                "document_boundaries": "full",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "annotators-each:1+"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "general",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "news"
+                ],
+                "data_sources": [
+                    "Universal Dependency corpora"
+                ],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    "da_ddt.train"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.875,
+                            "ORG": 0.778,
+                            "PER": 0.959
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "da_ddt.validation"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.917,
+                            "ORG": 0.765,
+                            "PER": 0.934
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "da_ddt.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.882,
+                            "ORG": 0.805,
+                            "PER": 0.975
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "en_ewt.train"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.696,
+                            "ORG": 0.533,
+                            "PER": 0.925
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "en_ewt.validation"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.786,
+                            "ORG": 0.640,
+                            "PER": 0.949
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "en_ewt.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.825,
+                            "ORG": 0.869,
+                            "PER": 0.969
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "pt_bosque.train"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.928,
+                            "ORG": 0.902,
+                            "PER": 0.974
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "pt_bosque.validation"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.850,
+                            "ORG": 0.885,
+                            "PER": 0.980
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "pt_bosque.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.955,
+                            "ORG": 0.914,
+                            "PER": 0.975
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "sk_snk.train"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.840,
+                            "ORG": 0.743,
+                            "PER": 0.900
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "sk_snk.validation"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.801,
+                            "ORG": 0.597,
+                            "PER": 0.770
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "sk_snk.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.837,
+                            "ORG": 0.621,
+                            "PER": 0.823
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "sv_talbanken.train"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.857,
+                            "ORG": 0.670,
+                            "PER": 0.913
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "sv_talbanken.validation"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.800,
+                            "ORG": 0.461,
+                            "PER": 0.888
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "sv_talbanken.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.937,
+                            "ORG": 0.812,
+                            "PER": 0.871
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "zh_gsd.train"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.800,
+                            "ORG": 0.724,
+                            "PER": 0.917
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "zh_gsd.validation"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.795,
+                            "ORG": 0.661,
+                            "PER": 0.956
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "zh_gsd.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.860,
+                            "ORG": 0.711,
+                            "PER": 0.944
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "de_pud.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.709,
+                            "ORG": 0.840,
+                            "PER": 0.812
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "en_pud.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 1,
+                            "ORG": 0.936,
+                            "PER": 0.966
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "pt_pud.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.903,
+                            "ORG": 0.920,
+                            "PER": 0.985
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "ru_pud.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.719,
+                            "ORG": 0.531,
+                            "PER": 0.891
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "sv_pud.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.865,
+                            "ORG": 0.735,
+                            "PER": 0.944
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "zh_pud.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.752,
+                            "ORG": 0.776,
+                            "PER": 0.971
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "ceb_gja.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.769,
+                            "ORG": 1,
+                            "PER": 0.914
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "tl_trg.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.833,
+                            "PER": 0.957
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "tl_ugnayan.test"
+                ],
+                "annotation": {
+                    "agreement": {
+                        "metric": "f1-score",
+                        "value": {
+                            "LOC": 0.913
+                        }
+                    }
+                }
+            },
+            {
+                "split": [
+                    "da_ddt"
+                ],
+                "document_boundaries": "none",
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "fiction",
+                    "news",
+                    "non-fiction",
+                    "spoken"
+                ],
+                "dataset_lineage": [
+                    "DaN+"
+                ]
+            },
+            {
+                "split": [
+                    "en_ewt"
+                ],
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "blog",
+                    "email",
+                    "reviews",
+                    "social",
+                    "web"
+                ]
+            },
+            {
+                "split": [
+                    "hr_set"
+                ],
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "news",
+                    "web",
+                    "wikipedia"
+                ]
+            },
+            {
+                "split": [
+                    "pt_bosque"
+                ],
+                "primary_domain": "news",
+                "finegrained_domains": [
+                    "news"
+                ]
+            },
+            {
+                "split": [
+                    "qaf_arabizi"
+                ],
+                "document_boundaries": "none",
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "blog",
+                    "web",
+                    "social"
+                ]
+            },
+            {
+                "split": [
+                    "sk_snk"
+                ],
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "fiction",
+                    "news",
+                    "non-fiction"
+                ]
+            },
+            {
+                "split": [
+                    "sr_set"
+                ],
+                "primary_domain": "news",
+                "finegrained_domains": [
+                    "news"
+                ],
+                "dataset_lineage": [
+                    "SETimes.SR"
+                ]
+            },
+            {
+                "split": [
+                    "sv_talbanken"
+                ],
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "news",
+                    "non-fiction"
+                ]
+            },
+            {
+                "split": [
+                    "zh_gsd"
+                ],
+                "primary_domain": "wikipedia",
+                "finegrained_domains": [
+                    "wikipedia"
+                ]
+            },
+            {
+                "split": [
+                    "zh_gsdsimp"
+                ],
+                "primary_domain": "wikipedia",
+                "finegrained_domains": [
+                    "wikipedia"
+                ]
+            },
+            {
+                "split": [
+                    "de_pud"
+                ],
+                "license": "CC BY-SA 3.0",
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "news",
+                    "wikipedia"
+                ]
+            },
+            {
+                "split": [
+                    "en_pud"
+                ],
+                "license": "CC BY-SA 3.0",
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "news",
+                    "wikipedia"
+                ]
+            },
+            {
+                "split": [
+                    "pt_pud"
+                ],
+                "license": "CC BY-SA 3.0",
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "news",
+                    "wikipedia"
+                ]
+            },
+            {
+                "split": [
+                    "ru_pud"
+                ],
+                "license": "CC BY-SA 3.0",
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "news",
+                    "wikipedia"
+                ]
+            },
+            {
+                "split": [
+                    "sv_pud"
+                ],
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "news",
+                    "wikipedia"
+                ]
+            },
+            {
+                "split": [
+                    "zh_pud"
+                ],
+                "license": "CC BY-SA 3.0",
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "news",
+                    "wikipedia"
+                ]
+            },
+            {
+                "split": [
+                    "ceb_gja"
+                ],
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "grammar examples"
+                ]
+            },
+            {
+                "split": [
+                    "tl_trg"
+                ],
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "grammar examples"
+                ]
+            },
+            {
+                "license": "CC BY-NC-SA 4.0",
+                "split": [
+                    "tl_ugnayan"
+                ],
+                "primary_domain": "literature",
+                "finegrained_domains": [
+                    "fiction",
+                    "non-fiction"
+                ]
+            },
+            {
+                "split": [
+                    "hr_set"
+                ],
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "news",
+                    "web"
+                ],
+                "data_sources": [
+                    "Southeast European Times",
+                    "Croatian news web sources",
+                    "Croation web sources"
+                ],
+                "dataset_lineage": [
+                    "hr500k"
+                ]
+            },
+            {
+                "split": [
+                    "hr_set.test"
+                ],
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "news",
+                    "web",
+                    "wikipedia"
+                ],
+                "data_sources": [
+                    "Southeast European Times",
+                    "Croatian news web sources",
+                    "Croation web sources",
+                    "Wikipedia"
+                ]
+            },
+            {
+                "split": [
+                    "nno_norne",
+                    "nob_norne"
+                ],
+                "primary_domain": "general",
+                "finegrained_domains": [
+                    "news",
+                    "blog",
+                    "non-fiction"
+                ],
+                "dataset_lineage": [
+                    "NorNE"
+                ]
+            }
+        ]
+    }
+}

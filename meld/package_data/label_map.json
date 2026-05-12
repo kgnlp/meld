@@ -1,0 +1,2749 @@
+{
+	"WikiANN": [
+		{
+			"subsets": [
+				[
+					"sco"
+				],
+				[
+					"sd"
+				],
+				[
+					"la"
+				],
+				[
+					"bs"
+				],
+				[
+					"si"
+				],
+				[
+					"mt"
+				],
+				[
+					"min"
+				],
+				[
+					"be-x-old"
+				],
+				[
+					"so"
+				],
+				[
+					"dv"
+				],
+				[
+					"mwl"
+				],
+				[
+					"os"
+				],
+				[
+					"lt"
+				],
+				[
+					"my"
+				],
+				[
+					"zh-min-nan"
+				],
+				[
+					"af"
+				],
+				[
+					"ms"
+				],
+				[
+					"ig"
+				],
+				[
+					"sah"
+				],
+				[
+					"map-bms"
+				],
+				[
+					"lmo"
+				],
+				[
+					"ast"
+				],
+				[
+					"cdo"
+				],
+				[
+					"ang"
+				],
+				[
+					"gan"
+				],
+				[
+					"as"
+				],
+				[
+					"ay"
+				],
+				[
+					"simple"
+				],
+				[
+					"gl"
+				],
+				[
+					"km"
+				],
+				[
+					"hu"
+				],
+				[
+					"bn"
+				],
+				[
+					"cv"
+				],
+				[
+					"de"
+				],
+				[
+					"tr"
+				],
+				[
+					"lv"
+				],
+				[
+					"da"
+				],
+				[
+					"ja"
+				],
+				[
+					"sl"
+				],
+				[
+					"ne"
+				],
+				[
+					"kn"
+				],
+				[
+					"bg"
+				],
+				[
+					"ia"
+				],
+				[
+					"pl"
+				],
+				[
+					"uk"
+				],
+				[
+					"br"
+				],
+				[
+					"zh-yue"
+				],
+				[
+					"it"
+				],
+				[
+					"zh"
+				],
+				[
+					"ba"
+				],
+				[
+					"sr"
+				],
+				[
+					"en"
+				],
+				[
+					"vi"
+				],
+				[
+					"su"
+				],
+				[
+					"ar"
+				],
+				[
+					"pa"
+				],
+				[
+					"pdc"
+				],
+				[
+					"be"
+				],
+				[
+					"el"
+				],
+				[
+					"fr"
+				],
+				[
+					"oc"
+				],
+				[
+					"pnb"
+				],
+				[
+					"tk"
+				],
+				[
+					"jbo"
+				],
+				[
+					"vls"
+				],
+				[
+					"eo"
+				],
+				[
+					"no"
+				],
+				[
+					"arc"
+				],
+				[
+					"ckb"
+				],
+				[
+					"kk"
+				],
+				[
+					"scn"
+				],
+				[
+					"arz"
+				],
+				[
+					"bo"
+				],
+				[
+					"bh"
+				],
+				[
+					"rw"
+				],
+				[
+					"mg"
+				],
+				[
+					"yo"
+				],
+				[
+					"sw"
+				],
+				[
+					"ug"
+				],
+				[
+					"cy"
+				],
+				[
+					"ml"
+				],
+				[
+					"yi"
+				],
+				[
+					"tt"
+				],
+				[
+					"ku"
+				],
+				[
+					"zea"
+				],
+				[
+					"als"
+				],
+				[
+					"cs"
+				],
+				[
+					"ksh"
+				],
+				[
+					"fo"
+				],
+				[
+					"cbk-zam"
+				],
+				[
+					"wuu"
+				],
+				[
+					"ru"
+				],
+				[
+					"lij"
+				],
+				[
+					"ko"
+				],
+				[
+					"uz"
+				],
+				[
+					"et"
+				],
+				[
+					"hsb"
+				],
+				[
+					"hy"
+				],
+				[
+					"pt"
+				],
+				[
+					"bar"
+				],
+				[
+					"es"
+				],
+				[
+					"ilo"
+				],
+				[
+					"sh"
+				],
+				[
+					"lb"
+				],
+				[
+					"rm"
+				],
+				[
+					"mk"
+				],
+				[
+					"eu"
+				],
+				[
+					"tg"
+				],
+				[
+					"fi"
+				],
+				[
+					"nap"
+				],
+				[
+					"nov"
+				],
+				[
+					"fur"
+				],
+				[
+					"ext"
+				],
+				[
+					"vec"
+				],
+				[
+					"mhr"
+				],
+				[
+					"te"
+				],
+				[
+					"ro"
+				],
+				[
+					"ka"
+				],
+				[
+					"war"
+				],
+				[
+					"crh"
+				],
+				[
+					"hr"
+				],
+				[
+					"mr"
+				],
+				[
+					"sk"
+				],
+				[
+					"diq"
+				],
+				[
+					"an"
+				],
+				[
+					"mzn"
+				],
+				[
+					"nds"
+				],
+				[
+					"jv"
+				],
+				[
+					"ur"
+				],
+				[
+					"frr"
+				],
+				[
+					"li"
+				],
+				[
+					"id"
+				],
+				[
+					"am"
+				],
+				[
+					"nn"
+				],
+				[
+					"csb"
+				],
+				[
+					"xmf"
+				],
+				[
+					"mi"
+				],
+				[
+					"ga"
+				],
+				[
+					"hi"
+				],
+				[
+					"ta"
+				],
+				[
+					"vo"
+				],
+				[
+					"ln"
+				],
+				[
+					"or"
+				],
+				[
+					"gd"
+				],
+				[
+					"is"
+				],
+				[
+					"bat-smg"
+				],
+				[
+					"he"
+				],
+				[
+					"fy"
+				],
+				[
+					"ky"
+				],
+				[
+					"az"
+				],
+				[
+					"sv"
+				],
+				[
+					"eml"
+				],
+				[
+					"ca"
+				],
+				[
+					"gu"
+				],
+				[
+					"hak"
+				],
+				[
+					"gn"
+				],
+				[
+					"fiu-vro"
+				],
+				[
+					"vep"
+				],
+				[
+					"qu"
+				],
+				[
+					"io"
+				],
+				[
+					"mn"
+				],
+				[
+					"ceb"
+				],
+				[
+					"co"
+				],
+				[
+					"sa"
+				],
+				[
+					"zh-classical"
+				],
+				[
+					"wa"
+				],
+				[
+					"nl"
+				],
+				[
+					"ce"
+				],
+				[
+					"ace"
+				],
+				[
+					"sq"
+				],
+				[
+					"tl"
+				],
+				[
+					"th"
+				],
+				[
+					"ps"
+				],
+				[
+					"szl"
+				],
+				[
+					"fa"
+				],
+				[
+					"pms"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"LOC": "location",
+				"ORG": "organization",
+				"PER": "person"
+			}
+		}
+	],
+	"WikiNEuRal": [
+		{
+			"subsets": [
+				[
+					"pl"
+				],
+				[
+					"de"
+				],
+				[
+					"en"
+				],
+				[
+					"fr"
+				],
+				[
+					"nl"
+				],
+				[
+					"es"
+				],
+				[
+					"ru"
+				],
+				[
+					"it"
+				],
+				[
+					"pt"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"LOC": "location",
+				"MISC": "miscellaneous",
+				"ORG": "organization",
+				"PER": "person"
+			}
+		}
+	],
+	"Tweebank-NER": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"LOC": "location",
+				"MISC": "miscellaneous",
+				"ORG": "organization",
+				"PER": "person"
+			}
+		}
+	],
+	"AnatEM": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Anatomical_system": "anatomical system",
+				"Cancer": "cancer",
+				"Cell": "cell",
+				"Cellular_component": "cellular component",
+				"Developing_anatomical_structure": "developing anatomical structure",
+				"Immaterial_anatomical_entity": "immaterial anatomical entity",
+				"Multi-tissue_structure": "multi-tissue structure",
+				"Organ": "organ",
+				"Organism_subdivision": "organism subdivision",
+				"Organism_substance": "organism substance",
+				"Pathological_formation": "pathological formation",
+				"Tissue": "tissue"
+			}
+		}
+	],
+	"FoNE": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Date": "date",
+				"Location": "location",
+				"Miscellaneous": "miscellaneous",
+				"Money": "money",
+				"Organization": "organization",
+				"Percent": "percent",
+				"Person": "person",
+				"Time": "time"
+			}
+		}
+	],
+	"WNUT2017": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"corporation": "corporation",
+				"creative-work": "creative work",
+				"group": "group",
+				"location": "location",
+				"person": "person",
+				"product": "product"
+			}
+		}
+	],
+	"SoMeSci": [
+		{
+			"subsets": [
+				[
+					"plos_sentences"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Abbreviation": "abbreviation",
+				"AlternativeName": "alternative name",
+				"Application_Mention": "application mention",
+				"Application_Usage": "application usage",
+				"Citation": "citation",
+				"Developer": "developer",
+				"Extension": "extension",
+				"OperatingSystem_Usage": "operating system usage",
+				"PlugIn_Deposition": "plug-in deposition",
+				"PlugIn_Usage": "plug-in usage",
+				"ProgrammingEnvironment_Mention": "programming environment mention",
+				"ProgrammingEnvironment_Usage": "programming environment usage",
+				"Release": "release",
+				"URL": "URL",
+				"Version": "version"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"plos_methods"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Abbreviation": "abbreviation",
+				"AlternativeName": "alternative name",
+				"Application_Creation": "application creation",
+				"Application_Deposition": "application deposition",
+				"Application_Mention": "application mention",
+				"Application_Usage": "application usage",
+				"Citation": "citation",
+				"Developer": "developer",
+				"Extension": "extension",
+				"OperatingSystem_Mention": "operating system mention",
+				"OperatingSystem_Usage": "operating system usage",
+				"PlugIn_Creation": "plug-in creation",
+				"PlugIn_Mention": "plug-in mention",
+				"PlugIn_Usage": "plug-in usage",
+				"ProgrammingEnvironment_Mention": "programming environment mention",
+				"ProgrammingEnvironment_Usage": "programming environment usage",
+				"Release": "release",
+				"SoftwareCoreference_Deposition": "software coreference deposition",
+				"URL": "URL",
+				"Version": "version"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"formal_citations"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Archive": "archive",
+				"Creator": "creator",
+				"Date_of_access": "date of access",
+				"Description": "description",
+				"ID": "ID",
+				"Manual": "manual",
+				"Name": "name",
+				"PubDate_exact": "publication date (exact)",
+				"PubDate_nd": "publication date (not defined)",
+				"PubDate_year": "publication date (year)",
+				"Type_of_citation": "type of citation",
+				"URL": "URL",
+				"Version": "version",
+				"duplicate": "duplicate",
+				"incomplete_content": "incomplete content",
+				"unstructured": "unstructured",
+				"wrong_content": "wrong content",
+				"wrong_place": "wrong place"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"creation_sentences"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Abbreviation": "abbreviation",
+				"AlternativeName": "alternative name",
+				"Application_Creation": "application creation",
+				"Application_Deposition": "application deposition",
+				"Application_Mention": "application mention",
+				"Application_Usage": "application usage",
+				"Citation": "citation",
+				"Developer": "developer",
+				"Extension": "extension",
+				"License": "license",
+				"OperatingSystem_Mention": "operating system mention",
+				"OperatingSystem_Usage": "operating system usage",
+				"PlugIn_Creation": "plug-in creation",
+				"PlugIn_Deposition": "plug-in deposition",
+				"PlugIn_Mention": "plug-in mention",
+				"PlugIn_Usage": "plug-in usage",
+				"ProgrammingEnvironment_Mention": "programming environment mention",
+				"ProgrammingEnvironment_Usage": "programming environment usage",
+				"Release": "release",
+				"SoftwareCoreference_Deposition": "software coreference deposition",
+				"URL": "URL",
+				"Version": "version"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"pubmed_fulltext"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Abbreviation": "abbreviation",
+				"AlternativeName": "alternative name",
+				"Application_Creation": "application creation",
+				"Application_Mention": "application mention",
+				"Application_Usage": "application usage",
+				"Citation": "citation",
+				"Developer": "developer",
+				"Extension": "extension",
+				"OperatingSystem_Mention": "operating system mention",
+				"OperatingSystem_Usage": "operating system usage",
+				"PlugIn_Mention": "plug-in mention",
+				"PlugIn_Usage": "plug-in usage",
+				"ProgrammingEnvironment_Mention": "programming environment mention",
+				"ProgrammingEnvironment_Usage": "programming environment usage",
+				"Release": "release",
+				"SoftwareCoreference_Deposition": "software coreference deposition",
+				"URL": "URL",
+				"Version": "version"
+			}
+		}
+	],
+	"Polyglot-NER": [
+		{
+			"subsets": [
+				[
+					"zh"
+				],
+				[
+					"fa"
+				],
+				[
+					"lv"
+				],
+				[
+					"ja"
+				],
+				[
+					"th"
+				],
+				[
+					"sv"
+				],
+				[
+					"en"
+				],
+				[
+					"da"
+				],
+				[
+					"ar"
+				],
+				[
+					"it"
+				],
+				[
+					"id"
+				],
+				[
+					"he"
+				],
+				[
+					"sl"
+				],
+				[
+					"lt"
+				],
+				[
+					"ms"
+				],
+				[
+					"es"
+				],
+				[
+					"pt"
+				],
+				[
+					"ca"
+				],
+				[
+					"pl"
+				],
+				[
+					"hi"
+				],
+				[
+					"hr"
+				],
+				[
+					"uk"
+				],
+				[
+					"hu"
+				],
+				[
+					"de"
+				],
+				[
+					"no"
+				],
+				[
+					"ko"
+				],
+				[
+					"ru"
+				],
+				[
+					"sr"
+				],
+				[
+					"nl"
+				],
+				[
+					"cs"
+				],
+				[
+					"sk"
+				],
+				[
+					"el"
+				],
+				[
+					"et"
+				],
+				[
+					"ro"
+				],
+				[
+					"tr"
+				],
+				[
+					"bg"
+				],
+				[
+					"vi"
+				],
+				[
+					"fr"
+				],
+				[
+					"fi"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"LOC": "location",
+				"ORG": "organization",
+				"PER": "person"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"tl"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"PER": "person"
+			}
+		}
+	],
+	"BioRED": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"CellLine": "cell line",
+				"ChemicalEntity": "chemical entity",
+				"DiseaseOrPhenotypicFeature": "disease or phenotypic feature",
+				"GeneOrGeneProduct": "gene or gene product",
+				"OrganismTaxon": "organism taxon",
+				"SequenceVariant": "sequence variant"
+			}
+		}
+	],
+	"CrossNER": [
+		{
+			"subsets": [
+				[
+					"science"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"academicjournal": "academic journal",
+				"astronomicalobject": "astronomical object",
+				"award": "award",
+				"chemicalcompound": "chemical compound",
+				"chemicalelement": "chemical element",
+				"country": "country",
+				"discipline": "discipline",
+				"enzyme": "enzyme",
+				"event": "event",
+				"location": "other location",
+				"misc": "miscellaneous",
+				"organisation": "other organization",
+				"person": "other person",
+				"protein": "protein",
+				"scientist": "scientist",
+				"theory": "theory",
+				"university": "university"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"ai"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"algorithm": "algorithm",
+				"conference": "conference",
+				"country": "country",
+				"field": "field",
+				"location": "other location",
+				"metrics": "metrics",
+				"misc": "miscellaneous",
+				"organisation": "other organization",
+				"person": "other person",
+				"product": "product",
+				"programlang": "programming language",
+				"researcher": "researcher",
+				"task": "task",
+				"university": "university"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"conll2003"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"location": "location",
+				"misc": "miscellaneous",
+				"organisation": "organization",
+				"person": "person"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"politics"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"country": "country",
+				"election": "election",
+				"event": "event",
+				"location": "location",
+				"misc": "miscellaneous",
+				"organisation": "other organization",
+				"person": "other person",
+				"politicalparty": "political party",
+				"politician": "politician"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"literature"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"award": "award",
+				"book": "book",
+				"country": "country",
+				"event": "event",
+				"literarygenre": "literary genre",
+				"location": "other location",
+				"magazine": "magazine",
+				"misc": "miscellaneous",
+				"organisation": "organization",
+				"person": "other person",
+				"poem": "poem",
+				"writer": "writer"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"music"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"album": "album",
+				"award": "award",
+				"band": "band",
+				"country": "country",
+				"event": "event",
+				"location": "other location",
+				"misc": "miscellaneous",
+				"musicalartist": "musical artist",
+				"musicalinstrument": "musical instrument",
+				"musicgenre": "music genre",
+				"organisation": "organization",
+				"person": "other person",
+				"song": "song"
+			}
+		}
+	],
+	"SciER": [
+		{
+			"subsets": [
+				[
+					"in_domain"
+				],
+				[
+					"out_of_domain"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Dataset": "dataset",
+				"Method": "method",
+				"Task": "task"
+			}
+		}
+	],
+	"MultiNERd": [
+		{
+			"subsets": [
+				[
+					"pt"
+				],
+				[
+					"en"
+				],
+				[
+					"pl"
+				],
+				[
+					"zh"
+				],
+				[
+					"fr"
+				],
+				[
+					"nl"
+				],
+				[
+					"ru"
+				],
+				[
+					"it"
+				],
+				[
+					"es"
+				],
+				[
+					"de"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"ANIM": "animal",
+				"BIO": "other biological entity",
+				"CEL": "cell",
+				"DIS": "disease",
+				"EVE": "event",
+				"FOOD": "food",
+				"INST": "institution",
+				"LOC": "location",
+				"MEDIA": "media",
+				"MYTH": "mythological Entity",
+				"ORG": "organization",
+				"PER": "person",
+				"PLANT": "plant",
+				"TIME": "time",
+				"VEHI": "vehicle"
+			}
+		}
+	],
+	"UniversalNER": [
+		{
+			"subsets": [
+				[
+					"en_pud"
+				],
+				[
+					"zh_gsd"
+				],
+				[
+					"pt_pud"
+				],
+				[
+					"sv_talbanken"
+				],
+				[
+					"qaf_arabizi"
+				],
+				[
+					"ceb_gja"
+				],
+				[
+					"ru_pud"
+				],
+				[
+					"de_pud"
+				],
+				[
+					"nno_norne"
+				],
+				[
+					"zh_gsdsimp"
+				],
+				[
+					"sv_pud"
+				],
+				[
+					"pt_bosque"
+				],
+				[
+					"da_ddt"
+				],
+				[
+					"nob_norne"
+				],
+				[
+					"en_ewt"
+				],
+				[
+					"zh_pud"
+				],
+				[
+					"sk_snk"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"LOC": "location",
+				"ORG": "organization",
+				"PER": "person"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"tl_ugnayan"
+				],
+				[
+					"tl_trg"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"LOC": "location",
+				"PER": "person"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"sr_set"
+				],
+				[
+					"hr_set"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"LOC": "location",
+				"ORG": "organization",
+				"OTH": "other",
+				"PER": "person"
+			}
+		}
+	],
+	"E-NER": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"BUSINESS": "business",
+				"COURT": "court",
+				"GOVERNMENT": "government",
+				"LEGISLATION/ACT": "legislation or act",
+				"LOCATION": "location",
+				"MISCELLANEOUS": "miscellaneous",
+				"PERSON": "person"
+			}
+		}
+	],
+	"SOFC-Exp": [
+		{
+			"subsets": [
+				[
+					"experiments_only"
+				],
+				[
+					"full"
+				]
+			],
+			"tagset": "entities",
+			"label_map": {
+				"DEVICE": "device",
+				"EXPERIMENT": "experiment",
+				"MATERIAL": "material",
+				"VALUE": "value"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"experiments_only"
+				]
+			],
+			"tagset": "slots",
+			"label_map": {
+				"anode_material": "anode material",
+				"cathode_material": "cathode material",
+				"conductivity": "conductivity",
+				"current_density": "current density",
+				"degradation_rate": "degradation rate",
+				"device": "device",
+				"electrolyte_material": "electrolyte material",
+				"experiment_evoking_word": "experiment evoking word",
+				"fuel_used": "fuel used",
+				"interlayer_material": "interlayer material",
+				"open_circuit_voltage": "open circuit voltage",
+				"power_density": "power density",
+				"resistance": "resistance",
+				"support_material": "support material",
+				"thickness": "thickness",
+				"time_of_operation": "time of operation",
+				"voltage": "voltage",
+				"working_temperature": "working temperature"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"full"
+				]
+			],
+			"tagset": "slots",
+			"label_map": {
+				"anode_material": "anode material",
+				"cathode_material": "cathode material",
+				"conductivity": "conductivity",
+				"current_density": "current density",
+				"degradation_rate": "degradation rate",
+				"device": "device",
+				"electrolyte_material": "electrolyte material",
+				"experiment_evoking_word": "experiment evoking word",
+				"fuel_used": "fuel used",
+				"interlayer_material": "interlayer material",
+				"open_circuit_voltage": "open circuit voltage",
+				"power_density": "power density",
+				"resistance": "resistance",
+				"support_material": "support material",
+				"thickness": "thickness",
+				"time_of_operation": "time of operation",
+				"voltage": "voltage",
+				"working_temperature": "working temperature"
+			}
+		}
+	],
+	"MultiCoNER": [
+		{
+			"subsets": [
+				[
+					"Swedish (SV)"
+				],
+				[
+					"Ukrainian (UK)"
+				],
+				[
+					"Bangla (BN)"
+				],
+				[
+					"Chinese (ZH)"
+				],
+				[
+					"Multilingual (MULTI)"
+				],
+				[
+					"Italian (IT)"
+				],
+				[
+					"English (EN)"
+				],
+				[
+					"Hindi (HI)"
+				],
+				[
+					"German (DE)"
+				],
+				[
+					"Portuguese (PT)"
+				],
+				[
+					"Farsi (FA)"
+				],
+				[
+					"Spanish (ES)"
+				],
+				[
+					"French (FR)"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"AerospaceManufacturer": "aerospace manufacturer",
+				"AnatomicalStructure": "anatomical structure",
+				"ArtWork": "art work",
+				"Artist": "artist",
+				"Athlete": "athlete",
+				"CarManufacturer": "car manufacturer",
+				"Cleric": "cleric",
+				"Clothing": "clothing",
+				"Disease": "disease",
+				"Drink": "drink",
+				"Facility": "facility",
+				"Food": "food",
+				"HumanSettlement": "human settlement",
+				"MedicalProcedure": "medical procedure",
+				"Medication/Vaccine": "medication or vaccine",
+				"MusicalGRP": "musical group",
+				"MusicalWork": "musical work",
+				"ORG": "organization",
+				"OtherLOC": "other location",
+				"OtherPER": "other person",
+				"OtherPROD": "other product",
+				"Politician": "politician",
+				"PrivateCorp": "private corporation",
+				"PublicCorp": "public corporation",
+				"Scientist": "scientist",
+				"Software": "software",
+				"SportsGRP": "sports group",
+				"SportsManager": "sports manager",
+				"Station": "station",
+				"Symptom": "symptom",
+				"Vehicle": "vehicle",
+				"VisualWork": "visual work",
+				"WrittenWork": "written work"
+			}
+		}
+	],
+	"Naamapadam": [
+		{
+			"subsets": [
+				[
+					"bn"
+				],
+				[
+					"or"
+				],
+				[
+					"ta"
+				],
+				[
+					"pa"
+				],
+				[
+					"mr"
+				],
+				[
+					"te"
+				],
+				[
+					"hi"
+				],
+				[
+					"ml"
+				],
+				[
+					"kn"
+				],
+				[
+					"gu"
+				],
+				[
+					"as"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"LOC": "location",
+				"ORG": "organization",
+				"PER": "person"
+			}
+		}
+	],
+	"Arabic-Cross-Dialectal-NER": [
+		{
+			"subsets": [
+				[
+					"syrian"
+				],
+				[
+					"moroccan"
+				],
+				[
+					"egyptian"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"FAC": "facility",
+				"GPE": "geopolitical entity",
+				"LOC": "location",
+				"ORG": "organization",
+				"PER": "person",
+				"VEH": "vehicle",
+				"WEA": "weapon"
+			}
+		}
+	],
+	"NYTK-NerKor": [
+		{
+			"subsets": [
+				[
+					"legal"
+				],
+				[
+					"news"
+				],
+				[
+					"wikipedia"
+				],
+				[
+					"web"
+				],
+				[
+					"fiction"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"LOC": "location",
+				"MISC": "miscellaneous",
+				"ORG": "organization",
+				"PER": "person"
+			}
+		}
+	],
+	"TweetNER7": [
+		{
+			"subsets": [
+				[
+					"2020"
+				],
+				[
+					"2021"
+				],
+				[
+					"random"
+				],
+				[
+					"all"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"corporation": "corporation",
+				"creative_work": "creative work",
+				"event": "event",
+				"group": "group",
+				"location": "location",
+				"person": "person",
+				"product": "product"
+			}
+		}
+	],
+	"TASTEset": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"COLOR": "ingredient color",
+				"FOOD": "food",
+				"PART": "ingredient part",
+				"PHYSICAL_QUALITY": "physical quality",
+				"PROCESS": "process",
+				"PURPOSE": "purpose",
+				"QUANTITY": "quantity",
+				"TASTE": "taste",
+				"UNIT": "unit"
+			}
+		}
+	],
+	"Few-NERD": [
+		{
+			"subsets": [
+				[
+					"supervised"
+				],
+				[
+					"intra"
+				],
+				[
+					"inter"
+				]
+			],
+			"tagset": "fine",
+			"label_map": {
+				"art-broadcastprogram": "broadcast program",
+				"art-film": "film",
+				"art-music": "music",
+				"art-other": "other art",
+				"art-painting": "painting",
+				"art-writtenart": "written work",
+				"building-airport": "airport",
+				"building-hospital": "hospital",
+				"building-hotel": "hotel",
+				"building-library": "library",
+				"building-other": "other building",
+				"building-restaurant": "restaurant",
+				"building-sportsfacility": "sports facility",
+				"building-theater": "theater",
+				"event-attack/battle/war/militaryconflict": "attack, battle, war, or military conflict",
+				"event-disaster": "disaster",
+				"event-election": "election",
+				"event-other": "other event",
+				"event-protest": "protest",
+				"event-sportsevent": "sports event",
+				"location-GPE": "geopolitical entity",
+				"location-bodiesofwater": "body of water",
+				"location-island": "island",
+				"location-mountain": "mountain",
+				"location-other": "other location",
+				"location-park": "park",
+				"location-road/railway/highway/transit": "road, railway, highway, or transit",
+				"organization-company": "company",
+				"organization-education": "education",
+				"organization-government/governmentagency": "government or government agency",
+				"organization-media/newspaper": "media or newspaper",
+				"organization-other": "other organization",
+				"organization-politicalparty": "political party",
+				"organization-religion": "religion",
+				"organization-showorganization": "show organization",
+				"organization-sportsleague": "sports league",
+				"organization-sportsteam": "sports team",
+				"other-astronomything": "astronomy thing",
+				"other-award": "award",
+				"other-biologything": "biology thing",
+				"other-chemicalthing": "chemical thing",
+				"other-currency": "currency",
+				"other-disease": "disease",
+				"other-educationaldegree": "educational degree",
+				"other-god": "god",
+				"other-language": "language",
+				"other-law": "law",
+				"other-livingthing": "other living thing",
+				"other-medical": "medical",
+				"person-actor": "actor",
+				"person-artist/author": "artist or author",
+				"person-athlete": "athlete",
+				"person-director": "director",
+				"person-other": "other person",
+				"person-politician": "politician",
+				"person-scholar": "scholar",
+				"person-soldier": "soldier",
+				"product-airplane": "airplane",
+				"product-car": "car",
+				"product-food": "food",
+				"product-game": "game",
+				"product-other": "other product",
+				"product-ship": "ship",
+				"product-software": "software",
+				"product-train": "train",
+				"product-weapon": "weapon"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"supervised"
+				],
+				[
+					"inter"
+				],
+				[
+					"intra"
+				]
+			],
+			"tagset": "coarse",
+			"label_map": {
+				"art": "art",
+				"building": "building",
+				"event": "event",
+				"location": "location",
+				"organization": "organization",
+				"other": "other",
+				"person": "person",
+				"product": "product"
+			}
+		}
+	],
+	"MasakhaNER-X": [
+		{
+			"subsets": [
+				[
+					"ig"
+				],
+				[
+					"rw"
+				],
+				[
+					"lg"
+				],
+				[
+					"ee"
+				],
+				[
+					"bbj"
+				],
+				[
+					"zu"
+				],
+				[
+					"luo"
+				],
+				[
+					"ha"
+				],
+				[
+					"sw"
+				],
+				[
+					"am"
+				],
+				[
+					"tw"
+				],
+				[
+					"sn"
+				],
+				[
+					"ny"
+				],
+				[
+					"pcm"
+				],
+				[
+					"yo"
+				],
+				[
+					"wo"
+				],
+				[
+					"tn"
+				],
+				[
+					"xh"
+				],
+				[
+					"mos"
+				],
+				[
+					"bm"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"DATE": "date",
+				"LOC": "location",
+				"ORG": "organization",
+				"PER": "person"
+			}
+		}
+	],
+	"StackOverflowNER": [
+		{
+			"subsets": [
+				[
+					"stackoverflow"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Algorithm": "algorithm",
+				"Application": "application",
+				"Class_Name": "class name",
+				"Code_Block": "code block",
+				"Data_Structure": "data structure",
+				"Data_Type": "data type",
+				"Device": "device",
+				"Error_Name": "error name",
+				"File_Name": "file name",
+				"File_Type": "file type",
+				"Function_Name": "function name",
+				"HTML_XML_Tag": "HTML or XML tag",
+				"Keyboard_IP": "keyboard input",
+				"Language": "programming language",
+				"Library": "library",
+				"Library_Class": "library class",
+				"Library_Function": "library function",
+				"Library_Variable": "library variable",
+				"Licence": "license",
+				"Operating_System": "operating system",
+				"Organization": "organization",
+				"Output_Block": "output block",
+				"User_Interface_Element": "user interface element",
+				"User_Name": "user name",
+				"Value": "value",
+				"Variable_Name": "variable name",
+				"Version": "version",
+				"Website": "website"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"github"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Algorithm": "algorithm",
+				"Application": "application",
+				"Class_Name": "class name",
+				"Code_Block": "code block",
+				"Data_Set_Name": "data set name",
+				"Data_Structure": "data structure",
+				"Data_Type": "data type",
+				"Device": "device",
+				"Error_Name": "error name",
+				"File_Name": "file name",
+				"File_Type": "file type",
+				"Function_Name": "function name",
+				"HTML_XML_Tag": "HTML or XML tag",
+				"Keyboard_IP": "keyboard input",
+				"Language": "programming language",
+				"Library": "library",
+				"Library_Class": "library class",
+				"Library_Function": "library function",
+				"Library_Variable": "library variable",
+				"Licence": "license",
+				"Operating_System": "operating system",
+				"Organization": "organization",
+				"Output_Block": "output block",
+				"User_Interface_Element": "user interface element",
+				"User_Name": "user name",
+				"Variable_Name": "variable name",
+				"Version": "version",
+				"Website": "website"
+			}
+		}
+	],
+	"Herodotos-Project-NER": [
+		{
+			"subsets": [
+				[
+					"civil_wars"
+				],
+				[
+					"pliny_the_younger"
+				],
+				[
+					"pliny_the_elder"
+				],
+				[
+					"ovid"
+				],
+				[
+					"gallic_wars"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"GEO": "geographical location",
+				"GRP": "group",
+				"PRS": "person"
+			}
+		}
+	],
+	"pioNER": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"LOC": "location",
+				"ORG": "organization",
+				"PER": "person"
+			}
+		}
+	],
+	"Weibo-NER": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"GPE.NAM": "geopolitical entity name",
+				"GPE.NOM": "geopolitical entity (nominal mention)",
+				"LOC.NAM": "location name",
+				"LOC.NOM": "location (nominal mention)",
+				"ORG.NAM": "organization name",
+				"ORG.NOM": "organization (nominal mention)",
+				"PER.NAM": "person name",
+				"PER.NOM": "person (nominal mention)"
+			}
+		}
+	],
+	"Turku-NER-corpus": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"DATE": "date",
+				"EVENT": "event",
+				"LOC": "location",
+				"ORG": "organization",
+				"PER": "person",
+				"PRO": "product"
+			}
+		}
+	],
+	"LegalNERo": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Code": "legal code",
+				"Convention": "convention",
+				"Decision": "decision",
+				"Decree": "decree",
+				"Directive": "directive",
+				"EmergencyOrdinance": "emergency ordinance",
+				"LOC": "location",
+				"Law": "law",
+				"Norm": "norm",
+				"ORG": "organization",
+				"Order": "order",
+				"Ordinance": "ordinance",
+				"Other": "other",
+				"PER": "person",
+				"Publication": "publication",
+				"Regulation": "regulation",
+				"Report": "report",
+				"TIME": "time",
+				"Treaty": "treaty"
+			}
+		}
+	],
+	"DanfeNER": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"DATE": "date",
+				"EVENT": "event",
+				"LOC": "location",
+				"ORG": "organization",
+				"PER": "person"
+			}
+		}
+	],
+	"BC5CDR": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Chemical": "chemical",
+				"Disease": "disease"
+			}
+		}
+	],
+	"RaTE-NER": [
+		{
+			"subsets": [
+				[
+					"Radiopaedia"
+				],
+				[
+					"MIMIC_IV"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"ABNORMALITY": "abnormality",
+				"ANATOMY": "anatomy",
+				"DISEASE": "disease",
+				"NON-ABNORMALITY": "non-abnormality",
+				"NON-DISEASE": "non-disease"
+			}
+		}
+	],
+	"idner-news-2k": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"LOC": "location",
+				"ORG": "organization",
+				"PER": "person"
+			}
+		}
+	],
+	"PhoNER-COVID19": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"AGE": "age",
+				"DATE": "date",
+				"GENDER": "gender",
+				"JOB": "job",
+				"LOCATION": "location",
+				"NAME": "name",
+				"ORGANIZATION": "organization",
+				"PATIENT_ID": "patient ID",
+				"SYMPTOM_AND_DISEASE": "symptom and disease",
+				"TRANSPORTATION": "transportation"
+			}
+		}
+	],
+	"MIT-Movie": [
+		{
+			"subsets": [
+				[
+					"simple"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"ACTOR": "actor",
+				"CHARACTER": "character",
+				"DIRECTOR": "director",
+				"GENRE": "genre",
+				"PLOT": "plot",
+				"RATING": "rating",
+				"RATINGS_AVERAGE": "average ratings",
+				"REVIEW": "review",
+				"SONG": "song",
+				"TITLE": "title",
+				"TRAILER": "trailer",
+				"YEAR": "year"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"complex"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Actor": "actor",
+				"Award": "award",
+				"Character_Name": "character name",
+				"Director": "director",
+				"Genre": "genre",
+				"Opinion": "opinion",
+				"Origin": "origin",
+				"Plot": "plot",
+				"Quote": "quote",
+				"Relationship": "relationship",
+				"Soundtrack": "soundtrack",
+				"Year": "year"
+			}
+		}
+	],
+	"CoNLL-2003": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"LOC": "location",
+				"MISC": "miscellaneous",
+				"ORG": "organization",
+				"PER": "person"
+			}
+		}
+	],
+	"German-LER": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "coarse",
+			"label_map": {
+				"LIT": "legal literature",
+				"LOC": "location",
+				"NRM": "legal norm",
+				"ORG": "organization",
+				"PER": "person",
+				"REG": "case-by-case regulation",
+				"RS": "court decision"
+			}
+		},
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "fine",
+			"label_map": {
+				"AN": "lawyer",
+				"EUN": "european legal norm",
+				"GRT": "court",
+				"GS": "law",
+				"INN": "institution",
+				"LD": "country",
+				"LDS": "landscape",
+				"LIT": "legal literature",
+				"MRK": "brand",
+				"ORG": "organization",
+				"PER": "other person",
+				"RR": "judge",
+				"RS": "court decision",
+				"ST": "city",
+				"STR": "street",
+				"UN": "company",
+				"VO": "ordinance",
+				"VS": "regulation",
+				"VT": "contract"
+			}
+		}
+	],
+	"FiNER-ORD": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"LOC": "location",
+				"ORG": "organization",
+				"PER": "person"
+			}
+		}
+	],
+	"JNLPBA": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"DNA": "DNA",
+				"RNA": "RNA",
+				"cell_line": "cell line",
+				"cell_type": "cell type",
+				"protein": "protein"
+			}
+		}
+	],
+	"CLEANANERCorp": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"LOC": "location",
+				"MISC": "miscellaneous",
+				"ORG": "organization",
+				"PERS": "person"
+			}
+		}
+	],
+	"HarveyNER": [
+		{
+			"subsets": [
+				[
+					"simple"
+				],
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"AREA": "area",
+				"POINT": "point",
+				"RIVER": "river",
+				"ROAD": "road"
+			}
+		},
+		{
+			"subsets": [
+				[
+					"complex"
+				]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"AREA": "area",
+				"POINT": "point",
+				"ROAD": "road"
+			}
+		}
+	],
+	"EBM-NLP": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "broad",
+			"label_map": {
+				"Interventions": "intervention",
+				"Outcomes": "outcome",
+				"Participants": "participant"
+			}
+		},
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "granular",
+			"label_map": {
+				"Intervention Control": "intervention control",
+				"Intervention Drug": "drug intervention",
+				"Intervention Educational": "educational intervention",
+				"Intervention Other": "other intervention",
+				"Intervention Physical": "physical intervention",
+				"Intervention Psychological": "psychological intervention",
+				"Intervention Surgical": "surgical intervention",
+				"Outcome Adverse effects": "adverse effects",
+				"Outcome Mental": "mental outcome",
+				"Outcome Mortality": "mortality",
+				"Outcome Other": "other outcome",
+				"Outcome Pain": "pain",
+				"Outcome Physical": "physical outcome",
+				"Participant Age": "participant age",
+				"Participant Condition": "participant condition",
+				"Participant Sample size": "participant sample size",
+				"Participant Sex": "participant sex"
+			}
+		}
+	],
+	"SciREX": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Material": "material",
+				"Method": "method",
+				"Metric": "metric",
+				"Task": "task"
+			}
+		}
+	],
+	"AgriNER": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Agri_Method": "agricultural method",
+				"Agri_Pollution": "pollution causes",
+				"Agri_Process": "agricultural process",
+				"Agri_Waste": "agricultural waste",
+				"Chemical": "chemical",
+				"Citation": "citation",
+				"Crop": "crop",
+				"Date_and_Time": "date and time",
+				"Disease": "disease",
+				"Duration": "duration",
+				"Event": "event",
+				"Field_Area": "field area",
+				"Food_Item": "other food item",
+				"Fruit": "fruit",
+				"Humidity": "humidity",
+				"Location": "location",
+				"ML_Model": "machine learning model",
+				"Money": "money",
+				"Natural_Disaster": "natural disaster",
+				"Natural_Resource": "natural resource",
+				"Nutrient": "nutrient",
+				"Organism": "organism",
+				"Organization": "organization",
+				"Other": "other",
+				"Other_Quantity": "other quantity",
+				"Person": "person",
+				"Policy": "policy",
+				"Quantity": "crop quantity",
+				"Rainfall": "rainfall",
+				"Season": "season",
+				"Soil": "soil",
+				"Technology": "technology",
+				"Temp": "temperature",
+				"Treatment": "treatment",
+				"Vegetable": "vegetable",
+				"Weather": "weather"
+			}
+		}
+	],
+	"BC4CHEMD": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Chemical": "chemical"
+			}
+		}
+	],
+	"WLP": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Action": "action",
+				"Amount": "amount",
+				"Concentration": "concentration",
+				"Device": "device",
+				"Generic-Measure": "generic measure",
+				"Location": "location",
+				"Measure-Type": "measure type",
+				"Mention": "mention",
+				"Method": "method",
+				"Misc": "miscellaneous",
+				"Modifier": "modifier",
+				"Numerical": "numerical value",
+				"Reagent": "reagent",
+				"Seal": "seal",
+				"Size": "size",
+				"Speed": "speed",
+				"Temperature": "temperature",
+				"Time": "time",
+				"Unit": "unit",
+				"pH": "pH"
+			}
+		}
+	],
+	"FindVehicle": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"vehicle_brand": "vehicle brand",
+				"vehicle_color": "vehicle color",
+				"vehicle_location": "vehicle location",
+				"vehicle_model": "vehicle model",
+				"vehicle_orientation": "vehicle orientation",
+				"vehicle_range": "vehicle range",
+				"vehicle_type": "vehicle type",
+				"vehicle_type-bus": "bus",
+				"vehicle_type-coupe": "coupe",
+				"vehicle_type-estate_car": "estate car",
+				"vehicle_type-hatchback": "hatchback",
+				"vehicle_type-motorcycle": "motorcycle",
+				"vehicle_type-mpv": "mpv",
+				"vehicle_type-roadster": "roadster",
+				"vehicle_type-sedan": "sedan",
+				"vehicle_type-sports_car": "sports car",
+				"vehicle_type-suv": "suv",
+				"vehicle_type-truck": "truck",
+				"vehicle_type-van": "van",
+				"vehicle_type-vintage_car": "vintage car",
+				"vehicle_velocity": "vehicle velocity"
+			}
+		}
+	],
+	"SCIERC": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Generic": "generic entity",
+				"Material": "material",
+				"Method": "method",
+				"Metric": "metric",
+				"OtherScientificTerm": "other scientific term",
+				"Task": "task"
+			}
+		}
+	],
+	"AgCNER": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"BIS": "biosystematic",
+				"COM": "company",
+				"CRO": "crop",
+				"CUL": "cultivar",
+				"DIS": "disease",
+				"DRUG": "drug",
+				"FER": "fertilizer",
+				"ORG": "organization",
+				"OTH": "other",
+				"PAOG": "pathogen",
+				"PART": "part",
+				"PER": "period",
+				"PET": "pest"
+			}
+		}
+	],
+	"MIT-Restaurant": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Amenity": "amenity",
+				"Cuisine": "cuisine",
+				"Dish": "dish",
+				"Hours": "hours",
+				"Location": "location",
+				"Price": "price",
+				"Rating": "rating",
+				"Restaurant_Name": "restaurant name"
+			}
+		}
+	],
+	"Japanese-Wikipedia": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"その他の組織名": "other organization",
+				"イベント名": "event",
+				"人名": "person",
+				"地名": "location",
+				"政治的組織名": "political organization",
+				"施設名": "facility",
+				"法人名": "corporation",
+				"製品名": "product"
+			}
+		}
+	],
+	"FabNER": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"APPL": "application",
+				"BIOP": "biomedical",
+				"CHAR": "process characterization",
+				"CONPRI": "concept or principles",
+				"ENAT": "enabling technology",
+				"FEAT": "engineering features",
+				"MACEQ": "machine or equipment",
+				"MANP": "manufacturing process",
+				"MANS": "manufacturing standards",
+				"MATE": "material",
+				"PARA": "process parameters",
+				"PRO": "mechanical properties"
+			}
+		}
+	],
+	"CANTEMIST": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"MORFOLOGIA_NEOPLASIA": "neoplasm morphology"
+			}
+		}
+	],
+	"FiNER-139": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"AccrualForEnvironmentalLossContingencies": "AccrualForEnvironmentalLossContingencies",
+				"AcquiredFiniteLivedIntangibleAssetsWeightedAverageUsefulLife": "AcquiredFiniteLivedIntangibleAssetsWeightedAverageUsefulLife",
+				"AllocatedShareBasedCompensationExpense": "AllocatedShareBasedCompensationExpense",
+				"AmortizationOfFinancingCosts": "AmortizationOfFinancingCosts",
+				"AmortizationOfIntangibleAssets": "AmortizationOfIntangibleAssets",
+				"AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount": "AntidilutiveSecuritiesExcludedFromComputationOfEarningsPerShareAmount",
+				"AreaOfRealEstateProperty": "AreaOfRealEstateProperty",
+				"AssetImpairmentCharges": "AssetImpairmentCharges",
+				"BusinessAcquisitionEquityInterestsIssuedOrIssuableNumberOfSharesIssued": "BusinessAcquisitionEquityInterestsIssuedOrIssuableNumberOfSharesIssued",
+				"BusinessAcquisitionPercentageOfVotingInterestsAcquired": "BusinessAcquisitionPercentageOfVotingInterestsAcquired",
+				"BusinessCombinationAcquisitionRelatedCosts": "BusinessCombinationAcquisitionRelatedCosts",
+				"BusinessCombinationConsiderationTransferred1": "BusinessCombinationConsiderationTransferred1",
+				"BusinessCombinationContingentConsiderationLiability": "BusinessCombinationContingentConsiderationLiability",
+				"BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedIntangibleAssetsOtherThanGoodwill": "BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedIntangibleAssetsOtherThanGoodwill",
+				"BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedIntangibles": "BusinessCombinationRecognizedIdentifiableAssetsAcquiredAndLiabilitiesAssumedIntangibles",
+				"CapitalizedContractCostAmortization": "CapitalizedContractCostAmortization",
+				"CashAndCashEquivalentsFairValueDisclosure": "CashAndCashEquivalentsFairValueDisclosure",
+				"ClassOfWarrantOrRightExercisePriceOfWarrantsOrRights1": "ClassOfWarrantOrRightExercisePriceOfWarrantsOrRights1",
+				"CommonStockCapitalSharesReservedForFutureIssuance": "CommonStockCapitalSharesReservedForFutureIssuance",
+				"CommonStockDividendsPerShareDeclared": "CommonStockDividendsPerShareDeclared",
+				"CommonStockParOrStatedValuePerShare": "CommonStockParOrStatedValuePerShare",
+				"CommonStockSharesAuthorized": "CommonStockSharesAuthorized",
+				"CommonStockSharesOutstanding": "CommonStockSharesOutstanding",
+				"ConcentrationRiskPercentage1": "ConcentrationRiskPercentage1",
+				"ContractWithCustomerLiability": "ContractWithCustomerLiability",
+				"ContractWithCustomerLiabilityRevenueRecognized": "ContractWithCustomerLiabilityRevenueRecognized",
+				"CumulativeEffectOfNewAccountingPrincipleInPeriodOfAdoption": "CumulativeEffectOfNewAccountingPrincipleInPeriodOfAdoption",
+				"DebtInstrumentBasisSpreadOnVariableRate1": "DebtInstrumentBasisSpreadOnVariableRate1",
+				"DebtInstrumentCarryingAmount": "DebtInstrumentCarryingAmount",
+				"DebtInstrumentConvertibleConversionPrice1": "DebtInstrumentConvertibleConversionPrice1",
+				"DebtInstrumentFaceAmount": "DebtInstrumentFaceAmount",
+				"DebtInstrumentFairValue": "DebtInstrumentFairValue",
+				"DebtInstrumentInterestRateEffectivePercentage": "DebtInstrumentInterestRateEffectivePercentage",
+				"DebtInstrumentInterestRateStatedPercentage": "DebtInstrumentInterestRateStatedPercentage",
+				"DebtInstrumentMaturityDate": "DebtInstrumentMaturityDate",
+				"DebtInstrumentRedemptionPricePercentage": "DebtInstrumentRedemptionPricePercentage",
+				"DebtInstrumentTerm": "DebtInstrumentTerm",
+				"DebtInstrumentUnamortizedDiscount": "DebtInstrumentUnamortizedDiscount",
+				"DebtWeightedAverageInterestRate": "DebtWeightedAverageInterestRate",
+				"DeferredFinanceCostsGross": "DeferredFinanceCostsGross",
+				"DeferredFinanceCostsNet": "DeferredFinanceCostsNet",
+				"DefinedBenefitPlanContributionsByEmployer": "DefinedBenefitPlanContributionsByEmployer",
+				"DefinedContributionPlanCostRecognized": "DefinedContributionPlanCostRecognized",
+				"Depreciation": "Depreciation",
+				"DerivativeFixedInterestRate": "DerivativeFixedInterestRate",
+				"DerivativeNotionalAmount": "DerivativeNotionalAmount",
+				"DisposalGroupIncludingDiscontinuedOperationConsideration": "DisposalGroupIncludingDiscontinuedOperationConsideration",
+				"EffectiveIncomeTaxRateContinuingOperations": "EffectiveIncomeTaxRateContinuingOperations",
+				"EffectiveIncomeTaxRateReconciliationAtFederalStatutoryIncomeTaxRate": "EffectiveIncomeTaxRateReconciliationAtFederalStatutoryIncomeTaxRate",
+				"EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognized": "EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognized",
+				"EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognizedPeriodForRecognition1": "EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognizedPeriodForRecognition1",
+				"EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognizedShareBasedAwardsOtherThanOptions": "EmployeeServiceShareBasedCompensationNonvestedAwardsTotalCompensationCostNotYetRecognizedShareBasedAwardsOtherThanOptions",
+				"EmployeeServiceShareBasedCompensationTaxBenefitFromCompensationExpense": "EmployeeServiceShareBasedCompensationTaxBenefitFromCompensationExpense",
+				"EquityMethodInvestmentOwnershipPercentage": "EquityMethodInvestmentOwnershipPercentage",
+				"EquityMethodInvestments": "EquityMethodInvestments",
+				"FiniteLivedIntangibleAssetUsefulLife": "FiniteLivedIntangibleAssetUsefulLife",
+				"GainsLossesOnExtinguishmentOfDebt": "GainsLossesOnExtinguishmentOfDebt",
+				"Goodwill": "Goodwill",
+				"GoodwillImpairmentLoss": "GoodwillImpairmentLoss",
+				"GuaranteeObligationsMaximumExposure": "GuaranteeObligationsMaximumExposure",
+				"IncomeLossFromEquityMethodInvestments": "IncomeLossFromEquityMethodInvestments",
+				"IncomeTaxExpenseBenefit": "IncomeTaxExpenseBenefit",
+				"InterestExpense": "InterestExpense",
+				"InterestExpenseDebt": "InterestExpenseDebt",
+				"LeaseAndRentalExpense": "LeaseAndRentalExpense",
+				"LesseeOperatingLeaseRenewalTerm": "LesseeOperatingLeaseRenewalTerm",
+				"LesseeOperatingLeaseTermOfContract": "LesseeOperatingLeaseTermOfContract",
+				"LettersOfCreditOutstandingAmount": "LettersOfCreditOutstandingAmount",
+				"LineOfCredit": "LineOfCredit",
+				"LineOfCreditFacilityCommitmentFeePercentage": "LineOfCreditFacilityCommitmentFeePercentage",
+				"LineOfCreditFacilityCurrentBorrowingCapacity": "LineOfCreditFacilityCurrentBorrowingCapacity",
+				"LineOfCreditFacilityInterestRateAtPeriodEnd": "LineOfCreditFacilityInterestRateAtPeriodEnd",
+				"LineOfCreditFacilityMaximumBorrowingCapacity": "LineOfCreditFacilityMaximumBorrowingCapacity",
+				"LineOfCreditFacilityRemainingBorrowingCapacity": "LineOfCreditFacilityRemainingBorrowingCapacity",
+				"LineOfCreditFacilityUnusedCapacityCommitmentFeePercentage": "LineOfCreditFacilityUnusedCapacityCommitmentFeePercentage",
+				"LongTermDebt": "LongTermDebt",
+				"LongTermDebtFairValue": "LongTermDebtFairValue",
+				"LossContingencyAccrualAtCarryingValue": "LossContingencyAccrualAtCarryingValue",
+				"LossContingencyDamagesSoughtValue": "LossContingencyDamagesSoughtValue",
+				"LossContingencyEstimateOfPossibleLoss": "LossContingencyEstimateOfPossibleLoss",
+				"LossContingencyPendingClaimsNumber": "LossContingencyPendingClaimsNumber",
+				"MinorityInterestOwnershipPercentageByNoncontrollingOwners": "MinorityInterestOwnershipPercentageByNoncontrollingOwners",
+				"MinorityInterestOwnershipPercentageByParent": "MinorityInterestOwnershipPercentageByParent",
+				"NumberOfOperatingSegments": "NumberOfOperatingSegments",
+				"NumberOfRealEstateProperties": "NumberOfRealEstateProperties",
+				"NumberOfReportableSegments": "NumberOfReportableSegments",
+				"OperatingLeaseCost": "OperatingLeaseCost",
+				"OperatingLeaseExpense": "OperatingLeaseExpense",
+				"OperatingLeaseLiability": "OperatingLeaseLiability",
+				"OperatingLeasePayments": "OperatingLeasePayments",
+				"OperatingLeaseRightOfUseAsset": "OperatingLeaseRightOfUseAsset",
+				"OperatingLeaseWeightedAverageDiscountRatePercent": "OperatingLeaseWeightedAverageDiscountRatePercent",
+				"OperatingLeaseWeightedAverageRemainingLeaseTerm1": "OperatingLeaseWeightedAverageRemainingLeaseTerm1",
+				"OperatingLeasesRentExpenseNet": "OperatingLeasesRentExpenseNet",
+				"OperatingLossCarryforwards": "OperatingLossCarryforwards",
+				"PaymentsToAcquireBusinessesGross": "PaymentsToAcquireBusinessesGross",
+				"PaymentsToAcquireBusinessesNetOfCashAcquired": "PaymentsToAcquireBusinessesNetOfCashAcquired",
+				"PreferredStockDividendRatePercentage": "PreferredStockDividendRatePercentage",
+				"PreferredStockSharesAuthorized": "PreferredStockSharesAuthorized",
+				"ProceedsFromIssuanceOfCommonStock": "ProceedsFromIssuanceOfCommonStock",
+				"PropertyPlantAndEquipmentUsefulLife": "PropertyPlantAndEquipmentUsefulLife",
+				"PublicUtilitiesRequestedRateIncreaseDecreaseAmount": "PublicUtilitiesRequestedRateIncreaseDecreaseAmount",
+				"RelatedPartyTransactionAmountsOfTransaction": "RelatedPartyTransactionAmountsOfTransaction",
+				"RelatedPartyTransactionExpensesFromTransactionsWithRelatedParty": "RelatedPartyTransactionExpensesFromTransactionsWithRelatedParty",
+				"RepaymentsOfDebt": "RepaymentsOfDebt",
+				"RestructuringAndRelatedCostExpectedCost1": "RestructuringAndRelatedCostExpectedCost1",
+				"RestructuringCharges": "RestructuringCharges",
+				"RevenueFromContractWithCustomerExcludingAssessedTax": "RevenueFromContractWithCustomerExcludingAssessedTax",
+				"RevenueFromContractWithCustomerIncludingAssessedTax": "RevenueFromContractWithCustomerIncludingAssessedTax",
+				"RevenueFromRelatedParties": "RevenueFromRelatedParties",
+				"RevenueRemainingPerformanceObligation": "RevenueRemainingPerformanceObligation",
+				"Revenues": "Revenues",
+				"SaleOfStockNumberOfSharesIssuedInTransaction": "SaleOfStockNumberOfSharesIssuedInTransaction",
+				"SaleOfStockPricePerShare": "SaleOfStockPricePerShare",
+				"ShareBasedCompensation": "ShareBasedCompensation",
+				"ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardVestingPeriod1": "ShareBasedCompensationArrangementByShareBasedPaymentAwardAwardVestingPeriod1",
+				"ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod": "ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriod",
+				"ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriodWeightedAverageGrantDateFairValue": "ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsGrantsInPeriodWeightedAverageGrantDateFairValue",
+				"ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonvestedNumber": "ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsNonvestedNumber",
+				"ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriodTotalFairValue": "ShareBasedCompensationArrangementByShareBasedPaymentAwardEquityInstrumentsOtherThanOptionsVestedInPeriodTotalFairValue",
+				"ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesAuthorized": "ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesAuthorized",
+				"ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesAvailableForGrant": "ShareBasedCompensationArrangementByShareBasedPaymentAwardNumberOfSharesAvailableForGrant",
+				"ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisesInPeriodTotalIntrinsicValue": "ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsExercisesInPeriodTotalIntrinsicValue",
+				"ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodGross": "ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodGross",
+				"ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodWeightedAverageGrantDateFairValue": "ShareBasedCompensationArrangementByShareBasedPaymentAwardOptionsGrantsInPeriodWeightedAverageGrantDateFairValue",
+				"SharePrice": "SharePrice",
+				"SharebasedCompensationArrangementBySharebasedPaymentAwardAwardVestingRightsPercentage": "SharebasedCompensationArrangementBySharebasedPaymentAwardAwardVestingRightsPercentage",
+				"SharebasedCompensationArrangementBySharebasedPaymentAwardExpirationPeriod": "SharebasedCompensationArrangementBySharebasedPaymentAwardExpirationPeriod",
+				"StockIssuedDuringPeriodSharesNewIssues": "StockIssuedDuringPeriodSharesNewIssues",
+				"StockRepurchaseProgramAuthorizedAmount1": "StockRepurchaseProgramAuthorizedAmount1",
+				"StockRepurchaseProgramRemainingAuthorizedRepurchaseAmount1": "StockRepurchaseProgramRemainingAuthorizedRepurchaseAmount1",
+				"StockRepurchasedAndRetiredDuringPeriodShares": "StockRepurchasedAndRetiredDuringPeriodShares",
+				"StockRepurchasedDuringPeriodShares": "StockRepurchasedDuringPeriodShares",
+				"SupplementalInformationForPropertyCasualtyInsuranceUnderwritersPriorYearClaimsAndClaimsAdjustmentExpense": "SupplementalInformationForPropertyCasualtyInsuranceUnderwritersPriorYearClaimsAndClaimsAdjustmentExpense",
+				"TreasuryStockAcquiredAverageCostPerShare": "TreasuryStockAcquiredAverageCostPerShare",
+				"TreasuryStockSharesAcquired": "TreasuryStockSharesAcquired",
+				"TreasuryStockValueAcquiredCostMethod": "TreasuryStockValueAcquiredCostMethod",
+				"UnrecognizedTaxBenefits": "UnrecognizedTaxBenefits",
+				"UnrecognizedTaxBenefitsThatWouldImpactEffectiveTaxRate": "UnrecognizedTaxBenefitsThatWouldImpactEffectiveTaxRate"
+			}
+		}
+	],
+	"TurkuONE": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"CARDINAL": "cardinal number",
+				"DATE": "date",
+				"EVENT": "event",
+				"FAC": "facility",
+				"GPE": "geopolitical entity",
+				"LANGUAGE": "language",
+				"LAW": "law",
+				"LOC": "location",
+				"MONEY": "money",
+				"NORP": "group",
+				"ORDINAL": "ordinal number",
+				"ORG": "organization",
+				"PERCENT": "percentage",
+				"PERSON": "person",
+				"PRODUCT": "product",
+				"QUANTITY": "quantity",
+				"TIME": "time",
+				"WORK_OF_ART": "work of art"
+			}
+		}
+	],
+	"WIESP2022": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Archive": "archive",
+				"CelestialObject": "celestial object",
+				"CelestialObjectRegion": "celestial object region",
+				"CelestialRegion": "celestial region",
+				"Citation": "citation",
+				"Collaboration": "collaboration",
+				"ComputingFacility": "computing facility",
+				"Database": "database",
+				"Dataset": "dataset",
+				"EntityOfFutureInterest": "entity of future interest",
+				"Event": "event",
+				"Fellowship": "fellowship",
+				"Formula": "formula",
+				"Grant": "grant",
+				"Identifier": "identifier",
+				"Instrument": "instrument",
+				"Location": "other location",
+				"Mission": "mission",
+				"Model": "model",
+				"ObservationalTechniques": "observational technique",
+				"Observatory": "observatory",
+				"Organization": "organization",
+				"Person": "person",
+				"Proposal": "proposal",
+				"Software": "software",
+				"Survey": "survey",
+				"Tag": "tag",
+				"Telescope": "telescope",
+				"TextGarbage": "text garbage",
+				"URL": "URL",
+				"Wavelength": "wavelength"
+			}
+		}
+	],
+	"BC2GM": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"GENE": "gene"
+			}
+		}
+	],
+	"NCBI-Disease": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"CompositeMention": "disease mention",
+				"DiseaseClass": "disease class",
+				"Modifier": "modifier",
+				"SpecificDisease": "specific disease"
+			}
+		}
+	],
+	"Thai-NER": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"AGO": "age",
+				"DATE": "date",
+				"EMAIL": "email address",
+				"FACILITY": "facility",
+				"LAW": "law",
+				"LEN": "length",
+				"LOCATION": "location",
+				"MONEY": "money",
+				"ORGANIZATION": "organization",
+				"PERCENT": "percentage",
+				"PERSON": "person",
+				"PHONE": "phone number",
+				"TEMPERATURE": "temperature",
+				"TIME": "time",
+				"URL": "URL",
+				"ZIP": "zip code"
+			}
+		}
+	],
+	"EverestNER": [
+		{
+			"subsets": [
+				[]
+			],
+			"tagset": "ner",
+			"label_map": {
+				"Date": "date",
+				"Event": "event",
+				"Location": "location",
+				"Organization": "organization",
+				"Person": "person"
+			}
+		}
+	]
+}

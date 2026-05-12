@@ -1,0 +1,97 @@
+[project]
+name = "meld"
+description = "MELD: A multilingual and multidomain dataset for named entity recognition (NER)"
+version = "1.0.0"
+authors = [
+  { name = "Kevin Glocker", email = "kevin.glocker@liu.se" },
+]
+dependencies = [
+  "GitPython>=3.1",
+  "tqdm>=4.67",
+  "pydantic~=2.11",
+  "requests>=2.32",
+  "datasets<4.0",
+  "lxml>=5.4",
+  "polars~=1.38.1",
+  "gdown~=5.2",
+  "pyarrow~=23.0.1",
+  "langcodes~=3.5",
+  "tokenizers~=0.21",
+  "hf_xet~=1.1",
+  "regex>=2026.2.28",
+  "bibtexparser~=2.0.0b9",
+  "huggingface-hub>=0.36.2",
+  "transformers>=4.57.6",
+]
+# Support is limited by datasets<4.0 not supporting 3.14+
+requires-python = ">=3.12,<3.14"
+classifiers=[
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Operating System :: OS Independent",
+]
+license = "MIT"
+
+[project.urls]
+Repository = "https://github.com/kgnlp/meld"
+Issues = "https://github.com/kgnlp/meld/issues"
+Documentation = "https://kgnlp.github.io/meld"
+
+[build-system]
+requires = ["setuptools >= 80.0"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+word-tokenization = [
+  "datatrove[processing,multilingual]~=0.6"
+]
+sentence-segmentation = [
+  "wtpsplit~=2.2.0"
+]
+dev = [
+  "pytest>=8.1.1",
+  "pre-commit>=3.7.0",
+  "ruff>=0.11.3",
+  "types-lxml>=2025.3.30",
+  "pyarrow-stubs>=19.3",
+]
+docs = [
+  "zensical>=0.0.24",
+  "mkdocstrings[python]>=1.0",
+]
+
+[project.scripts]
+meld-data = "meld.data:main"
+
+[tool.setuptools.packages.find]
+include = ["meld"]
+
+[tool.pytest.ini_options]
+addopts = [
+  "--import-mode=importlib",
+  "--doctest-modules",
+  "--strict-markers",
+  "--ignore=recipes"
+]
+markers = []
+# Work around import issues with multiprocessing in the test folder
+# when using the "pytest" command instead of "python -m pytest"
+pythonpath = "."
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+ignore = ["B020", "PLR1704"]
+preview = true
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"

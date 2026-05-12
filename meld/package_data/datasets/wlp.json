@@ -1,0 +1,99 @@
+{
+    "WLP": {
+        "citekeys": [
+            "kulkarni-etal-2018-annotated"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/chaitanya2334/WLP-Dataset.git",
+                "revision": "1f51ae6e620a5aa3590acf725713f430783f56d7",
+                "base_language": "eng",
+                "subsets": {
+                    "__root__": {
+                        "data_pipe": [
+                            {
+                                "step": "convert",
+                                "reader": {
+                                    "type": "standoff"
+                                }
+                            }
+                        ],
+                        "train": [
+                            {
+                                "annotations": [
+                                    "train/*.ann"
+                                ],
+                                "text": [
+                                    "train/*.txt"
+                                ]
+                            }
+                        ],
+                        "validation": [
+                            {
+                                "annotations": [
+                                    "dev/*.ann"
+                                ],
+                                "text": [
+                                    "dev/*.txt"
+                                ]
+                            }
+                        ],
+                        "test": [
+                            {
+                                "annotations": [
+                                    "test/*.ann"
+                                ],
+                                "text": [
+                                    "test/*.txt"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "spans"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "MIT",
+                "document_boundaries": "full",
+                "sentence_boundaries": "none",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 10,
+                    "features": [
+                        "domain-experts:subset"
+                    ],
+                    "agreement": {
+                        "metric": "krippendorfs-alpha",
+                        "value": 0.7599
+                    }
+                },
+                "primary_domain": "science",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "lab protocols",
+                    "molecular biology",
+                    "microbiology",
+                    "cell biology",
+                    "plant biology",
+                    "immunology",
+                    "chemical biology"
+                ],
+                "data_sources": [
+                    {
+                        "source": "protocols.io",
+                        "url": "https://www.protocols.io/"
+                    }
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

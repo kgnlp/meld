@@ -1,0 +1,81 @@
+{
+    "SciER": {
+        "citekeys": [
+            "zhang-etal-2024-scier"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/edzq/SciER.git",
+                "revision": "db347813de379eb200e0813bbfee350d67e7c701",
+                "base_language": "eng",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "scier_jsonl"
+                        }
+                    }
+                ],
+                "subsets": {
+                    "in_domain": {
+                        "directory": "SciER/PLM",
+                        "train": [
+                            "train.jsonl"
+                        ],
+                        "validation": [
+                            "dev.jsonl"
+                        ],
+                        "test": [
+                            "test.jsonl"
+                        ]
+                    },
+                    "out_of_domain": {
+                        "directory": "SciER/PLM",
+                        "test": [
+                            "test_ood.jsonl"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "spans"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "GPL 3.0",
+                "document_boundaries": "full",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 5,
+                    "features": [
+                        "annotators-each:3+",
+                        "domain-experts",
+                        "lead-annotator:1"
+                    ],
+                    "agreement": {
+                        "metric": "fleiss-kappa",
+                        "value": 0.741
+                    }
+                },
+                "primary_domain": "science",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "AI"
+                ],
+                "data_sources": [
+                    "S2ORC (documents from the SciDMT-E validation set)",
+                    "AI conference papers (6 papers, 2023--2024)"
+                ],
+                "dataset_lineage": [
+                    "SciDMT-E"
+                ],
+                "label_set_standard": "SciDMT"
+            }
+        ]
+    }
+}

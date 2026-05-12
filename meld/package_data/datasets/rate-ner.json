@@ -1,0 +1,114 @@
+{
+    "RaTE-NER": {
+        "citekeys": [
+            "zhao2024ratescore"
+        ],
+        "source": {
+            "loader": "huggingface",
+            "arguments": {
+                "repo": "Angelakeke/RaTE-NER",
+                "revision": "7327bf066d997713245ae61815a3b973406ea7b9",
+                "base_language": "eng",
+                "text_column": "tokens",
+                "tag_column": "ner_tags",
+                "train_name": "train",
+                "validation_name": "dev",
+                "test_name": "test",
+                "data_files": {
+                    "subsets": {
+                        "MIMIC_IV": {
+                            "train": "MIMIC_IV/train_IOB.json",
+                            "dev": "MIMIC_IV/dev_IOB.json",
+                            "test": "MIMIC_IV/test_IOB.json"
+                        },
+                        "Radiopaedia": {
+                            "train": "Radiopaedia/train_IOB.json",
+                            "dev": "Radiopaedia/dev_IOB.json",
+                            "test": "Radiopaedia/test_IOB.json"
+                        }
+                    }
+                },
+                "data_pipe": [
+                    {
+                        "step": "columns",
+                        "tagsets": {
+                            "ner": {
+                                "label_map": {
+                                    "B-ABNORMALITY": 0,
+                                    "I-ABNORMALITY": 1,
+                                    "B-NON-ABNORMALITY": 2,
+                                    "I-NON-ABNORMALITY": 3,
+                                    "B-DISEASE": 4,
+                                    "I-DISEASE": 5,
+                                    "B-NON-DISEASE": 6,
+                                    "I-NON-DISEASE": 7,
+                                    "B-ANATOMY": 8,
+                                    "I-ANATOMY": 9,
+                                    "O": 10
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio",
+            "tag_format": "indices"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY-NC 4.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "domain-experts"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "clinical",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "radiology reports"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            },
+            {
+                "split": [
+                    "MIMIC_IV"
+                ],
+                "data_sources": [
+                    "MIMIC-IV"
+                ]
+            },
+            {
+                "split": [
+                    "Radiopaedia"
+                ],
+                "data_sources": [
+                    "Radiopaedia"
+                ]
+            },
+            {
+                "split": [
+                    "Radiopaedia.train",
+                    "Radiopaedia.validation"
+                ],
+                "annotation": {
+                    "type": "silver-standard",
+                    "annotator_count": 0,
+                    "features": [
+                        "automatically-extracted"
+                    ],
+                    "agreement": null
+                }
+            }
+        ]
+    }
+}

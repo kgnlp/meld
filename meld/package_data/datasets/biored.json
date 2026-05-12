@@ -1,0 +1,90 @@
+{
+    "BioRED": {
+        "citekeys": [
+            "luo2022biored"
+        ],
+        "source": {
+            "loader": "generic",
+            "arguments": {
+                "download_data_pipe": [
+                    {
+                        "step": "download",
+                        "urls": [
+                            {
+                                "url": "https://ftp.ncbi.nlm.nih.gov/pub/lu/BioRED/BIORED.zip",
+                                "sha256": "c3032230bd89d22a0923d0df6ae943bc8ea37fba7e42dafa7a8dec21bac02d47"
+                            }
+                        ]
+                    },
+                    {
+                        "step": "extract",
+                        "from_file": "BIORED.zip",
+                        "files": [
+                            "BioRED/Train.BioC.XML",
+                            "BioRED/Dev.BioC.XML",
+                            "BioRED/Test.BioC.XML"
+                        ]
+                    },
+                    {
+                        "step": "splits",
+                        "language": "eng",
+                        "directory": "BioRED",
+                        "train": [
+                            "Train.BioC.XML"
+                        ],
+                        "validation": [
+                            "Dev.BioC.XML"
+                        ],
+                        "test": [
+                            "Test.BioC.XML"
+                        ]
+                    },
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "bioc_xml"
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "spans",
+            "tag_alignment": "offsets"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Public Domain",
+                "document_boundaries": "full",
+                "sentence_boundaries": "sections",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 3,
+                    "features": [
+                        "domain-experts"
+                    ],
+                    "agreement": {
+                        "value": {
+                            "Gene": 0.9735,
+                            "Disease": 0.9606,
+                            "Chemical": 0.9612,
+                            "Variant": 0.9779,
+                            "Species": 0.9943,
+                            "Cell Line": 0.9968
+                        }
+                    }
+                },
+                "primary_domain": "biomedical",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    "PubMed"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

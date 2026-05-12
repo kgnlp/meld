@@ -1,0 +1,73 @@
+{
+    "BC4CHEMD": {
+        "citekeys": [
+            "Krallinger2015TheCC"
+        ],
+        "use_shared_cache": "MTL-Bioinformatics",
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/cambridgeltl/MTL-Bioinformatics-2016.git",
+                "revision": "df0df02fae6dbb87d88ffcf323b9096528f06f84",
+                "keep_repo": true,
+                "base_language": "eng",
+                "subsets": {
+                    "__root__": {
+                        "data_pipe": [
+                            {
+                                "step": "convert",
+                                "reader": {
+                                    "type": "conll"
+                                }
+                            }
+                        ],
+                        "directory": "data/BC4CHEMD",
+                        "train": [
+                            "train.tsv"
+                        ],
+                        "validation": [
+                            "devel.tsv"
+                        ],
+                        "test": [
+                            "test.tsv"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Unspecified",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "domain-experts"
+                    ],
+                    "agreement": {
+                        "metric": null,
+                        "value": 0.8526
+                    }
+                },
+                "primary_domain": "biomedical",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "chemical",
+                    "structure associated chemical entity mentions (SACEMs)"
+                ],
+                "data_sources": [
+                    "PubMed"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

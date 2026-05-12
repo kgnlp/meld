@@ -1,0 +1,71 @@
+{
+    "Arabic-Cross-Dialectal-NER": {
+        "citekeys": [
+            "elkhbir-etal-2023-cross"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/niamaelkhbir/Arabic-Cross-Dialectal-NER.git",
+                "revision": "83b2f70128be11b666e74819aa3992c7ea53b893",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "arabic_cross_dialectal_json"
+                        }
+                    }
+                ],
+                "subsets": {
+                    "egyptian": {
+                        "language": "arz",
+                        "test": [
+                            "data/egyptian.json"
+                        ]
+                    },
+                    "moroccan": {
+                        "language": "ary",
+                        "test": [
+                            "data/moroccan.json"
+                        ]
+                    },
+                    "syrian": {
+                        "language": "apc",
+                        "test": [
+                            "data/syrian.json"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "spans"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Unspecified",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 1,
+                    "features": [],
+                    "agreement": null
+                },
+                "primary_domain": "general",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    {
+                        "source": "xP3x",
+                        "url": "https://huggingface.co/datasets/CohereLabs/xP3x"
+                    }
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": "ACE 2005"
+            }
+        ]
+    }
+}

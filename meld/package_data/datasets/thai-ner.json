@@ -1,0 +1,112 @@
+{
+    "Thai-NER": {
+        "citekeys": [
+            "wannaphong_phatthiyaphaibun_2024_10795907"
+        ],
+        "note": "Version 2.2 of Thai NER",
+        "source": {
+            "loader": "huggingface",
+            "arguments": {
+                "repo": "pythainlp/thainer-corpus-v2.2",
+                "revision": "e516176cf83d96526e407a7652205d6620837600",
+                "base_language": "tha",
+                "text_column": "words",
+                "tag_column": "ner",
+                "train_name": "train",
+                "validation_name": "validation",
+                "test_name": "test",
+                "data_pipe": [
+                    {
+                        "step": "columns",
+                        "tagsets": {
+                            "ner": {
+                                "label_map": {
+                                    "B-PERSON": 0,
+                                    "I-PERSON": 1,
+                                    "O": 2,
+                                    "B-ORGANIZATION": 3,
+                                    "B-LOCATION": 4,
+                                    "I-ORGANIZATION": 5,
+                                    "I-LOCATION": 6,
+                                    "B-DATE": 7,
+                                    "I-DATE": 8,
+                                    "B-TIME": 9,
+                                    "I-TIME": 10,
+                                    "B-MONEY": 11,
+                                    "I-MONEY": 12,
+                                    "B-FACILITY": 13,
+                                    "I-FACILITY": 14,
+                                    "B-URL": 15,
+                                    "I-URL": 16,
+                                    "B-PERCENT": 17,
+                                    "I-PERCENT": 18,
+                                    "B-LEN": 19,
+                                    "I-LEN": 20,
+                                    "B-AGO": 21,
+                                    "I-AGO": 22,
+                                    "B-LAW": 23,
+                                    "I-LAW": 24,
+                                    "B-PHONE": 25,
+                                    "I-PHONE": 26,
+                                    "B-EMAIL": 27,
+                                    "I-EMAIL": 28,
+                                    "B-ZIP": 29,
+                                    "B-TEMPERATURE": 30,
+                                    "I-TEMPERATURE": 31
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio",
+            "tag_format": "indices"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY 4.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": null,
+                    "features": [
+                        "crowd-sourced",
+                        "partially-unknown"
+                    ],
+                    "agreement": null
+                },
+                "primary_domain": "general",
+                "other_domains": [
+                    "news",
+                    "social media",
+                    "general"
+                ],
+                "finegrained_domains": [],
+                "data_sources": [
+                    "BEST 2009 corpus",
+                    "Twitter",
+                    {
+                        "source": "KKU news",
+                        "url": "kku.ac.th"
+                    },
+                    {
+                        "source": "Blognone",
+                        "url": "https://www.blognone.com/"
+                    },
+                    {
+                        "source": "Royal Thai Government",
+                        "url": "https://www.thaigov.go.th"
+                    },
+                    "Other unknown sources"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

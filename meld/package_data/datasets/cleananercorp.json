@@ -1,0 +1,104 @@
+{
+    "CLEANANERCorp": {
+        "citekeys": [
+            "alduwais2024cleananercorp"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/iwan-rg/CLEANANERCorp.git",
+                "revision": "8dd850c17ad13f71d3844f9e979e07d82a9070ef",
+                "base_language": "ara",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll",
+                            "arguments": {
+                                "delimiter": " "
+                            }
+                        }
+                    }
+                ],
+                "subsets": {
+                    "__root__": {
+                        "train": [
+                            "cleananercorp_TRAIN.txt"
+                        ],
+                        "test": [
+                            "cleananercorp_TEST.txt"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "GPL 3.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 1,
+                    "features": [],
+                    "agreement": null
+                },
+                "primary_domain": "news",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    {
+                        "source": "Al Jazeera",
+                        "url": "http://www.aljazeera.net"
+                    },
+                    {
+                        "source": "Raya",
+                        "url": "http://www.raya.com"
+                    },
+                    {
+                        "source": "Arabic Wikipedia",
+                        "url": "http://ar.wikipedia.org"
+                    },
+                    {
+                        "source": "Al Alam",
+                        "url": "http://www.alalam.ma"
+                    },
+                    {
+                        "source": "Ahram",
+                        "url": "http://www.ahram.eg.org"
+                    },
+                    {
+                        "source": "Al Ittihad",
+                        "url": "http://www.alittihad.ae"
+                    },
+                    {
+                        "source": "BBC Arabic",
+                        "url": "http://www.bbc.co.uk/arabic/"
+                    },
+                    {
+                        "source": "CNN Arabic",
+                        "url": "http://arabic.cnn.com"
+                    },
+                    {
+                        "source": "Addustour",
+                        "url": "http://www.addustour.com"
+                    },
+                    {
+                        "source": "Kassioun",
+                        "url": "http://kassioun.org"
+                    },
+                    "Other newspapers and magazines"
+                ],
+                "dataset_lineage": [
+                    "ANERcorp"
+                ],
+                "label_set_standard": "MUC-6"
+            }
+        ]
+    }
+}

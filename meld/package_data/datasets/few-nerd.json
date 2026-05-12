@@ -1,0 +1,165 @@
+{
+    "Few-NERD": {
+        "citekeys": [
+            "ding-etal-2021-nerd"
+        ],
+        "source": {
+            "loader": "huggingface",
+            "arguments": {
+                "repo": "DFKI-SLT/few-nerd",
+                "revision": "205f3e9c9f3577ea2561d43f2f62dc249ab92d5b",
+                "base_language": "eng",
+                "text_column": "tokens",
+                "tag_column": "fine_ner_tags",
+                "train_name": "train",
+                "validation_name": "validation",
+                "test_name": "test",
+                "data_pipe": [
+                    {
+                        "step": "columns",
+                        "tagsets": {
+                            "coarse": {
+                                "column": "ner_tags",
+                                "label_map": {
+                                    "O": 0,
+                                    "I-art": 1,
+                                    "I-building": 2,
+                                    "I-event": 3,
+                                    "I-location": 4,
+                                    "I-organization": 5,
+                                    "I-other": 6,
+                                    "I-person": 7,
+                                    "I-product": 8
+                                }
+                            },
+                            "fine": {
+                                "column": "fine_ner_tags",
+                                "label_map": {
+                                    "O": 0,
+                                    "I-art-broadcastprogram": 1,
+                                    "I-art-film": 2,
+                                    "I-art-music": 3,
+                                    "I-art-other": 4,
+                                    "I-art-painting": 5,
+                                    "I-art-writtenart": 6,
+                                    "I-building-airport": 7,
+                                    "I-building-hospital": 8,
+                                    "I-building-hotel": 9,
+                                    "I-building-library": 10,
+                                    "I-building-other": 11,
+                                    "I-building-restaurant": 12,
+                                    "I-building-sportsfacility": 13,
+                                    "I-building-theater": 14,
+                                    "I-event-attack/battle/war/militaryconflict": 15,
+                                    "I-event-disaster": 16,
+                                    "I-event-election": 17,
+                                    "I-event-other": 18,
+                                    "I-event-protest": 19,
+                                    "I-event-sportsevent": 20,
+                                    "I-location-GPE": 21,
+                                    "I-location-bodiesofwater": 22,
+                                    "I-location-island": 23,
+                                    "I-location-mountain": 24,
+                                    "I-location-other": 25,
+                                    "I-location-park": 26,
+                                    "I-location-road/railway/highway/transit": 27,
+                                    "I-organization-company": 28,
+                                    "I-organization-education": 29,
+                                    "I-organization-government/governmentagency": 30,
+                                    "I-organization-media/newspaper": 31,
+                                    "I-organization-other": 32,
+                                    "I-organization-politicalparty": 33,
+                                    "I-organization-religion": 34,
+                                    "I-organization-showorganization": 35,
+                                    "I-organization-sportsleague": 36,
+                                    "I-organization-sportsteam": 37,
+                                    "I-other-astronomything": 38,
+                                    "I-other-award": 39,
+                                    "I-other-biologything": 40,
+                                    "I-other-chemicalthing": 41,
+                                    "I-other-currency": 42,
+                                    "I-other-disease": 43,
+                                    "I-other-educationaldegree": 44,
+                                    "I-other-god": 45,
+                                    "I-other-language": 46,
+                                    "I-other-law": 47,
+                                    "I-other-livingthing": 48,
+                                    "I-other-medical": 49,
+                                    "I-person-actor": 50,
+                                    "I-person-artist/author": 51,
+                                    "I-person-athlete": 52,
+                                    "I-person-director": 53,
+                                    "I-person-other": 54,
+                                    "I-person-politician": 55,
+                                    "I-person-scholar": 56,
+                                    "I-person-soldier": 57,
+                                    "I-product-airplane": 58,
+                                    "I-product-car": 59,
+                                    "I-product-food": 60,
+                                    "I-product-game": 61,
+                                    "I-product-other": 62,
+                                    "I-product-ship": 63,
+                                    "I-product-software": 64,
+                                    "I-product-train": 65,
+                                    "I-product-weapon": 66
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "settings": {
+            "inter": [
+                {
+                    "type": "subset",
+                    "name": "inter"
+                }
+            ],
+            "intra": [
+                {
+                    "type": "subset",
+                    "name": "intra"
+                }
+            ],
+            "supervised": [
+                {
+                    "type": "subset",
+                    "name": "supervised"
+                }
+            ]
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio",
+            "tag_format": "indices"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY-SA 4.0",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 70,
+                    "features": [
+                        "annotators-each:2"
+                    ],
+                    "agreement": {
+                        "metric": "cohens-kappa",
+                        "value": 0.7644
+                    }
+                },
+                "primary_domain": "wikipedia",
+                "other_domains": [],
+                "finegrained_domains": [],
+                "data_sources": [
+                    "English Wikipedia"
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

@@ -1,0 +1,78 @@
+{
+    "EverestNER": {
+        "citekeys": [
+            "niraula2022named"
+        ],
+        "source": {
+            "loader": "git",
+            "arguments": {
+                "repo": "https://github.com/nowalab/everest-ner.git",
+                "revision": "c8df849d8c48d048df69486d81b10c8399c4dcd6",
+                "base_language": "nep",
+                "default_data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "plain_spans",
+                            "arguments": {
+                                "span_format": "python"
+                            }
+                        }
+                    }
+                ],
+                "subsets": {
+                    "__root__": {
+                        "train": [
+                            "EverestNER-train-char.txt"
+                        ],
+                        "test": [
+                            "EverestNER-test-char.txt"
+                        ]
+                    }
+                }
+            }
+        },
+        "format": {
+            "text": "original",
+            "tags": "spans"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "Non-commercial",
+                "document_boundaries": "none",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 2,
+                    "features": [
+                        "author-annotated"
+                    ],
+                    "agreement": {
+                        "metric": "cohens-kappa",
+                        "value": 0.74
+                    }
+                },
+                "primary_domain": "news",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "Politics",
+                    "Sport",
+                    "Art",
+                    "Society",
+                    "Economics",
+                    "Blog",
+                    "Literature"
+                ],
+                "data_sources": [
+                    {
+                        "source": "Setopati",
+                        "url": "https://setopati.com/"
+                    }
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}

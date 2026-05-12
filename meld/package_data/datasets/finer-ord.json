@@ -1,0 +1,78 @@
+{
+    "FiNER-ORD": {
+        "citekeys": [
+            "shah2024finerordfinancialnamedentity"
+        ],
+        "source": {
+            "loader": "huggingface",
+            "arguments": {
+                "repo": "gtfintechlab/finer-ord",
+                "revision": "ffde4829ec7be59c846365f8e8a10421bb79138a",
+                "base_language": "eng",
+                "text_column": "gold_token",
+                "tag_column": "gold_label",
+                "train_name": "train",
+                "validation_name": "validation",
+                "test_name": "test",
+                "data_pipe": [
+                    {
+                        "step": "convert",
+                        "reader": {
+                            "type": "conll",
+                            "arguments": {
+                                "dialect": "flat",
+                                "label_map": {
+                                    "ner": {
+                                        "O": 0,
+                                        "B-PER": 1,
+                                        "I-PER": 2,
+                                        "B-LOC": 3,
+                                        "I-LOC": 4,
+                                        "B-ORG": 5,
+                                        "I-ORG": 6
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "format": {
+            "text": "pre-tokenized",
+            "tags": "bio",
+            "tag_format": "indices"
+        },
+        "metadata": [
+            {
+                "split": [],
+                "license": "CC BY-NC 4.0",
+                "document_boundaries": "full",
+                "sentence_boundaries": "full",
+                "annotation": {
+                    "type": "gold-standard",
+                    "annotator_count": 2,
+                    "features": [
+                        "author-annotated"
+                    ],
+                    "agreement": {
+                        "value": 0.9685
+                    }
+                },
+                "primary_domain": "news",
+                "other_domains": [],
+                "finegrained_domains": [
+                    "finance"
+                ],
+                "data_sources": [
+                    {
+                        "source": "webz.io",
+                        "url": "https://webz.io/free-datasets/financial-news-articles/"
+                    }
+                ],
+                "dataset_lineage": [],
+                "label_set_standard": null
+            }
+        ]
+    }
+}
