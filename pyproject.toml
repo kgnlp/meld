@@ -1,5 +1,5 @@
 [project]
-name = "meld"
+name = "meld-data"
 description = "MELD: A multilingual and multidomain dataset for named entity recognition (NER)"
 version = "1.0.0"
 authors = [

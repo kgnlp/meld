@@ -30,13 +30,13 @@ MELD is a multilingual and multi-domain dataset for Named Entity Recognition (NE
 To start working with our dataset, install MELD using pip:
 
 ```bash
-pip install meld
+pip install meld-data
 ```
 
 For [reproducing sentence level tokenization from source](#reproducing-meld-from-source),  the `sentence-segmentation` extra needs to be enabled:
 
 ```
-pip install 'meld[sentence-segmentation]'
+pip install 'meld-data[sentence-segmentation]'
 ```
 
 For **development**, we recommend managing your environment with [`uv`](https://docs.astral.sh/uv):
