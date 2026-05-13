@@ -1,14 +1,6 @@
 <div align="center">
-<img src="docs/logo.svg" width="275ch">
+<img src="https://raw.githubusercontent.com/kgnlp/meld/refs/heads/main/docs/logo.svg" width="275ch">
 <h1>MELD: Melding Diverse Multilingual and Multi-Domain Datasets for Named Entity Recognition Evaluation</h1>
-
-<nav>
-    <a href="#installation">Installation</a> •
-    <a href="#download-meld">Download MELD</a> •
-    <a href="#convert-to-huggingface-datasets-format">Convert to HuggingFace Datasets Format</a> •
-    <a href="#included-datasets">Included Datasets</a> •
-    <a href="#citation">Citation</a>
-<nav>
 </div>
 
 ----------
@@ -33,7 +25,7 @@ To start working with our dataset, install MELD using pip:
 pip install meld-data
 ```
 
-For [reproducing sentence level tokenization from source](#reproducing-meld-from-source),  the `sentence-segmentation` extra needs to be enabled:
+For reproducing sentence level tokenization from source,  the `sentence-segmentation` extra needs to be enabled:
 
 ```
 pip install 'meld-data[sentence-segmentation]'
@@ -56,7 +48,7 @@ meld-data list
 
 # Download MELD
 
-> [!NOTE]
+> **NOTE:**
 > It is recommended to log into a HuggingFace account with `huggingface-cli login` before downloading datasets to avoid running into API rate limits, particularly when reproducing MELD from source.
 
 To get started, the preprocessed, redistributable subset of MELD can be downloaded using:
@@ -71,8 +63,8 @@ By default, this downloads the `meld:open` profile, which includes all dataset a
 meld-data download -v info --datasets meld:full path/to/download_directory
 ```
 
-> [!NOTE]
-> Currently, the initially downloaded data will contain the original unnormalized entity labels from each dataset. To apply our label normalization, the [`meld-data hf`](#convert-to-huggingface-datasets-format) command can be used.
+> **NOTE:**
+> Currently, the initially downloaded data will contain the original unnormalized entity labels from each dataset. To apply our label normalization, the `meld-data hf` command can be used.
 
 **Notice regarding CoNLL-2003:**
 
@@ -132,7 +124,7 @@ meld-data download -v info --datasets 'meld:open,CoNLL-2003' path/to/download_di
 
 ## Download Specific Datasets
 
-Individual datasets can be downloaded by passing their names as a comma separated list. Dataset names are case-sensitive corresponding to the output of the [list command](###listing-available-datasets).
+Individual datasets can be downloaded by passing their names as a comma separated list. Dataset names are case-sensitive corresponding to the output of the `list` command.
 
 ```bash
 meld-data download -v info --datasets "conll-2003,scierc,few-nerd" path/to/download_directory
@@ -151,7 +143,7 @@ We use the [SAT sentence tokenizer](https://github.com/segment-any-text/wtpsplit
 meld download -v info -r --sentence-span-path path/to/new/segmentations path/to/download_directory
 ```
 
-Where the directory passed as `--sentence-span-path` will contain parquet files in the same format as those [bundled with the MELD package](/meld/package_data/sentence_spans).
+Where the directory passed as `--sentence-span-path` will contain parquet files in the same format as those [bundled with the MELD package](https://github.com/kgnlp/meld/blob/main/meld/package_data/sentence_spans).
 
 # Convert to HuggingFace Datasets Format
 
@@ -195,7 +187,7 @@ MELD integrates **60 NER datasets** spanning **194 languages** (**60 with gold s
 | LegalNERo | Law | ron | gold-standard | CC BY-NC-ND 4.0 |
 | Herodotos-Project-NER | Literature | lat | gold-standard | AGPL-3.0 license |
 | CLEANANERCorp | News | ara | gold-standard | GPL 3.0 |
-| CoNLL-2003 | News | eng | gold-standard | Proprietary text (See [Download MELD](#download-meld) for details) |
+| CoNLL-2003 | News | eng | gold-standard | Proprietary text (See *Download MELD* for details) |
 | EverestNER | News | nep | gold-standard | Non-commercial |
 | FiNER-ORD | News | eng | gold-standard | CC BY-NC 4.0 |
 | FoNE | News | fao | gold-standard | CC BY 4.0 |
@@ -282,7 +274,7 @@ When using the PhoNER COVID19 subset, also cite the following article in accorda
 }
 ```
 
-To retrieve citations for other datasets in MELD, see [BibTex Citations](#bibtex-citations).
+To retrieve citations for other datasets in MELD, see BibTex Citations.
 
 # API Reference
 
@@ -294,4 +286,4 @@ We welcome contributions to expand the dataset! Documentation and guidelines for
 
 # License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/kgnlp/meld/blob/main/LICENSE) file for details.
